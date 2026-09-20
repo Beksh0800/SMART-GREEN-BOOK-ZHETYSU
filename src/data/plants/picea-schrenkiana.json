@@ -1,0 +1,96 @@
+{
+  "slug": "picea-schrenkiana",
+  "name": {
+    "kk": "Шренк шыршасы",
+    "ru": "Ель Шренка",
+    "la": "Picea schrenkiana"
+  },
+  "family": {
+    "kk": "Қарағайлар",
+    "la": "Pinaceae"
+  },
+  "status": {
+    "redBookKz": null,
+    "iucn": null,
+    "endemic": "regional",
+    "rarity": "Кең таралған, бірақ орман шекарасы өрт пен жайылымнан ығысуда"
+  },
+  "habitat": [
+    "mountain-forest",
+    "alpine",
+    "rocky"
+  ],
+  "description": {
+    "summary": "Тянь-Шань мен Жетісу тауларының басты орман түзуші ағашы және тау ылғал режимінің негізгі индикаторы.",
+    "morphology": "Биіктігі 40 м-ге дейін жететін ағаш. Діңі тік, қабығы сұр-қоңыр. Бұтақтары төмен салбыраған, ине жапырақтары төрт қырлы, көкшіл-жасыл, 2–4 см. Бүрлері цилиндр тәрізді, 7–10 см.",
+    "habitat": "1500–3000 м биіктіктегі солтүстік беткейлер; таза шырша ормандарын түзеді, жоғарғы шекарасы альпі белдеуіне жетеді.",
+    "phenology": "Мамыр–маусымда тозаңданады, бүрлері күзде піседі. 300 жылдан астам өмір сүреді.",
+    "uses": "Су реттеуші және топырақ қорғаушы орман, ағаш материалы, шайыры.",
+    "threats": "Орман өрттері, жайылымның орман шекарасына дейін көтерілуі, климаттың жылынуы, зиянкестер."
+  },
+  "bioIndicator": {
+    "isIndicator": true,
+    "indicates": [
+      "soil-moisture",
+      "air-pollution",
+      "soil-erosion"
+    ],
+    "scores": {
+      "moisture": 4,
+      "salinity": 1,
+      "soilPh": 6.2,
+      "grazing": 1,
+      "pollutionTolerance": 1
+    },
+    "note": "Ауа ластануына сезімтал: қаланың жел өтіндегі шыршаларда инелердің мерзімінен бұрын түсуі ластанудың көрсеткіші."
+  },
+  "locations": [
+    {
+      "zoneId": "ile-alatau",
+      "label": "Іле Алатауы, Кіші Алматы шатқалының шырша ормандары",
+      "lat": 43.1039,
+      "lon": 76.9509,
+      "precision": "exact",
+      "source": "GBIF occurrence 6133272441",
+      "sourceUrl": "https://www.gbif.org/occurrence/6133272441"
+    },
+    {
+      "zoneId": "ile-alatau",
+      "label": "Талғар ауданының орманды беткейлері",
+      "lat": 43.22,
+      "lon": 77.1656,
+      "precision": "exact",
+      "source": "GBIF occurrence 6163305530",
+      "sourceUrl": "https://www.gbif.org/occurrence/6163305530"
+    },
+    {
+      "zoneId": "zhongar-alatau",
+      "label": "Жоңғар Алатауының шырша ормандары",
+      "lat": 45.2,
+      "lon": 80.2,
+      "precision": "zone",
+      "source": "Аймақтық таралу деректері бойынша",
+      "sourceUrl": null
+    }
+  ],
+  "photo": {
+    "file": "picea-schrenkiana.webp",
+    "author": "Lukas on Flickr",
+    "license": "CC BY 2.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Picea_schrenkiana_forest.jpg"
+  },
+  "sources": [
+    {
+      "title": "Plants of the World Online — Picea schrenkiana",
+      "url": "https://powo.science.kew.org/"
+    },
+    {
+      "title": "GBIF — Picea schrenkiana, Қазақстан бойынша кездесу деректері",
+      "url": "https://www.gbif.org/"
+    },
+    {
+      "title": "Қазақстан флорасы. Алматы: Ғылым",
+      "url": null
+    }
+  ]
+}

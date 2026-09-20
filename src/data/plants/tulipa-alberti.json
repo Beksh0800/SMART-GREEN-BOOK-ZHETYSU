@@ -1,0 +1,95 @@
+{
+  "slug": "tulipa-alberti",
+  "name": {
+    "kk": "Альберт қызғалдағы",
+    "ru": "Тюльпан Альберта",
+    "la": "Tulipa alberti"
+  },
+  "family": {
+    "kk": "Лалагүлдер",
+    "la": "Liliaceae"
+  },
+  "status": {
+    "redBookKz": "III",
+    "iucn": null,
+    "endemic": "kz",
+    "rarity": "Сирек, тек шағын оқшау популяциялар түрінде сақталған"
+  },
+  "habitat": [
+    "steppe",
+    "desert",
+    "rocky"
+  ],
+  "description": {
+    "summary": "Қазақстан эндемигі — Шу-Іле таулары мен Іле аңғарының қиыршық тасты беткейлерінде өсетін ірі гүлді қызғалдақ.",
+    "morphology": "Биіктігі 10–25 см, пиязшығы қара қоңыр қабықты. Жапырақтары 3–4, кең сопақша, көкшіл-жасыл, шеті қызғылт жиекті және толқынды. Гүлі ірі, қызыл немесе сарғыш-қызыл, түбінде қара дақ бар.",
+    "habitat": "Теңіз деңгейінен 500–1500 м биіктіктегі қиыршық тасты шөлейт беткейлер, аласа таулардың етегі мен тас қалдықты жазықтар. Тығыз, тасты топырақты таңдайды.",
+    "phenology": "Сәуірде гүлдейді, мамырдың аяғында жемісі піседі; жазда пиязшық күйінде тыныштық кезеңіне өтеді.",
+    "uses": "Селекцияда пайдаланылатын генетикалық қор, жоғары бағаланатын сәндік түр.",
+    "threats": "Гүлін жұлу және пиязшығын қазып алу, карьерлер мен жол құрылысы, шамадан тыс мал жаю."
+  },
+  "bioIndicator": {
+    "isIndicator": true,
+    "indicates": [
+      "grazing-pressure",
+      "soil-erosion"
+    ],
+    "scores": {
+      "moisture": 2,
+      "salinity": 1,
+      "soilPh": 7.6,
+      "grazing": 1,
+      "pollutionTolerance": 2
+    },
+    "note": "Тасты беткейлердің бұзылмағанын көрсетеді: топырақ қабаты бүлінген жерде популяциясы қалпына келмейді."
+  },
+  "locations": [
+    {
+      "zoneId": "shu-ile",
+      "label": "Шу-Іле тауларының оңтүстік беткейлері, Жамбыл ауданы",
+      "lat": 43.7629,
+      "lon": 76.3995,
+      "precision": "exact",
+      "source": "GBIF occurrence 6187942226",
+      "sourceUrl": "https://www.gbif.org/occurrence/6187942226"
+    },
+    {
+      "zoneId": "ile-valley",
+      "label": "Іле ауданы, Қапшағай маңындағы тасты беткейлер",
+      "lat": 43.871,
+      "lon": 76.3393,
+      "precision": "exact",
+      "source": "GBIF occurrence 6188021180",
+      "sourceUrl": "https://www.gbif.org/occurrence/6188021180"
+    },
+    {
+      "zoneId": "altyn-emel",
+      "label": "Алтын-Емел ҰТП маңы, Іле өзенінің оң жағалауы",
+      "lat": 43.9982,
+      "lon": 77.6931,
+      "precision": "exact",
+      "source": "GBIF occurrence 6236317568",
+      "sourceUrl": "https://www.gbif.org/occurrence/6236317568"
+    }
+  ],
+  "photo": {
+    "file": "tulipa-alberti.webp",
+    "author": "(c) Viktoriya Khimonen",
+    "license": "CC BY-NC 4.0",
+    "url": "https://www.inaturalist.org/photos/491114769"
+  },
+  "sources": [
+    {
+      "title": "Қазақстан Республикасының Қызыл кітабы. 2-том: Өсімдіктер. Алматы, 2014",
+      "url": null
+    },
+    {
+      "title": "Plants of the World Online — Tulipa alberti",
+      "url": "https://powo.science.kew.org/"
+    },
+    {
+      "title": "GBIF — Tulipa alberti, Қазақстан бойынша кездесу деректері",
+      "url": "https://www.gbif.org/"
+    }
+  ]
+}

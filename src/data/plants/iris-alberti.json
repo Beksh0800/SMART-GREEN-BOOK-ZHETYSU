@@ -1,0 +1,86 @@
+{
+  "slug": "iris-alberti",
+  "name": {
+    "kk": "Альберт қызғалдақ гүлі",
+    "ru": "Ирис Альберта",
+    "la": "Iris alberti"
+  },
+  "family": {
+    "kk": "Құртқашаштар",
+    "la": "Iridaceae"
+  },
+  "status": {
+    "redBookKz": "III",
+    "iucn": null,
+    "endemic": "regional",
+    "rarity": "Сирек, негізінен Іле Алатауының бөктерлерінде сақталған"
+  },
+  "habitat": [
+    "steppe",
+    "shrubland",
+    "rocky"
+  ],
+  "description": {
+    "summary": "Іле Алатауының бөктеріне тән, көкшіл-күлгін гүлді ірі құртқашаш — Жетісу флорасының символдық түрлерінің бірі.",
+    "morphology": "Биіктігі 30–60 см, жуан тамырсабақты көпжылдық. Жапырақтары қылыш тәрізді, көкшіл-жасыл, желпуіш түзеді. Гүлдері ірі, көкшіл-күлгіннен ақшылға дейін, сыртқы күлте жапырақшаларында сары сақалшасы бар.",
+    "habitat": "900–1800 м биіктіктегі лёсті және қиыршық тасты тау бөктерлері, бұталы дала, жол жиектері.",
+    "phenology": "Мамырда гүлдейді, шілдеде тұқымы піседі. Тамырсабағы арқылы да көбейеді.",
+    "uses": "Сәндік және селекциялық қор; тамыр жүйесі топырақ эрозиясын тежейді.",
+    "threats": "Қала маңының кеңеюі, жер телімдерін игеру, гүлін жұлу, мал жаю."
+  },
+  "bioIndicator": {
+    "isIndicator": true,
+    "indicates": [
+      "grazing-pressure",
+      "soil-erosion"
+    ],
+    "scores": {
+      "moisture": 2,
+      "salinity": 1,
+      "soilPh": 7.4,
+      "grazing": 2,
+      "pollutionTolerance": 2
+    },
+    "note": "Қала маңындағы бөктерлерде сақталуы жердің әлі жыртылмағанын көрсетеді; құрылыс басталған жерде тез жоғалады."
+  },
+  "locations": [
+    {
+      "zoneId": "ile-alatau",
+      "label": "Алматы маңы, Бостандық ауданының жоғарғы бөктері",
+      "lat": 43.2152,
+      "lon": 76.927,
+      "precision": "exact",
+      "source": "GBIF occurrence 6184721596",
+      "sourceUrl": "https://www.gbif.org/occurrence/6184721596"
+    },
+    {
+      "zoneId": "ile-alatau",
+      "label": "Талғар ауданының тау бөктерлері",
+      "lat": 43.296,
+      "lon": 77.1057,
+      "precision": "exact",
+      "source": "GBIF occurrence 6195975902",
+      "sourceUrl": "https://www.gbif.org/occurrence/6195975902"
+    }
+  ],
+  "photo": {
+    "file": "iris-alberti.webp",
+    "author": "chernoburko",
+    "license": "CC BY 2.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Iris_alberti_-_49791525011.jpg"
+  },
+  "sources": [
+    {
+      "title": "Қазақстан Республикасының Қызыл кітабы. 2-том: Өсімдіктер. Алматы, 2014",
+      "url": null
+    },
+    {
+      "title": "Plants of the World Online — Iris alberti",
+      "url": "https://powo.science.kew.org/"
+    },
+    {
+      "title": "GBIF — Iris alberti, Қазақстан бойынша кездесу деректері",
+      "url": "https://www.gbif.org/"
+    }
+  ]
+}

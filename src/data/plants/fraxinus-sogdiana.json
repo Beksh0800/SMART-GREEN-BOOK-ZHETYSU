@@ -1,0 +1,85 @@
+{
+  "slug": "fraxinus-sogdiana",
+  "name": {
+    "kk": "Соғды шағаны",
+    "ru": "Ясень согдийский",
+    "la": "Fraxinus sogdiana"
+  },
+  "family": {
+    "kk": "Зәйтүндер",
+    "la": "Oleaceae"
+  },
+  "status": {
+    "redBookKz": "II",
+    "iucn": null,
+    "endemic": "regional",
+    "rarity": "Реликт; табиғи тоғайы тек Шарын өзені аңғарында сақталған"
+  },
+  "habitat": [
+    "riparian",
+    "rocky"
+  ],
+  "description": {
+    "summary": "Палеоген дәуірінен сақталған реликт ағаш — әлемдегі ең ірі табиғи тоғайы Шарын шатқалында орналасқан.",
+    "morphology": "Биіктігі 15–25 м ағаш. Қабығы сұр, ұзыннан жарықшақты. Жапырағы күрделі, 7–11 жапырақшадан тұрады. Гүлдері ұсақ, желмен тозаңданады. Жемісі — қанатты арыша.",
+    "habitat": "Өзен аңғарларының тасты-малта тасты террассалары, жер асты суы қолжетімді тоғайлы белдеу; 600–1400 м.",
+    "phenology": "Сәуір–мамырда жапырақ жаймай тұрып гүлдейді, қыркүйекте тұқымы піседі.",
+    "uses": "Ғылыми реликт мәні, берік ағаш материалы, өзен жағасын бекітетін түр.",
+    "threats": "Өзен ағысы режимінің өзгеруі, жер асты суы деңгейінің төмендеуі, өрт, туристік жүктеме, мал жаю."
+  },
+  "bioIndicator": {
+    "isIndicator": true,
+    "indicates": [
+      "groundwater",
+      "soil-moisture"
+    ],
+    "scores": {
+      "moisture": 3,
+      "salinity": 2,
+      "soilPh": 7.6,
+      "grazing": 2,
+      "pollutionTolerance": 2
+    },
+    "note": "Тоғайдың жаңаруы өзеннің тасқын режиміне тәуелді: жас өскіндердің жоқтығы су режимінің бұзылғанын көрсетеді."
+  },
+  "locations": [
+    {
+      "zoneId": "charyn",
+      "label": "Шарын ҰТП, Соғды шағаны тоғайы",
+      "lat": 43.3013,
+      "lon": 79.1576,
+      "precision": "exact",
+      "source": "GBIF occurrence 5176928521",
+      "sourceUrl": "https://www.gbif.org/occurrence/5176928521"
+    },
+    {
+      "zoneId": "charyn",
+      "label": "Шарын өзенінің төменгі ағысы, Ұйғыр ауданы",
+      "lat": 43.5413,
+      "lon": 79.3768,
+      "precision": "exact",
+      "source": "GBIF occurrence 4875154707",
+      "sourceUrl": "https://www.gbif.org/occurrence/4875154707"
+    }
+  ],
+  "photo": {
+    "file": "fraxinus-sogdiana.webp",
+    "author": "Arkadiusz Nowak, Marcin Nobis, Sylwia Nowak, Agnieszka Nobis, Anna Wróbel, Sebastian Świerszcz, Ewelina Klichowska, Iwon",
+    "license": "CC BY 4.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Fraxinus_sogdiana.jpg"
+  },
+  "sources": [
+    {
+      "title": "Қазақстан Республикасының Қызыл кітабы. 2-том: Өсімдіктер. Алматы, 2014",
+      "url": null
+    },
+    {
+      "title": "Plants of the World Online — Fraxinus sogdiana",
+      "url": "https://powo.science.kew.org/"
+    },
+    {
+      "title": "GBIF — Fraxinus sogdiana, Қазақстан бойынша кездесу деректері",
+      "url": "https://www.gbif.org/"
+    }
+  ]
+}

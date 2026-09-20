@@ -1,0 +1,86 @@
+{
+  "slug": "betula-tianschanica",
+  "name": {
+    "kk": "Тянь-Шань қайыңы",
+    "ru": "Берёза тянь-шаньская",
+    "la": "Betula tianschanica"
+  },
+  "family": {
+    "kk": "Қайыңдар",
+    "la": "Betulaceae"
+  },
+  "status": {
+    "redBookKz": null,
+    "iucn": null,
+    "endemic": "regional",
+    "rarity": "Шашыраңқы, тек ылғалды сай мен өзен бойында"
+  },
+  "habitat": [
+    "mountain-forest",
+    "riparian",
+    "wetland"
+  ],
+  "description": {
+    "summary": "Тау өзендерінің бойындағы ылғалды топырақта өсетін, ылғал режимінің сезімтал индикаторы.",
+    "morphology": "Биіктігі 5–15 м ағаш. Қабығы ақ немесе сарғыш-ақ, қабыршақтанып түседі. Жапырақтары ұсақ, ромб тәрізді, шеті тісті. Гүлшоғыры — сырға.",
+    "habitat": "1200–2400 м биіктіктегі өзен жағалаулары, ылғалды сайлар, бұлақ көздері.",
+    "phenology": "Сәуір–мамырда тозаңданады, шілде–тамызда тұқымы піседі.",
+    "uses": "Су көздерін қорғайтын орман, ағаш материалы, дәрілік бүршігі.",
+    "threats": "Жер асты суы деңгейінің төмендеуі, өзен ағысының азаюы, отынға кесу, мал жаю."
+  },
+  "bioIndicator": {
+    "isIndicator": true,
+    "indicates": [
+      "soil-moisture",
+      "groundwater"
+    ],
+    "scores": {
+      "moisture": 5,
+      "salinity": 1,
+      "soilPh": 6.6,
+      "grazing": 2,
+      "pollutionTolerance": 2
+    },
+    "note": "Тұрақты ылғал көзінің тікелей көрсеткіші: қайың тоғайының қурауы бұлақ пен өзен режимінің бұзылғанын білдіреді."
+  },
+  "locations": [
+    {
+      "zoneId": "ile-alatau",
+      "label": "Іле Алатауының ылғалды сайлары, Алматы маңы",
+      "lat": 43.0535,
+      "lon": 76.9224,
+      "precision": "exact",
+      "source": "GBIF occurrence 6251841336",
+      "sourceUrl": "https://www.gbif.org/occurrence/6251841336"
+    },
+    {
+      "zoneId": "zhongar-alatau",
+      "label": "Жоңғар Алатауының өзен аңғарлары",
+      "lat": 45.2,
+      "lon": 80.2,
+      "precision": "zone",
+      "source": "Аймақтық таралу деректері бойынша",
+      "sourceUrl": null
+    }
+  ],
+  "photo": {
+    "file": "betula-tianschanica.webp",
+    "author": "dschigel",
+    "license": "CC BY 4.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Betula_tianschanica_380726194.jpg"
+  },
+  "sources": [
+    {
+      "title": "Plants of the World Online — Betula tianschanica",
+      "url": "https://powo.science.kew.org/"
+    },
+    {
+      "title": "GBIF — Betula tianschanica, Қазақстан бойынша кездесу деректері",
+      "url": "https://www.gbif.org/"
+    },
+    {
+      "title": "Қазақстан флорасы. Алматы: Ғылым",
+      "url": null
+    }
+  ]
+}

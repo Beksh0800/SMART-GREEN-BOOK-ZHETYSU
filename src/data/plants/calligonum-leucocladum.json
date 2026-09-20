@@ -1,0 +1,83 @@
+{
+  "slug": "calligonum-leucocladum",
+  "name": {
+    "kk": "Ақ жүзгін",
+    "ru": "Джузгун белокорый",
+    "la": "Calligonum leucocladum"
+  },
+  "family": {
+    "kk": "Тарандар",
+    "la": "Polygonaceae"
+  },
+  "status": {
+    "redBookKz": null,
+    "iucn": null,
+    "endemic": null,
+    "rarity": "Құмды массивтерде жиі, бірақ таралуы үзік-үзік"
+  },
+  "habitat": [
+    "desert"
+  ],
+  "description": {
+    "summary": "Жылжымалы құмда алғашқы болып орнығатын бұта — құм бекітілуінің бастапқы кезеңінің индикаторы.",
+    "morphology": "Биіктігі 1–3 м бұта. Бұтақтары ақшыл, буын-буын. Жапырақтары редукцияланған, фотосинтезді жасыл өркендер атқарады. Жемісі қауырсынды немесе қылтанды өсінділермен қоршалған шар тәрізді — жел арқылы құм бетімен домалап таралады.",
+    "habitat": "Жылжымалы және жартылай бекітілген құмдар, құм төбешіктердің беткейлері; 340–800 м.",
+    "phenology": "Сәуір–мамырда гүлдейді, маусымда жемісі піседі.",
+    "uses": "Құмды бекітудің басты өсімдіктерінің бірі, түйе азығы, отын.",
+    "threats": "Құмдарды игеру, жол салу, мал жаю, отынға кесу."
+  },
+  "bioIndicator": {
+    "isIndicator": true,
+    "indicates": [
+      "soil-erosion"
+    ],
+    "scores": {
+      "moisture": 1,
+      "salinity": 1,
+      "soilPh": 7.7,
+      "grazing": 3,
+      "pollutionTolerance": 4
+    },
+    "note": "Жүзгіннің болуы құмның әлі толық бекімегенін, ал сексеуілмен бірге өсуі бекіну процесінің аяқталып келе жатқанын көрсетеді."
+  },
+  "locations": [
+    {
+      "zoneId": "balkhash-sands",
+      "label": "Балқаш ауданы, Тауқұм құмдары",
+      "lat": 44.922,
+      "lon": 76.5315,
+      "precision": "exact",
+      "source": "GBIF occurrence 5063701566",
+      "sourceUrl": "https://www.gbif.org/occurrence/5063701566"
+    },
+    {
+      "zoneId": "balkhash-sands",
+      "label": "Сарыесік-Атырау құмдарының батыс шеті",
+      "lat": 44.9094,
+      "lon": 75.1125,
+      "precision": "exact",
+      "source": "GBIF occurrence 6133599670",
+      "sourceUrl": "https://www.gbif.org/occurrence/6133599670"
+    }
+  ],
+  "photo": {
+    "file": "calligonum-leucocladum.webp",
+    "author": "(c) Osmonali Bektemir",
+    "license": "CC BY-NC 4.0",
+    "url": "https://www.inaturalist.org/photos/467115123"
+  },
+  "sources": [
+    {
+      "title": "Plants of the World Online — Calligonum leucocladum",
+      "url": "https://powo.science.kew.org/"
+    },
+    {
+      "title": "GBIF — Calligonum leucocladum, Қазақстан бойынша кездесу деректері",
+      "url": "https://www.gbif.org/"
+    },
+    {
+      "title": "Қазақстан флорасы. Алматы: Ғылым",
+      "url": null
+    }
+  ]
+}

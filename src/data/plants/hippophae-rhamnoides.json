@@ -1,0 +1,87 @@
+{
+  "slug": "hippophae-rhamnoides",
+  "name": {
+    "kk": "Шырғанақ",
+    "ru": "Облепиха крушиновидная",
+    "la": "Hippophae rhamnoides"
+  },
+  "family": {
+    "kk": "Жиделер",
+    "la": "Elaeagnaceae"
+  },
+  "status": {
+    "redBookKz": null,
+    "iucn": null,
+    "endemic": null,
+    "rarity": "Жиі, бірақ өзен арналарының өзгеруінен тоғайлары азайған"
+  },
+  "habitat": [
+    "riparian",
+    "shrubland",
+    "wetland"
+  ],
+  "description": {
+    "summary": "Тау өзендерінің малта тасты жағалауларын бекітетін, жер асты суының деңгейін көрсететін бұта.",
+    "morphology": "Биіктігі 1,5–6 м бұта немесе ағаш. Бұтақтарында тікендері бар. Жапырақтары сызықты, үстіңгі жағы сұр-жасыл, астыңғы жағы күміс түстес. Жемісі сарғыш-қызғылт, шырынды, тығыз орналасады.",
+    "habitat": "Өзен жайылмалары, малта тасты террассалар, бұлақ көздері; 400–2000 м биіктік.",
+    "phenology": "Сәуір–мамырда тозаңданады, тамыз–қыркүйекте жемісі піседі.",
+    "uses": "Дәрілік және тағамдық шикізат (майы), жағаны бекітуші өсімдік, азотты байытатын түр.",
+    "threats": "Арна түзету жұмыстары, жер асты суының төмендеуі, жемісімен бірге бұтақтарын кесу."
+  },
+  "bioIndicator": {
+    "isIndicator": true,
+    "indicates": [
+      "groundwater",
+      "soil-moisture",
+      "soil-erosion"
+    ],
+    "scores": {
+      "moisture": 4,
+      "salinity": 2,
+      "soilPh": 7.4,
+      "grazing": 3,
+      "pollutionTolerance": 4
+    },
+    "note": "Тамырында азот бекітетін бактериялары бар: бұзылған, кедей топырақта алғашқы болып орнығады — қалпына келу процесінің индикаторы."
+  },
+  "locations": [
+    {
+      "zoneId": "ile-alatau",
+      "label": "Кіші Алматы өзенінің жағалауы",
+      "lat": 43.1034,
+      "lon": 76.9249,
+      "precision": "exact",
+      "source": "GBIF occurrence 6251504017",
+      "sourceUrl": "https://www.gbif.org/occurrence/6251504017"
+    },
+    {
+      "zoneId": "zhongar-alatau",
+      "label": "Жоңғар Алатауының өзен жайылмалары",
+      "lat": 45.2,
+      "lon": 80.2,
+      "precision": "zone",
+      "source": "Аймақтық таралу деректері бойынша",
+      "sourceUrl": null
+    }
+  ],
+  "photo": {
+    "file": "hippophae-rhamnoides.webp",
+    "author": "No machine-readable author provided. Svdmolen assumed (based on copyright claims).",
+    "license": "CC BY-SA 3.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Hippophae_rhamnoides-01_(xndr).JPG"
+  },
+  "sources": [
+    {
+      "title": "Plants of the World Online — Hippophae rhamnoides",
+      "url": "https://powo.science.kew.org/"
+    },
+    {
+      "title": "GBIF — Hippophae rhamnoides, Қазақстан бойынша кездесу деректері",
+      "url": "https://www.gbif.org/"
+    },
+    {
+      "title": "Қазақстан флорасы. Алматы: Ғылым",
+      "url": null
+    }
+  ]
+}

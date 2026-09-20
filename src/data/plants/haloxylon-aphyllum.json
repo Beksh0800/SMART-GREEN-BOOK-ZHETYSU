@@ -1,0 +1,96 @@
+{
+  "slug": "haloxylon-aphyllum",
+  "name": {
+    "kk": "Қара сексеуіл",
+    "ru": "Саксаул чёрный",
+    "la": "Haloxylon aphyllum"
+  },
+  "family": {
+    "kk": "Алабұталар",
+    "la": "Amaranthaceae"
+  },
+  "status": {
+    "redBookKz": null,
+    "iucn": null,
+    "endemic": null,
+    "rarity": "Кең таралған, бірақ отын ретінде кесілуден тоғайлары сирей түскен"
+  },
+  "habitat": [
+    "desert",
+    "saline",
+    "steppe"
+  ],
+  "description": {
+    "summary": "Балқаш маңы шөлдерінің негізгі орман түзуші түрі және жер асты суы мен топырақ тұздануының ең сенімді индикаторларының бірі.",
+    "morphology": "Биіктігі 2–8 м ағаш немесе ірі бұта. Діңі қисық, қабығы сұр, жарықшақты. Жапырақтары редукцияланған — қабыршақ түрінде, фотосинтезді жасыл жас бұтақтары атқарады. Тамыр жүйесі 10–15 м тереңдікке жетеді.",
+    "habitat": "Сазды және сор шөлдер, бекітілген құмдар, тақыр шеттері. Жер асты суы 3–10 м тереңдікте жатқан, орташа тұзданған топырақтарда тығыз тоғай түзеді.",
+    "phenology": "Наурыз–сәуірде гүлдейді, жемісі қазан–қарашада піседі. Тұқымы қар суымен бірге бірнеше сағат ішінде өне бастайды.",
+    "uses": "Құмды бекітудің және шөлейттенуге қарсы күрестің басты өсімдігі. Отын және мал азығы ретінде пайдаланылады, көктемгі жайылымда түйе мен қойдың негізгі қорегі.",
+    "threats": "Отынға заңсыз кесу, жер асты суы деңгейінің төмендеуі, шамадан тыс жайылым, Балқаш алабындағы су режимінің өзгеруі."
+  },
+  "bioIndicator": {
+    "isIndicator": true,
+    "indicates": [
+      "groundwater",
+      "salinity",
+      "soil-erosion"
+    ],
+    "scores": {
+      "moisture": 2,
+      "salinity": 4,
+      "soilPh": 8.2,
+      "grazing": 4,
+      "pollutionTolerance": 4
+    },
+    "note": "Тоғайдың құрғауы мен жаппай қурауы жер асты суы деңгейінің 10–15 м-ден төмен түскенін көрсетеді. Орнына қарабарақ пен сораңның басуы топырақ тұздануының күшейгенін білдіреді."
+  },
+  "locations": [
+    {
+      "zoneId": "balkhash-sands",
+      "label": "Балқаш ауданы, Сарыесік-Атырау құмдары",
+      "lat": 45.737,
+      "lon": 75.0488,
+      "precision": "exact",
+      "source": "GBIF occurrence 6334118109",
+      "sourceUrl": "https://www.gbif.org/occurrence/6334118109"
+    },
+    {
+      "zoneId": "ile-valley",
+      "label": "Іле алабының шөл белдеуі",
+      "lat": 44.9218,
+      "lon": 76.0094,
+      "precision": "exact",
+      "source": "GBIF occurrence 6253361225",
+      "sourceUrl": "https://www.gbif.org/occurrence/6253361225"
+    },
+    {
+      "zoneId": "charyn",
+      "label": "Шарын маңындағы сексеуілді шөл",
+      "lat": 43.3515,
+      "lon": 79.0754,
+      "precision": "exact",
+      "source": "GBIF occurrence 6235522550",
+      "sourceUrl": "https://www.gbif.org/occurrence/6235522550"
+    }
+  ],
+  "photo": {
+    "file": "haloxylon-aphyllum.webp",
+    "author": "BáthoryPéter",
+    "license": "CC BY-SA 3.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Haloxylon_ammodendron_lev%C3%A9l.jpg"
+  },
+  "sources": [
+    {
+      "title": "Қазақстан флорасы. Алматы: Ғылым",
+      "url": null
+    },
+    {
+      "title": "Plants of the World Online — Haloxylon aphyllum",
+      "url": "https://powo.science.kew.org/"
+    },
+    {
+      "title": "GBIF — Haloxylon aphyllum, Қазақстан бойынша кездесу деректері",
+      "url": "https://www.gbif.org/"
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "slug": "alhagi-pseudalhagi",
+  "name": {
+    "kk": "Түйежапырақ",
+    "ru": "Верблюжья колючка",
+    "la": "Alhagi pseudalhagi"
+  },
+  "family": {
+    "kk": "Бұршақтар",
+    "la": "Fabaceae"
+  },
+  "status": {
+    "redBookKz": null,
+    "iucn": null,
+    "endemic": null,
+    "rarity": "Кең таралған, тозған жайылымдарда басым"
+  },
+  "habitat": [
+    "desert",
+    "saline",
+    "steppe"
+  ],
+  "description": {
+    "summary": "Тозған жайылым мен тасталған егістіктің индикаторы: тамыры 10 м тереңдіктегі суға жетеді.",
+    "morphology": "Биіктігі 30–100 см тікенді жартылай бұта. Сабағы қатты, тікендері ұзын. Жапырақтары ұсақ, тұтас. Гүлдері қызғылт, тікен түбінде орналасады. Тамыр жүйесі өте терең.",
+    "habitat": "Шөл және шөлейт жазықтар, сортаң жерлер, тозған жайылымдар, тасталған егістіктер; 340–1000 м.",
+    "phenology": "Маусым–тамызда гүлдейді, қыркүйекте бұршағы піседі.",
+    "uses": "Түйе мен қойдың жазғы азығы, дәрілік шикізат, тамыры топырақты бекітеді.",
+    "threats": "Қауіп жоқ; керісінше, жайылым тозған сайын аумағы кеңейеді."
+  },
+  "bioIndicator": {
+    "isIndicator": true,
+    "indicates": [
+      "grazing-pressure",
+      "groundwater",
+      "salinity"
+    ],
+    "scores": {
+      "moisture": 2,
+      "salinity": 4,
+      "soilPh": 8.2,
+      "grazing": 5,
+      "pollutionTolerance": 5
+    },
+    "note": "Түйежапырақтың басым болуы жайылымның қатты тозғанын және топырақтың тығыздалғанын көрсетеді — деградацияның негізгі индикаторы."
+  },
+  "locations": [
+    {
+      "zoneId": "ile-valley",
+      "label": "Іле ауданы, тозған жайылым алқаптары",
+      "lat": 43.5346,
+      "lon": 76.7583,
+      "precision": "exact",
+      "source": "GBIF occurrence 6469996467",
+      "sourceUrl": "https://www.gbif.org/occurrence/6469996467"
+    },
+    {
+      "zoneId": "charyn",
+      "label": "Ұйғыр ауданы, Шарын маңындағы жазық",
+      "lat": 43.808,
+      "lon": 79.467,
+      "precision": "exact",
+      "source": "GBIF occurrence 6178355320",
+      "sourceUrl": "https://www.gbif.org/occurrence/6178355320"
+    }
+  ],
+  "photo": {
+    "file": "alhagi-pseudalhagi.webp",
+    "author": "Craigfnp (talk)Craig Fujii",
+    "license": "CC BY-SA 3.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Alhagi_pseudalhagi.jpg"
+  },
+  "sources": [
+    {
+      "title": "Plants of the World Online — Alhagi pseudalhagi",
+      "url": "https://powo.science.kew.org/"
+    },
+    {
+      "title": "GBIF — Alhagi pseudalhagi, Қазақстан бойынша кездесу деректері",
+      "url": "https://www.gbif.org/"
+    },
+    {
+      "title": "Қазақстан флорасы. Алматы: Ғылым",
+      "url": null
+    }
+  ]
+}

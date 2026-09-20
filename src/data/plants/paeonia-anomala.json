@@ -1,0 +1,86 @@
+{
+  "slug": "paeonia-anomala",
+  "name": {
+    "kk": "Марал оты",
+    "ru": "Пион уклоняющийся",
+    "la": "Paeonia anomala"
+  },
+  "family": {
+    "kk": "Пиондар",
+    "la": "Paeoniaceae"
+  },
+  "status": {
+    "redBookKz": "III",
+    "iucn": null,
+    "endemic": null,
+    "rarity": "Сирек, дәрілік шикізат ретінде жиналуы салдарынан азайған"
+  },
+  "habitat": [
+    "mountain-forest",
+    "shrubland",
+    "alpine"
+  ],
+  "description": {
+    "summary": "Тау ормандарының шетінде өсетін ірі қызыл гүлді дәрілік өсімдік — тамыры үшін жаппай қазылуы салдарынан сирейген түр.",
+    "morphology": "Биіктігі 60–100 см көпжылдық. Тамыры жуан, етженді, ерекше иісті. Жапырақтары ірі, терең тілімделген. Гүлі жалғыз, қызғылт-күлгін, диаметрі 8–13 см.",
+    "habitat": "1400–2500 м биіктіктегі шырша ормандарының шеті, субальпі шалғындары, бұталы беткейлер.",
+    "phenology": "Мамыр–маусымда гүлдейді, тамызда тұқымы піседі.",
+    "uses": "Ресми дәрілік өсімдік (тамыры мен тамырсабағы), сәндік түр.",
+    "threats": "Тамырын жаппай қазу, орман шетін игеру, жайылым қысымы."
+  },
+  "bioIndicator": {
+    "isIndicator": true,
+    "indicates": [
+      "soil-moisture",
+      "grazing-pressure"
+    ],
+    "scores": {
+      "moisture": 3,
+      "salinity": 1,
+      "soilPh": 6.4,
+      "grazing": 2,
+      "pollutionTolerance": 2
+    },
+    "note": "Ересек особьтардың азайып, тек жас өскіндердің қалуы дәрілік шикізат ретінде қазылғанын көрсетеді."
+  },
+  "locations": [
+    {
+      "zoneId": "zhongar-alatau",
+      "label": "Жоңғар Алатауының орманды белдеуі",
+      "lat": 44.6713,
+      "lon": 79.0539,
+      "precision": "exact",
+      "source": "GBIF occurrence 6360150570",
+      "sourceUrl": "https://www.gbif.org/occurrence/6360150570"
+    },
+    {
+      "zoneId": "ketmen",
+      "label": "Кетмен жотасының солтүстік беткейі",
+      "lat": 43.0307,
+      "lon": 79.7024,
+      "precision": "exact",
+      "source": "GBIF occurrence 6360134902",
+      "sourceUrl": "https://www.gbif.org/occurrence/6360134902"
+    }
+  ],
+  "photo": {
+    "file": "paeonia-anomala.webp",
+    "author": "Imartin6",
+    "license": "CC BY-SA 3.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Paeonia_anomala_riu_orkhon.jpg"
+  },
+  "sources": [
+    {
+      "title": "Қазақстан Республикасының Қызыл кітабы. 2-том: Өсімдіктер. Алматы, 2014",
+      "url": null
+    },
+    {
+      "title": "Plants of the World Online — Paeonia anomala",
+      "url": "https://powo.science.kew.org/"
+    },
+    {
+      "title": "GBIF — Paeonia anomala, Қазақстан бойынша кездесу деректері",
+      "url": "https://www.gbif.org/"
+    }
+  ]
+}

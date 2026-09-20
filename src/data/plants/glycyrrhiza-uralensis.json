@@ -1,0 +1,87 @@
+{
+  "slug": "glycyrrhiza-uralensis",
+  "name": {
+    "kk": "Орал мия",
+    "ru": "Солодка уральская",
+    "la": "Glycyrrhiza uralensis"
+  },
+  "family": {
+    "kk": "Бұршақтар",
+    "la": "Fabaceae"
+  },
+  "status": {
+    "redBookKz": null,
+    "iucn": null,
+    "endemic": null,
+    "rarity": "Жиі, бірақ тамырын жаппай дайындау қорын азайтуда"
+  },
+  "habitat": [
+    "riparian",
+    "saline",
+    "steppe"
+  ],
+  "description": {
+    "summary": "Өзен аңғарлары мен сортаң жазықтардың дәрілік өсімдігі, топырақ ылғалдылығының индикаторы.",
+    "morphology": "Биіктігі 50–120 см көпжылдық. Тамыры өте ұзын, тәтті, жер астында 2 м-ге дейін тарайды. Жапырағы күрделі, 9–17 жапырақшалы, жабысқақ. Гүлдері күлгін-көк, шашақ гүлшоғырында. Бұршағы иілген, түкті.",
+    "habitat": "Өзен жайылмалары, сортаң шалғындар, суармалы жерлердің шеті; 340–1200 м.",
+    "phenology": "Маусым–шілдеде гүлдейді, тамыз–қыркүйекте бұршағы піседі.",
+    "uses": "Әлемдік маңызы бар дәрілік шикізат (тамыры), тағам өнеркәсібінде қолданылады, топырақты азотпен байытады.",
+    "threats": "Тамырын өнеркәсіптік дайындау, жайылманы жырту, су режимінің өзгеруі."
+  },
+  "bioIndicator": {
+    "isIndicator": true,
+    "indicates": [
+      "soil-moisture",
+      "salinity",
+      "groundwater"
+    ],
+    "scores": {
+      "moisture": 4,
+      "salinity": 3,
+      "soilPh": 8,
+      "grazing": 4,
+      "pollutionTolerance": 4
+    },
+    "note": "Жер асты суы жақын, орташа тұзданған топырақты көрсетеді. Жаппай қазылған жерде топырақ құрылымы бұзылып, эрозия басталады."
+  },
+  "locations": [
+    {
+      "zoneId": "ile-alatau",
+      "label": "Қарасай ауданы, өзен аңғарлары",
+      "lat": 43.1618,
+      "lon": 76.7524,
+      "precision": "exact",
+      "source": "GBIF occurrence 6251760378",
+      "sourceUrl": "https://www.gbif.org/occurrence/6251760378"
+    },
+    {
+      "zoneId": "ile-valley",
+      "label": "Іле өзенінің жайылмалық шалғындары",
+      "lat": 43.95,
+      "lon": 77.4,
+      "precision": "zone",
+      "source": "Аймақтық таралу деректері бойынша",
+      "sourceUrl": null
+    }
+  ],
+  "photo": {
+    "file": "glycyrrhiza-uralensis.webp",
+    "author": "Stickpen",
+    "license": "Public domain",
+    "url": "https://commons.wikimedia.org/wiki/File:Glycyrrhizauralensis.jpg"
+  },
+  "sources": [
+    {
+      "title": "Plants of the World Online — Glycyrrhiza uralensis",
+      "url": "https://powo.science.kew.org/"
+    },
+    {
+      "title": "GBIF — Glycyrrhiza uralensis, Қазақстан бойынша кездесу деректері",
+      "url": "https://www.gbif.org/"
+    },
+    {
+      "title": "Қазақстан флорасы. Алматы: Ғылым",
+      "url": null
+    }
+  ]
+}

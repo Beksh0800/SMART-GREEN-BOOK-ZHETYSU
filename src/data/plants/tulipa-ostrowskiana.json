@@ -1,0 +1,86 @@
+{
+  "slug": "tulipa-ostrowskiana",
+  "name": {
+    "kk": "Островский қызғалдағы",
+    "ru": "Тюльпан Островского",
+    "la": "Tulipa ostrowskiana"
+  },
+  "family": {
+    "kk": "Лалагүлдер",
+    "la": "Liliaceae"
+  },
+  "status": {
+    "redBookKz": "III",
+    "iucn": null,
+    "endemic": "regional",
+    "rarity": "Сирек, тау бөктерлерінің игерілуіне байланысты саны азаюда"
+  },
+  "habitat": [
+    "steppe",
+    "shrubland",
+    "rocky"
+  ],
+  "description": {
+    "summary": "Іле Алатауының бөктерлерінде өсетін, жарқын қызыл гүлді сирек қызғалдақ.",
+    "morphology": "Биіктігі 15–30 см. Жапырақтары 2–3, сызықты, көкшіл реңді, шеті сәл толқынды. Гүлі жалғыз, қанық қызыл немесе сарғыш, түбінде қара немесе сары дақ бар. Пиязшық қабығы жұқа, қоңыр.",
+    "habitat": "1000–2000 м биіктіктегі лёсті және қиыршық тасты тау бөктерлері, бұталы дала, эфемероидты шалғындар.",
+    "phenology": "Сәуір–мамырда гүлдейді, маусымда жеміс салады.",
+    "uses": "Сәндік және селекциялық маңызы зор; көктемгі ерте балара қорегі.",
+    "threats": "Қала маңындағы құрылыс, бақша-саяжайларды кеңейту, гүлін жаппай жұлу, мал жаю."
+  },
+  "bioIndicator": {
+    "isIndicator": true,
+    "indicates": [
+      "grazing-pressure",
+      "soil-erosion"
+    ],
+    "scores": {
+      "moisture": 2,
+      "salinity": 1,
+      "soilPh": 7.3,
+      "grazing": 1,
+      "pollutionTolerance": 1
+    },
+    "note": "Қала маңындағы беткейлерде жоғалуы рекреациялық және құрылыс қысымының тікелей көрсеткіші."
+  },
+  "locations": [
+    {
+      "zoneId": "ile-alatau",
+      "label": "Іле Алатауының солтүстік бөктері, Талғар ауданы",
+      "lat": 43.2957,
+      "lon": 77.1083,
+      "precision": "exact",
+      "source": "GBIF occurrence 6196019340",
+      "sourceUrl": "https://www.gbif.org/occurrence/6196019340"
+    },
+    {
+      "zoneId": "ile-alatau",
+      "label": "Алматы маңы, Бостандық ауданының жоғарғы белдеуі",
+      "lat": 43.1142,
+      "lon": 76.9135,
+      "precision": "exact",
+      "source": "GBIF occurrence 6234179796",
+      "sourceUrl": "https://www.gbif.org/occurrence/6234179796"
+    }
+  ],
+  "photo": {
+    "file": "tulipa-ostrowskiana.webp",
+    "author": "(c) Alexander Dubynin",
+    "license": "CC BY 4.0",
+    "url": "https://www.inaturalist.org/photos/491895902"
+  },
+  "sources": [
+    {
+      "title": "Қазақстан Республикасының Қызыл кітабы. 2-том: Өсімдіктер. Алматы, 2014",
+      "url": null
+    },
+    {
+      "title": "Plants of the World Online — Tulipa ostrowskiana",
+      "url": "https://powo.science.kew.org/"
+    },
+    {
+      "title": "GBIF — Tulipa ostrowskiana, Қазақстан бойынша кездесу деректері",
+      "url": "https://www.gbif.org/"
+    }
+  ]
+}

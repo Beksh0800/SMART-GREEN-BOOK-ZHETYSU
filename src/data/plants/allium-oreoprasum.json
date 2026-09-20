@@ -1,0 +1,86 @@
+{
+  "slug": "allium-oreoprasum",
+  "name": {
+    "kk": "Тау жуасы",
+    "ru": "Лук горный",
+    "la": "Allium oreoprasum"
+  },
+  "family": {
+    "kk": "Жуалар",
+    "la": "Amaryllidaceae"
+  },
+  "status": {
+    "redBookKz": null,
+    "iucn": null,
+    "endemic": "regional",
+    "rarity": "Шашыраңқы, тасты беткейлерде ғана"
+  },
+  "habitat": [
+    "rocky",
+    "steppe",
+    "alpine"
+  ],
+  "description": {
+    "summary": "Тау беткейлерінің тасты жерлерінде өсетін жабайы жуа — жайылым жүктемесіне сезімтал түр.",
+    "morphology": "Биіктігі 15–35 см пиязшықты көпжылдық. Жапырақтары жіңішке, сызықты, 2–4 дана. Гүлшоғыры шар тәрізді немесе жартылай шар, гүлдері ақшыл-қызғылт, ортасында қою жолағы бар.",
+    "habitat": "1200–2800 м биіктіктегі тасты және қиыршық тасты беткейлер, тау далалары, жартас жарықтары.",
+    "phenology": "Маусым–шілдеде гүлдейді, тамызда тұқымы піседі.",
+    "uses": "Тағамға жарамды жабайы жуа, генетикалық қор ретінде маңызды.",
+    "threats": "Мал жаю, пиязшығын қазу, тасты беткейлерді игеру."
+  },
+  "bioIndicator": {
+    "isIndicator": true,
+    "indicates": [
+      "grazing-pressure",
+      "soil-erosion"
+    ],
+    "scores": {
+      "moisture": 2,
+      "salinity": 1,
+      "soilPh": 7.3,
+      "grazing": 2,
+      "pollutionTolerance": 2
+    },
+    "note": "Тек мал жете алмайтын тасты жерлерде сақталуы аймақтағы жайылым қысымының жоғары екенін көрсетеді."
+  },
+  "locations": [
+    {
+      "zoneId": "charyn",
+      "label": "Шарын маңы, Кеген ауданының тасты беткейлері",
+      "lat": 43.3117,
+      "lon": 79.0753,
+      "precision": "exact",
+      "source": "GBIF occurrence 5176968600",
+      "sourceUrl": "https://www.gbif.org/occurrence/5176968600"
+    },
+    {
+      "zoneId": "zhongar-alatau",
+      "label": "Панфилов ауданы, Жоңғар Алатауының оңтүстік беткейі",
+      "lat": 44.252,
+      "lon": 79.5741,
+      "precision": "exact",
+      "source": "GBIF occurrence 4909287343",
+      "sourceUrl": "https://www.gbif.org/occurrence/4909287343"
+    }
+  ],
+  "photo": {
+    "file": "allium-oreoprasum.webp",
+    "author": "Arkadiusz Nowak, Marcin Nobis, Sylwia Nowak, Agnieszka Nobis, Anna Wróbel, Sebastian Świerszcz, Ewelina Klichowska, Iwon",
+    "license": "CC BY 4.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Allium_oreoprasum.jpg"
+  },
+  "sources": [
+    {
+      "title": "Plants of the World Online — Allium oreoprasum",
+      "url": "https://powo.science.kew.org/"
+    },
+    {
+      "title": "GBIF — Allium oreoprasum, Қазақстан бойынша кездесу деректері",
+      "url": "https://www.gbif.org/"
+    },
+    {
+      "title": "Қазақстан флорасы. Алматы: Ғылым",
+      "url": null
+    }
+  ]
+}

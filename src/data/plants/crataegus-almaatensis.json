@@ -1,0 +1,80 @@
+{
+  "slug": "crataegus-almaatensis",
+  "name": {
+    "kk": "Алматы долана",
+    "ru": "Боярышник алматинский",
+    "la": "Crataegus almaatensis"
+  },
+  "family": {
+    "kk": "Раушангүлділер",
+    "la": "Rosaceae"
+  },
+  "status": {
+    "redBookKz": "II",
+    "iucn": null,
+    "endemic": "kz",
+    "rarity": "Өте сирек, санаулы ағаштары ғана белгілі"
+  },
+  "habitat": [
+    "mountain-forest",
+    "shrubland"
+  ],
+  "description": {
+    "summary": "Тек Іле Алатауының бөктерінде кездесетін Қазақстан эндемигі — әлемдегі ең сирек долана түрлерінің бірі.",
+    "morphology": "Биіктігі 4–7 м ағаш немесе ірі бұта. Бұтақтарында сирек, қысқа тікендері бар. Жапырақтары терең тілімделген, түгі бар. Гүлдері ақ, қалқанша гүлшоғырына жиналған. Жемісі қызғылт-сары, шар тәрізді.",
+    "habitat": "1000–1600 м биіктіктегі жеміс ормандары, сай бойындағы бұталы қауымдастықтар.",
+    "phenology": "Мамырда гүлдейді, қыркүйек–қазанда жемісі піседі.",
+    "uses": "Селекциялық генетикалық қор, дәрілік шикізат, сәндік ағаш.",
+    "threats": "Табиғи ареалының қала маңында орналасуы, құрылыс, жеке популяциялардың өте аз болуы."
+  },
+  "bioIndicator": {
+    "isIndicator": true,
+    "indicates": [
+      "soil-moisture",
+      "soil-erosion"
+    ],
+    "scores": {
+      "moisture": 3,
+      "salinity": 1,
+      "soilPh": 6.9,
+      "grazing": 2,
+      "pollutionTolerance": 2
+    },
+    "note": "Жас өскіндерінің жоқтығы популяцияның табиғи жаңармай тұрғанын білдіреді — түрдің басты қаупі осы."
+  },
+  "locations": [
+    {
+      "zoneId": "ile-alatau",
+      "label": "Медеу ауданы, Алматы маңындағы жеміс ормандары",
+      "lat": 43.163,
+      "lon": 76.9906,
+      "precision": "exact",
+      "source": "GBIF occurrence 5007798217",
+      "sourceUrl": "https://www.gbif.org/occurrence/5007798217"
+    },
+    {
+      "zoneId": "ile-alatau",
+      "label": "Қарасай ауданының тау бөктері",
+      "lat": 43.1012,
+      "lon": 76.7097,
+      "precision": "exact",
+      "source": "GBIF occurrence 4063008986",
+      "sourceUrl": "https://www.gbif.org/occurrence/4063008986"
+    }
+  ],
+  "photo": null,
+  "sources": [
+    {
+      "title": "Қазақстан Республикасының Қызыл кітабы. 2-том: Өсімдіктер. Алматы, 2014",
+      "url": null
+    },
+    {
+      "title": "Plants of the World Online — Crataegus almaatensis",
+      "url": "https://powo.science.kew.org/"
+    },
+    {
+      "title": "GBIF — Crataegus almaatensis, Қазақстан бойынша кездесу деректері",
+      "url": "https://www.gbif.org/"
+    }
+  ]
+}

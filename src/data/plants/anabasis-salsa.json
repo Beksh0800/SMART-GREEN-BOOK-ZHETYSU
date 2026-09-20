@@ -1,0 +1,87 @@
+{
+  "slug": "anabasis-salsa",
+  "name": {
+    "kk": "Биюргин",
+    "ru": "Биюргун (ежовник солончаковый)",
+    "la": "Anabasis salsa"
+  },
+  "family": {
+    "kk": "Алабұталар",
+    "la": "Amaranthaceae"
+  },
+  "status": {
+    "redBookKz": null,
+    "iucn": null,
+    "endemic": null,
+    "rarity": "Шөлейт жазықтарда жиі"
+  },
+  "habitat": [
+    "saline",
+    "desert",
+    "steppe"
+  ],
+  "description": {
+    "summary": "Сазды шөлдің негізгі түрі — топырақтың тұздануы мен тығыздалуын бірге көрсетеді.",
+    "morphology": "Биіктігі 10–30 см аласа жартылай бұта. Сабағы етженді, буындалған, көкшіл-жасыл, күзде қызғылт. Жапырақтары қабыршақ тәрізді. Тамыры топырақтың терең қабатына жетеді.",
+    "habitat": "Сазды және сортаң шөлдер, тақыр тәрізді жазықтар, малта тасты шөлейт; 340–900 м.",
+    "phenology": "Тамыз–қыркүйекте гүлдейді, қазанда жемісі піседі.",
+    "uses": "Күзгі-қысқы жайылымның негізгі азығы, әсіресе қой мен түйе үшін.",
+    "threats": "Шамадан тыс жайылым кезінде де сақталады, бірақ өнімділігі күрт төмендейді."
+  },
+  "bioIndicator": {
+    "isIndicator": true,
+    "indicates": [
+      "salinity",
+      "grazing-pressure",
+      "soil-erosion"
+    ],
+    "scores": {
+      "moisture": 1,
+      "salinity": 4,
+      "soilPh": 8.3,
+      "grazing": 5,
+      "pollutionTolerance": 5
+    },
+    "note": "Биюргин басым қауымдастықтың пайда болуы жайылымның соңғы тозу сатысын және топырақтың тығыздалғанын білдіреді."
+  },
+  "locations": [
+    {
+      "zoneId": "altyn-emel",
+      "label": "Алтын-Емел ҰТП аумағындағы сазды жазық",
+      "lat": 43.8814,
+      "lon": 78.6432,
+      "precision": "exact",
+      "source": "GBIF occurrence 4500550417",
+      "sourceUrl": "https://www.gbif.org/occurrence/4500550417"
+    },
+    {
+      "zoneId": "zhongar-alatau",
+      "label": "Панфилов ауданы, тау етегіндегі шөлейт",
+      "lat": 44.1722,
+      "lon": 79.5297,
+      "precision": "exact",
+      "source": "GBIF occurrence 5938223870",
+      "sourceUrl": "https://www.gbif.org/occurrence/5938223870"
+    }
+  ],
+  "photo": {
+    "file": "anabasis-salsa.webp",
+    "author": "Carl Anton von Meyer (1795-1855)",
+    "license": "Public domain",
+    "url": "https://commons.wikimedia.org/wiki/File:Anabasis_salsa_as_Brachylepis_salsa_cropped.jpg"
+  },
+  "sources": [
+    {
+      "title": "Plants of the World Online — Anabasis salsa",
+      "url": "https://powo.science.kew.org/"
+    },
+    {
+      "title": "GBIF — Anabasis salsa, Қазақстан бойынша кездесу деректері",
+      "url": "https://www.gbif.org/"
+    },
+    {
+      "title": "Қазақстан флорасы. Алматы: Ғылым",
+      "url": null
+    }
+  ]
+}

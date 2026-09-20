@@ -1,0 +1,87 @@
+{
+  "slug": "tamarix-ramosissima",
+  "name": {
+    "kk": "Бұтақты жыңғыл",
+    "ru": "Гребенщик многоветвистый",
+    "la": "Tamarix ramosissima"
+  },
+  "family": {
+    "kk": "Жыңғылдар",
+    "la": "Tamaricaceae"
+  },
+  "status": {
+    "redBookKz": null,
+    "iucn": null,
+    "endemic": null,
+    "rarity": "Кең таралған, тұзды жерлерде басым"
+  },
+  "habitat": [
+    "saline",
+    "riparian",
+    "desert"
+  ],
+  "description": {
+    "summary": "Тұзды топырақтың классикалық индикаторы: жапырағы арқылы артық тұзды сыртқа шығарады.",
+    "morphology": "Биіктігі 2–5 м бұта. Бұтақтары жіңішке, қызғылт-қоңыр. Жапырақтары ұсақ, қабыршақ тәрізді. Гүлдері ұсақ, қызғылт, тығыз шашақ гүлшоғырында; жазда ұзақ гүлдейді.",
+    "habitat": "Сор және сортаң жерлер, өзен жағалаулары, құрғап бара жатқан көл табандары; 340–1000 м.",
+    "phenology": "Мамырдан тамызға дейін гүлдейді, тұқымы жеңіл, желмен таралады.",
+    "uses": "Тұзды жерлерді бекітеді, отын, бал шарасы; жағаны нығайтуға отырғызылады.",
+    "threats": "Тікелей қауіп аз; керісінше, тоғай бұзылған жерлерде басқа түрлерді ығыстырып, үстемдік алады."
+  },
+  "bioIndicator": {
+    "isIndicator": true,
+    "indicates": [
+      "salinity",
+      "groundwater",
+      "soil-erosion"
+    ],
+    "scores": {
+      "moisture": 3,
+      "salinity": 5,
+      "soilPh": 8.4,
+      "grazing": 4,
+      "pollutionTolerance": 5
+    },
+    "note": "Тоғайда терек пен талдың орнын жыңғылдың басуы — топырақтың тұздануы мен су режимінің бұзылуының айқын көрсеткіші."
+  },
+  "locations": [
+    {
+      "zoneId": "altyn-emel",
+      "label": "Алтын-Емел ҰТП, Іле жағалауы",
+      "lat": 43.8447,
+      "lon": 77.8694,
+      "precision": "exact",
+      "source": "GBIF occurrence 6334287426",
+      "sourceUrl": "https://www.gbif.org/occurrence/6334287426"
+    },
+    {
+      "zoneId": "charyn",
+      "label": "Ұйғыр ауданы, Шарын төменгі ағысы",
+      "lat": 43.8528,
+      "lon": 79.4271,
+      "precision": "exact",
+      "source": "GBIF occurrence 6273740536",
+      "sourceUrl": "https://www.gbif.org/occurrence/6273740536"
+    }
+  ],
+  "photo": {
+    "file": "tamarix-ramosissima.webp",
+    "author": "Jerzy Opioła",
+    "license": "CC BY-SA 3.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Tamarix_ramosissima_a2.jpg"
+  },
+  "sources": [
+    {
+      "title": "Plants of the World Online — Tamarix ramosissima",
+      "url": "https://powo.science.kew.org/"
+    },
+    {
+      "title": "GBIF — Tamarix ramosissima, Қазақстан бойынша кездесу деректері",
+      "url": "https://www.gbif.org/"
+    },
+    {
+      "title": "Қазақстан флорасы. Алматы: Ғылым",
+      "url": null
+    }
+  ]
+}

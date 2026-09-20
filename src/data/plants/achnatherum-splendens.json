@@ -1,0 +1,87 @@
+{
+  "slug": "achnatherum-splendens",
+  "name": {
+    "kk": "Ақ шағыл (шағыр)",
+    "ru": "Чий блестящий",
+    "la": "Achnatherum splendens"
+  },
+  "family": {
+    "kk": "Астықтұқымдастар",
+    "la": "Poaceae"
+  },
+  "status": {
+    "redBookKz": null,
+    "iucn": null,
+    "endemic": null,
+    "rarity": "Кең таралған, сортаң шалғындарда басым"
+  },
+  "habitat": [
+    "saline",
+    "steppe",
+    "wetland"
+  ],
+  "description": {
+    "summary": "Ірі шоқ түзетін астық: жер асты суының жақындығы мен топырақтың орташа тұздануын бірге көрсетеді.",
+    "morphology": "Биіктігі 80–250 см тығыз шоқ түзетін көпжылдық. Сабағы қатты, жылтыр. Жапырақтары ұзын, қатты, шеті өткір. Гүлшоғыры ірі, жайылған сеппе, күміс реңді.",
+    "habitat": "Сортаң шалғындар, өзен террассалары, тау етегіндегі ылғалды жазықтар; 340–1600 м.",
+    "phenology": "Маусым–шілдеде гүлдейді, тамызда тұқымы піседі.",
+    "uses": "Шоқтары қысқы малға пана, сабағы бау-шарбақ пен шым үй жасауға, тамыры топырақты бекітеді.",
+    "threats": "Жер жырту, өрт; шамадан тыс жайылымда шоқтары ұсақталады."
+  },
+  "bioIndicator": {
+    "isIndicator": true,
+    "indicates": [
+      "groundwater",
+      "salinity",
+      "soil-moisture"
+    ],
+    "scores": {
+      "moisture": 4,
+      "salinity": 3,
+      "soilPh": 8.1,
+      "grazing": 4,
+      "pollutionTolerance": 4
+    },
+    "note": "Шағыл шоқтары жер асты суы 2–5 м тереңдікте жатқан жерлерде ғана түзіледі — құрғақ далада су көзінің нақты нұсқауышы."
+  },
+  "locations": [
+    {
+      "zoneId": "ile-valley",
+      "label": "Іле ауданы, сортаң шалғындар",
+      "lat": 43.6365,
+      "lon": 76.7728,
+      "precision": "exact",
+      "source": "GBIF occurrence 6253182703",
+      "sourceUrl": "https://www.gbif.org/occurrence/6253182703"
+    },
+    {
+      "zoneId": "ketmen",
+      "label": "Кеген ауданы, тау етегіндегі жазық",
+      "lat": 42.9409,
+      "lon": 79.2865,
+      "precision": "exact",
+      "source": "GBIF occurrence 6469829152",
+      "sourceUrl": "https://www.gbif.org/occurrence/6469829152"
+    }
+  ],
+  "photo": {
+    "file": "achnatherum-splendens.webp",
+    "author": "Natalya",
+    "license": "CC BY 4.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Stipa_splendens_25106564.jpg"
+  },
+  "sources": [
+    {
+      "title": "Plants of the World Online — Achnatherum splendens",
+      "url": "https://powo.science.kew.org/"
+    },
+    {
+      "title": "GBIF — Achnatherum splendens, Қазақстан бойынша кездесу деректері",
+      "url": "https://www.gbif.org/"
+    },
+    {
+      "title": "Қазақстан флорасы. Алматы: Ғылым",
+      "url": null
+    }
+  ]
+}

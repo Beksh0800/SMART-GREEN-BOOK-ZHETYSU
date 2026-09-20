@@ -1,0 +1,87 @@
+{
+  "slug": "salix-songarica",
+  "name": {
+    "kk": "Жоңғар талы",
+    "ru": "Ива джунгарская",
+    "la": "Salix songarica"
+  },
+  "family": {
+    "kk": "Талдар",
+    "la": "Salicaceae"
+  },
+  "status": {
+    "redBookKz": null,
+    "iucn": null,
+    "endemic": "regional",
+    "rarity": "Сирек, тек ірі өзендердің тоғайларында сақталған"
+  },
+  "habitat": [
+    "riparian",
+    "wetland",
+    "saline"
+  ],
+  "description": {
+    "summary": "Қаратал мен Аксу өзендерінің тоғайларына тән тал — өзен арнасының тұрақтылығын көрсетеді.",
+    "morphology": "Биіктігі 3–8 м бұта немесе ағаш. Бұтақтары жіңішке, иілгіш, сұр-сары. Жапырақтары сызықты, ұзын, астыңғы жағы көкшіл. Гүлшоғыры — қысқа сырға.",
+    "habitat": "Өзен арналарының құмды-малта тасты жағалаулары, аралдар, ылғалды сортаң жерлер; 350–900 м.",
+    "phenology": "Сәуір–мамырда гүлдейді, маусымда тұқымы піседі.",
+    "uses": "Жағаны бекітеді, тоғай құрылымын қалыптастырады, бұтағы қолөнерде қолданылады.",
+    "threats": "Су алу және бөгет салу, тоғайларды кесу, мал жаю, өрт."
+  },
+  "bioIndicator": {
+    "isIndicator": true,
+    "indicates": [
+      "groundwater",
+      "soil-moisture",
+      "salinity"
+    ],
+    "scores": {
+      "moisture": 5,
+      "salinity": 3,
+      "soilPh": 7.6,
+      "grazing": 2,
+      "pollutionTolerance": 3
+    },
+    "note": "Өзен деңгейінің маусымдық ауытқуына тәуелді: талдың қурауы ағын судың азайғанын тікелей көрсетеді."
+  },
+  "locations": [
+    {
+      "zoneId": "karatal",
+      "label": "Қаратал өзенінің тоғайы, Майлыбай алқабы",
+      "lat": 45.6303,
+      "lon": 77.4381,
+      "precision": "exact",
+      "source": "GBIF occurrence 1798989742",
+      "sourceUrl": "https://www.gbif.org/occurrence/1798989742"
+    },
+    {
+      "zoneId": "karatal",
+      "label": "Ақсу өзенінің төменгі ағысындағы тоғай",
+      "lat": 45.8837,
+      "lon": 78.714,
+      "precision": "exact",
+      "source": "GBIF occurrence 1798989746",
+      "sourceUrl": "https://www.gbif.org/occurrence/1798989746"
+    }
+  ],
+  "photo": {
+    "file": "salix-songarica.webp",
+    "author": "(c) Светлана Нестерова",
+    "license": "CC BY-NC 4.0",
+    "url": "https://www.inaturalist.org/photos/119970396"
+  },
+  "sources": [
+    {
+      "title": "Plants of the World Online — Salix songarica",
+      "url": "https://powo.science.kew.org/"
+    },
+    {
+      "title": "GBIF — Salix songarica, Қазақстан бойынша кездесу деректері",
+      "url": "https://www.gbif.org/"
+    },
+    {
+      "title": "Қазақстан флорасы. Алматы: Ғылым",
+      "url": null
+    }
+  ]
+}

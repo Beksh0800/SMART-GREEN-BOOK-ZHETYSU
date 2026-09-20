@@ -1,0 +1,86 @@
+{
+  "slug": "tulipa-greigii",
+  "name": {
+    "kk": "Грейг қызғалдағы",
+    "ru": "Тюльпан Грейга",
+    "la": "Tulipa greigii"
+  },
+  "family": {
+    "kk": "Лалагүлдер",
+    "la": "Liliaceae"
+  },
+  "status": {
+    "redBookKz": "II",
+    "iucn": null,
+    "endemic": "regional",
+    "rarity": "Саны қысқарған, ірі популяциялары тек қорғалатын аумақтарда сақталған"
+  },
+  "habitat": [
+    "steppe",
+    "rocky",
+    "shrubland"
+  ],
+  "description": {
+    "summary": "Әлемдегі ең ірі гүлді жабайы қызғалдақтардың бірі — мәдени қызғалдақ сорттарының негізгі арғы тегі.",
+    "morphology": "Биіктігі 20–50 см. Жапырақтары кең, көкшіл-жасыл, үстіңгі жағында қою күлгін жолақтары анық көрінеді — түрдің басты айырым белгісі. Гүлі ірі, қанық қызыл, түбінде сары жиекті қара дақ бар.",
+    "habitat": "Қиыршық тасты және лёсті тау бөктерлері, аласа таулардың беткейлері; 600–1700 м биіктік.",
+    "phenology": "Сәуірде гүлдейді, мамыр–маусымда жемісі піседі. Тұқымнан гүлдеуге дейін 6–8 жыл өтеді.",
+    "uses": "Дүниежүзілік гүл селекциясының негізгі генетикалық қоры; Greigii тобындағы жүздеген сорттың бастауы.",
+    "threats": "Гүлін жаппай жұлу, пиязшық саудасы, жайылым қысымы, тау бөктерлерін жырту."
+  },
+  "bioIndicator": {
+    "isIndicator": true,
+    "indicates": [
+      "grazing-pressure",
+      "soil-erosion"
+    ],
+    "scores": {
+      "moisture": 2,
+      "salinity": 1,
+      "soilPh": 7.5,
+      "grazing": 1,
+      "pollutionTolerance": 2
+    },
+    "note": "Баяу өсетін, тұқымнан ұзақ жетілетін түр: популяциясының жас особьтарға кедей болуы жаппай жұлудың белгісі."
+  },
+  "locations": [
+    {
+      "zoneId": "shu-ile",
+      "label": "Шу-Іле тауларының батыс шеті, Қордай ауданы",
+      "lat": 43.3537,
+      "lon": 74.9931,
+      "precision": "exact",
+      "source": "GBIF occurrence 5133429147",
+      "sourceUrl": "https://www.gbif.org/occurrence/5133429147"
+    },
+    {
+      "zoneId": "shu-ile",
+      "label": "Қордай асуы маңындағы тасты беткейлер",
+      "lat": 43.3381,
+      "lon": 75.1054,
+      "precision": "exact",
+      "source": "GBIF occurrence 5153263848",
+      "sourceUrl": "https://www.gbif.org/occurrence/5153263848"
+    }
+  ],
+  "photo": {
+    "file": "tulipa-greigii.webp",
+    "author": "Łukasz Szczurowski",
+    "license": "CC BY-SA 3.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Tulipa_greigii_11.jpg"
+  },
+  "sources": [
+    {
+      "title": "Қазақстан Республикасының Қызыл кітабы. 2-том: Өсімдіктер. Алматы, 2014",
+      "url": null
+    },
+    {
+      "title": "Plants of the World Online — Tulipa greigii",
+      "url": "https://powo.science.kew.org/"
+    },
+    {
+      "title": "GBIF — Tulipa greigii, Қазақстан бойынша кездесу деректері",
+      "url": "https://www.gbif.org/"
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "slug": "iris-tenuifolia",
+  "name": {
+    "kk": "Жіңішке жапырақты құртқашаш",
+    "ru": "Ирис тонколистный",
+    "la": "Iris tenuifolia"
+  },
+  "family": {
+    "kk": "Құртқашаштар",
+    "la": "Iridaceae"
+  },
+  "status": {
+    "redBookKz": null,
+    "iucn": null,
+    "endemic": null,
+    "rarity": "Құрғақ далада жиі, тозған жайылымда сақталады"
+  },
+  "habitat": [
+    "steppe",
+    "desert",
+    "rocky"
+  ],
+  "description": {
+    "summary": "Құмды және қиыршық тасты даланың тығыз шоқ түзетін құртқашашы — жайылымға төзімді индикатор.",
+    "morphology": "Биіктігі 20–40 см. Тамырсабағы қысқа, талшықты қалдықтармен жабылған. Жапырақтары өте жіңішке, қатты, тығыз шоқ түзеді. Гүлдері көкшіл-күлгін, ұзын түтікшелі.",
+    "habitat": "Құрғақ дала, құмды және қиыршық тасты жазықтар, тау етегі; 400–1800 м.",
+    "phenology": "Сәуір–мамырда гүлдейді, шілдеде тұқымы піседі.",
+    "uses": "Жапырағы қолөнерде пайдаланылған, топырақты бекітеді; мал нашар жейді.",
+    "threats": "Жер жырту; жайылым қысымына салыстырмалы төзімді."
+  },
+  "bioIndicator": {
+    "isIndicator": true,
+    "indicates": [
+      "grazing-pressure",
+      "soil-erosion"
+    ],
+    "scores": {
+      "moisture": 1,
+      "salinity": 2,
+      "soilPh": 7.8,
+      "grazing": 4,
+      "pollutionTolerance": 4
+    },
+    "note": "Тығыз шоқтарының көбеюі жайылымның тозғанын көрсетеді: мал жемейтіндіктен, жайылған жерде үлесі артады."
+  },
+  "locations": [
+    {
+      "zoneId": "shu-ile",
+      "label": "Шу-Іле тауларының етегіндегі құрғақ дала",
+      "lat": 44.2,
+      "lon": 75.6,
+      "precision": "zone",
+      "source": "Аймақтық таралу деректері бойынша",
+      "sourceUrl": null
+    },
+    {
+      "zoneId": "altyn-emel",
+      "label": "Алтын-Емел ҰТП, қиыршық тасты дала",
+      "lat": 43.88,
+      "lon": 78.6,
+      "precision": "zone",
+      "source": "Аймақтық таралу деректері бойынша",
+      "sourceUrl": null
+    }
+  ],
+  "photo": {
+    "file": "iris-tenuifolia.webp",
+    "author": "Yuriy75",
+    "license": "CC BY-SA 3.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Iris_tenuifolia;_Baikonur_005.jpg"
+  },
+  "sources": [
+    {
+      "title": "Plants of the World Online — Iris tenuifolia",
+      "url": "https://powo.science.kew.org/"
+    },
+    {
+      "title": "GBIF — Iris tenuifolia, Қазақстан бойынша кездесу деректері",
+      "url": "https://www.gbif.org/"
+    },
+    {
+      "title": "Қазақстан флорасы. Алматы: Ғылым",
+      "url": null
+    }
+  ]
+}

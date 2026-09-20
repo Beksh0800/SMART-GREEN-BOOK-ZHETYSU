@@ -1,0 +1,85 @@
+{
+  "slug": "tulipa-buhseana",
+  "name": {
+    "kk": "Бузе қызғалдағы",
+    "ru": "Тюльпан Бузе",
+    "la": "Tulipa buhseana"
+  },
+  "family": {
+    "kk": "Лалагүлдер",
+    "la": "Liliaceae"
+  },
+  "status": {
+    "redBookKz": null,
+    "iucn": null,
+    "endemic": null,
+    "rarity": "Шөл аймақтарында жиі, бірақ жайылым тозған жерлерде азаяды"
+  },
+  "habitat": [
+    "desert",
+    "steppe"
+  ],
+  "description": {
+    "summary": "Шөл мен шөлейттің ерте көктемгі эфемероиді — ақ гүлді ұсақ қызғалдақ.",
+    "morphology": "Биіктігі 10–20 см. Жапырақтары сызықты, 2–4 дана. Гүлдері ұсақ, ақ немесе сүт түстес, түбінде сары дақ бар, бір сабақта 2–5 гүл орналасады.",
+    "habitat": "Сазды және құмды шөлдер, тақырлар, шөлейт жазықтар; 350–900 м биіктік.",
+    "phenology": "Наурыз–сәуірде гүлдейді, мамырдың басында вегетациясы аяқталады.",
+    "uses": "Көктемгі жайылымның ерте қорегі, шөл экожүйесінің құрамдас бөлігі.",
+    "threats": "Жайылымның тозуы, жер жырту, шөл жерлерді өнеркәсіптік игеру."
+  },
+  "bioIndicator": {
+    "isIndicator": true,
+    "indicates": [
+      "grazing-pressure",
+      "soil-erosion"
+    ],
+    "scores": {
+      "moisture": 1,
+      "salinity": 2,
+      "soilPh": 7.9,
+      "grazing": 2,
+      "pollutionTolerance": 3
+    },
+    "note": "Эфемероидтардың жоғалуы шөл жайылымындағы топырақ қабатының тапталып, бұзылғанын көрсетеді."
+  },
+  "locations": [
+    {
+      "zoneId": "ile-valley",
+      "label": "Іле өзенінің сол жағалауындағы шөлді жазық",
+      "lat": 43.9169,
+      "lon": 77.2215,
+      "precision": "locality",
+      "source": "Аймақтық гербарий деректері бойынша локалитет орталығы",
+      "sourceUrl": null
+    },
+    {
+      "zoneId": "balkhash-sands",
+      "label": "Балқаш маңы құмдарының шеті",
+      "lat": 45.0586,
+      "lon": 75.2767,
+      "precision": "locality",
+      "source": "Аймақтық таралу деректері бойынша",
+      "sourceUrl": null
+    }
+  ],
+  "photo": {
+    "file": "tulipa-buhseana.webp",
+    "author": "Yuriy75",
+    "license": "CC BY-SA 3.0",
+    "url": "https://commons.wikimedia.org/wiki/File:TulipaBuhseana;_Baikonur_005.jpg"
+  },
+  "sources": [
+    {
+      "title": "Plants of the World Online — Tulipa buhseana",
+      "url": "https://powo.science.kew.org/"
+    },
+    {
+      "title": "GBIF — Tulipa buhseana, Қазақстан бойынша кездесу деректері",
+      "url": "https://www.gbif.org/"
+    },
+    {
+      "title": "Қазақстан флорасы. Алматы: Ғылым",
+      "url": null
+    }
+  ]
+}

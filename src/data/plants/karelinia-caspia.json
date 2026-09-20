@@ -1,0 +1,87 @@
+{
+  "slug": "karelinia-caspia",
+  "name": {
+    "kk": "Каспий кәрелиниясы",
+    "ru": "Карелиния каспийская",
+    "la": "Karelinia caspia"
+  },
+  "family": {
+    "kk": "Күрделігүлділер",
+    "la": "Asteraceae"
+  },
+  "status": {
+    "redBookKz": null,
+    "iucn": null,
+    "endemic": null,
+    "rarity": "Тұзды және ылғалды жерлерде жиі"
+  },
+  "habitat": [
+    "saline",
+    "wetland",
+    "desert"
+  ],
+  "description": {
+    "summary": "Тұзданған, бірақ ылғалы жеткілікті жерлердің индикаторы — суармалы алқаптардың шетінде жиі кездеседі.",
+    "morphology": "Биіктігі 40–120 см көпжылдық шөптесін өсімдік. Сабағы тік, тармақталған. Жапырақтары етженді, сопақша, сабақты құшақтай орналасады. Гүл себеттері қызғылт-күлгін, шоғырланған.",
+    "habitat": "Сортаң шалғындар, арық жағалаулары, суармалы жерлердің шеті, көл маңы; 340–900 м.",
+    "phenology": "Маусым–тамызда гүлдейді, қыркүйекте тұқымы піседі; тамыр өркені арқылы тез таралады.",
+    "uses": "Тұзды жерлердегі жайылым азығы, бал шарасы; топырақты бекітеді.",
+    "threats": "Қауіп жоқ; суармалы жерлерде арамшөп ретінде таралады."
+  },
+  "bioIndicator": {
+    "isIndicator": true,
+    "indicates": [
+      "salinity",
+      "groundwater",
+      "soil-moisture"
+    ],
+    "scores": {
+      "moisture": 4,
+      "salinity": 4,
+      "soilPh": 8.3,
+      "grazing": 4,
+      "pollutionTolerance": 5
+    },
+    "note": "Егіс алқабының шетінде жаппай өсуі жер асты суының көтеріліп, топырақтың екінші реттік тұздануға ұшырағанын көрсетеді."
+  },
+  "locations": [
+    {
+      "zoneId": "balkhash-sands",
+      "label": "Балқаш ауданы, көл маңындағы сортаң шалғын",
+      "lat": 44.9574,
+      "lon": 75.1595,
+      "precision": "exact",
+      "source": "GBIF occurrence 6452498905",
+      "sourceUrl": "https://www.gbif.org/occurrence/6452498905"
+    },
+    {
+      "zoneId": "ile-valley",
+      "label": "Іле жазығы, суармалы алқаптар шеті",
+      "lat": 44.9416,
+      "lon": 76.0151,
+      "precision": "exact",
+      "source": "GBIF occurrence 6480853359",
+      "sourceUrl": "https://www.gbif.org/occurrence/6480853359"
+    }
+  ],
+  "photo": {
+    "file": "karelinia-caspia.webp",
+    "author": "(c) Наталья Бешко",
+    "license": "CC BY-NC 4.0",
+    "url": "https://www.inaturalist.org/photos/432144854"
+  },
+  "sources": [
+    {
+      "title": "Plants of the World Online — Karelinia caspia",
+      "url": "https://powo.science.kew.org/"
+    },
+    {
+      "title": "GBIF — Karelinia caspia, Қазақстан бойынша кездесу деректері",
+      "url": "https://www.gbif.org/"
+    },
+    {
+      "title": "Қазақстан флорасы. Алматы: Ғылым",
+      "url": null
+    }
+  ]
+}

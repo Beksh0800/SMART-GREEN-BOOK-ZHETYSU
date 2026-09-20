@@ -1,0 +1,87 @@
+{
+  "slug": "armeniaca-vulgaris",
+  "name": {
+    "kk": "Жабайы өрік",
+    "ru": "Абрикос обыкновенный (дикорастущий)",
+    "la": "Armeniaca vulgaris"
+  },
+  "family": {
+    "kk": "Раушангүлділер",
+    "la": "Rosaceae"
+  },
+  "status": {
+    "redBookKz": "III",
+    "iucn": null,
+    "endemic": "regional",
+    "rarity": "Табиғи тоғайлары сирек, негізінен қорғалатын аумақтарда"
+  },
+  "habitat": [
+    "mountain-forest",
+    "shrubland",
+    "steppe"
+  ],
+  "description": {
+    "summary": "Мәдени өріктің жабайы арғы тегі — Жетісу тау бөктерлеріндегі жеміс ормандарының құрамдас түрі.",
+    "morphology": "Биіктігі 5–10 м ағаш. Қабығы сұр-қоңыр, жарықшақты. Жапырақтары жұмыртқа тәрізді, ұшы сүйірленген. Гүлдері ақшыл-қызғылт, жапырақ жаймай тұрып ашылады. Жемісі ұсақ, сарғыш, дәмі қышқыл немесе тәтті.",
+    "habitat": "900–1700 м биіктіктегі күн жақсы түсетін тау бөктерлері, тасты беткейлер, жеміс ормандары.",
+    "phenology": "Наурыздың аяғы — сәуірде гүлдейді, шілде–тамызда жемісі піседі.",
+    "uses": "Селекцияның генетикалық қоры, жергілікті халықтың дәстүрлі тағамы, топырақты бекітетін ағаш.",
+    "threats": "Мал жаю кезінде жас өскіндердің жойылуы, ағаш кесу, тау бөктерлерін игеру, өрт."
+  },
+  "bioIndicator": {
+    "isIndicator": true,
+    "indicates": [
+      "soil-moisture",
+      "grazing-pressure",
+      "soil-erosion"
+    ],
+    "scores": {
+      "moisture": 2,
+      "salinity": 1,
+      "soilPh": 7.2,
+      "grazing": 2,
+      "pollutionTolerance": 2
+    },
+    "note": "Жеміс ормандарының жаңару қабілетін көрсетеді: жас ағаштардың жоқтығы жайылым қысымының жоғары екенін білдіреді."
+  },
+  "locations": [
+    {
+      "zoneId": "ile-alatau",
+      "label": "Іле Алатауының бөктеріндегі жеміс ормандары",
+      "lat": 43.2151,
+      "lon": 76.927,
+      "precision": "locality",
+      "source": "Аймақтық гербарий деректері бойынша локалитет орталығы",
+      "sourceUrl": null
+    },
+    {
+      "zoneId": "zhongar-alatau",
+      "label": "Жоңғар Алатауының оңтүстік беткейлері",
+      "lat": 45.2,
+      "lon": 80.2,
+      "precision": "zone",
+      "source": "Аймақтық таралу деректері бойынша",
+      "sourceUrl": null
+    }
+  ],
+  "photo": {
+    "file": "armeniaca-vulgaris.webp",
+    "author": "Lazaregagnidze",
+    "license": "CC BY-SA 4.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Armeniaca_vulgaris_Wild_Apricot_%E1%83%AD%E1%83%94%E1%83%A0%E1%83%90%E1%83%9B%E1%83%98.jpg"
+  },
+  "sources": [
+    {
+      "title": "Қазақстан Республикасының Қызыл кітабы. 2-том: Өсімдіктер. Алматы, 2014",
+      "url": null
+    },
+    {
+      "title": "Plants of the World Online — Armeniaca vulgaris",
+      "url": "https://powo.science.kew.org/"
+    },
+    {
+      "title": "Қазақстан флорасы. Алматы: Ғылым",
+      "url": null
+    }
+  ]
+}

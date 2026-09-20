@@ -1,0 +1,86 @@
+{
+  "slug": "sorbus-tianschanica",
+  "name": {
+    "kk": "Тянь-Шань шетені",
+    "ru": "Рябина тянь-шаньская",
+    "la": "Sorbus tianschanica"
+  },
+  "family": {
+    "kk": "Раушангүлділер",
+    "la": "Rosaceae"
+  },
+  "status": {
+    "redBookKz": null,
+    "iucn": null,
+    "endemic": "regional",
+    "rarity": "Жиі емес, шырша ормандарының шетінде шашыраңқы кездеседі"
+  },
+  "habitat": [
+    "mountain-forest",
+    "alpine",
+    "rocky"
+  ],
+  "description": {
+    "summary": "Шырша ормандарының жоғарғы шекарасын белгілейтін, күзде қызыл жемісімен көзге түсетін ағаш.",
+    "morphology": "Биіктігі 2–5 м ағаш немесе бұта. Жапырағы күрделі, 11–15 жапырақшадан тұрады, күзде қызғылт тартады. Гүлдері ақ, қалқанша гүлшоғырында. Жемісі қызыл, шар тәрізді, қыс бойы бұтақта қалады.",
+    "habitat": "1800–2900 м биіктіктегі шырша ормандарының шеті, субальпі бұталары, тасты беткейлер.",
+    "phenology": "Маусымда гүлдейді, қыркүйекте жемісі піседі.",
+    "uses": "Қыстайтын құстардың негізгі азығы, дәрілік және сәндік мәні бар.",
+    "threats": "Орман өрті, жайылым, бұтақтарын жемісімен бірге сындыру."
+  },
+  "bioIndicator": {
+    "isIndicator": true,
+    "indicates": [
+      "soil-moisture",
+      "grazing-pressure"
+    ],
+    "scores": {
+      "moisture": 3,
+      "salinity": 1,
+      "soilPh": 6.5,
+      "grazing": 2,
+      "pollutionTolerance": 2
+    },
+    "note": "Орманның жоғарғы шекарасының индикаторы: шетеннің жоғары қарай жылжуы орман белдеуінің көтерілгенін көрсетеді."
+  },
+  "locations": [
+    {
+      "zoneId": "ile-alatau",
+      "label": "Медеу ауданы, Іле Алатауының орманды белдеуі",
+      "lat": 43.122,
+      "lon": 77.0799,
+      "precision": "exact",
+      "source": "GBIF occurrence 6352375916",
+      "sourceUrl": "https://www.gbif.org/occurrence/6352375916"
+    },
+    {
+      "zoneId": "zhongar-alatau",
+      "label": "Жоңғар Алатауының субальпі белдеуі",
+      "lat": 45.2,
+      "lon": 80.2,
+      "precision": "zone",
+      "source": "Аймақтық таралу деректері бойынша",
+      "sourceUrl": null
+    }
+  ],
+  "photo": {
+    "file": "sorbus-tianschanica.webp",
+    "author": "Aidos.taibekuly",
+    "license": "CC BY-SA 4.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Yellowing_Sorbus_tianschanica.jpg"
+  },
+  "sources": [
+    {
+      "title": "Plants of the World Online — Sorbus tianschanica",
+      "url": "https://powo.science.kew.org/"
+    },
+    {
+      "title": "GBIF — Sorbus tianschanica, Қазақстан бойынша кездесу деректері",
+      "url": "https://www.gbif.org/"
+    },
+    {
+      "title": "Қазақстан флорасы. Алматы: Ғылым",
+      "url": null
+    }
+  ]
+}

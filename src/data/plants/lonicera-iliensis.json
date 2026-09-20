@@ -1,0 +1,81 @@
+{
+  "slug": "lonicera-iliensis",
+  "name": {
+    "kk": "Іле ұшқаты",
+    "ru": "Жимолость илийская",
+    "la": "Lonicera iliensis"
+  },
+  "family": {
+    "kk": "Ұшқаттар",
+    "la": "Caprifoliaceae"
+  },
+  "status": {
+    "redBookKz": "II",
+    "iucn": null,
+    "endemic": "kz",
+    "rarity": "Өте сирек, санаулы табылу орны белгілі"
+  },
+  "habitat": [
+    "riparian",
+    "shrubland",
+    "rocky"
+  ],
+  "description": {
+    "summary": "Іле алабының эндемигі — Жоңғар Алатауының оңтүстік беткейлеріндегі сай-тоғайларда сақталған сирек бұта.",
+    "morphology": "Биіктігі 1–2 м бұта. Бұтақтары жіңішке, қабығы сұр, қабыршақтанып түседі. Жапырақтары ұсақ, сопақша, көкшіл-жасыл. Гүлдері ақшыл-сары, жұп-жұбымен орналасады. Жемісі қызыл, жұп болып бітеді.",
+    "habitat": "Тау өзендерінің аңғарлары, тасты сайлар, бұталы белдеу; 700–1800 м биіктік.",
+    "phenology": "Мамырда гүлдейді, шілде–тамызда жемісі піседі.",
+    "uses": "Ғылыми маңызы зор эндемик, сәндік бұта ретінде әлеуеті бар.",
+    "threats": "Мал жаю, сай бойындағы бұталарды кесу, су режимінің өзгеруі, ареалының тарлығы."
+  },
+  "bioIndicator": {
+    "isIndicator": true,
+    "indicates": [
+      "soil-moisture",
+      "grazing-pressure"
+    ],
+    "scores": {
+      "moisture": 3,
+      "salinity": 2,
+      "soilPh": 7.5,
+      "grazing": 2,
+      "pollutionTolerance": 2
+    },
+    "note": "Сай-тоғай бұталы белдеуінің сақталғанының көрсеткіші: мал тығыз жайылған сайларда жойылады."
+  },
+  "locations": [
+    {
+      "zoneId": "zhongar-alatau",
+      "label": "Жоңғар Алатауының оңтүстік беткейі, Кіші Үсек өзенінің аңғары",
+      "lat": 44.2668,
+      "lon": 79.9063,
+      "precision": "exact",
+      "source": "GBIF occurrence 1799051363",
+      "sourceUrl": "https://www.gbif.org/occurrence/1799051363"
+    },
+    {
+      "zoneId": "ile-valley",
+      "label": "Іле өзенінің орта ағысы, Сарытоғай маңы",
+      "lat": 43.56,
+      "lon": 79.2903,
+      "precision": "exact",
+      "source": "GBIF occurrence 5887427792",
+      "sourceUrl": "https://www.gbif.org/occurrence/5887427792"
+    }
+  ],
+  "photo": null,
+  "sources": [
+    {
+      "title": "Қазақстан Республикасының Қызыл кітабы. 2-том: Өсімдіктер. Алматы, 2014",
+      "url": null
+    },
+    {
+      "title": "Plants of the World Online — Lonicera iliensis",
+      "url": "https://powo.science.kew.org/"
+    },
+    {
+      "title": "GBIF — Lonicera iliensis, Қазақстан бойынша кездесу деректері",
+      "url": "https://www.gbif.org/"
+    }
+  ]
+}

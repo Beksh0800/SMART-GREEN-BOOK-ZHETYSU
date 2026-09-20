@@ -1,0 +1,85 @@
+{
+  "slug": "haloxylon-persicum",
+  "name": {
+    "kk": "Ақ сексеуіл",
+    "ru": "Саксаул белый",
+    "la": "Haloxylon persicum"
+  },
+  "family": {
+    "kk": "Алабұталар",
+    "la": "Amaranthaceae"
+  },
+  "status": {
+    "redBookKz": null,
+    "iucn": null,
+    "endemic": null,
+    "rarity": "Құмды шөлдерде жиі, бірақ кесілу салдарынан сирей түскен"
+  },
+  "habitat": [
+    "desert",
+    "steppe"
+  ],
+  "description": {
+    "summary": "Құмды шөлдің орман түзуші түрі — құмның бекітілу дәрежесін көрсететін негізгі индикатор.",
+    "morphology": "Биіктігі 1,5–5 м бұта немесе аласа ағаш. Қабығы ақшыл сұр, қара сексеуілден ашығырақ. Жас бұтақтары жіңішке, салбыраңқы, жасыл. Жапырақтары қабыршақ тәрізді, редукцияланған.",
+    "habitat": "Жартылай бекітілген және бекітілген құмдар, құмды жоталар; қара сексеуілден айырмашылығы — тұзданбаған, жеңіл топырақты таңдайды.",
+    "phenology": "Сәуірде гүлдейді, қазан–қарашада жемісі піседі.",
+    "uses": "Құмды бекітудің негізгі өсімдігі, отын, түйе жайылымы.",
+    "threats": "Отынға кесу, шамадан тыс жайылым, құм массивтерін игеру."
+  },
+  "bioIndicator": {
+    "isIndicator": true,
+    "indicates": [
+      "soil-erosion",
+      "groundwater"
+    ],
+    "scores": {
+      "moisture": 1,
+      "salinity": 2,
+      "soilPh": 7.9,
+      "grazing": 3,
+      "pollutionTolerance": 4
+    },
+    "note": "Ақ сексеуілдің жойылуы құмның жылжымалы күйге өтуіне әкеледі — шөлейттенудің тікелей алғышарты."
+  },
+  "locations": [
+    {
+      "zoneId": "balkhash-sands",
+      "label": "Балқаш ауданы, Сарыесік-Атырау құмдары",
+      "lat": 45.0586,
+      "lon": 75.2767,
+      "precision": "exact",
+      "source": "GBIF occurrence 5843990570",
+      "sourceUrl": "https://www.gbif.org/occurrence/5843990570"
+    },
+    {
+      "zoneId": "altyn-emel",
+      "label": "Кербұлақ ауданы, Алтын-Емел маңындағы құмдар",
+      "lat": 43.8776,
+      "lon": 78.5608,
+      "precision": "exact",
+      "source": "GBIF occurrence 4946636269",
+      "sourceUrl": "https://www.gbif.org/occurrence/4946636269"
+    }
+  ],
+  "photo": {
+    "file": "haloxylon-persicum.webp",
+    "author": "Abodi009",
+    "license": "CC BY-SA 3.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Haloxylon_persicum.JPG"
+  },
+  "sources": [
+    {
+      "title": "Plants of the World Online — Haloxylon persicum",
+      "url": "https://powo.science.kew.org/"
+    },
+    {
+      "title": "GBIF — Haloxylon persicum, Қазақстан бойынша кездесу деректері",
+      "url": "https://www.gbif.org/"
+    },
+    {
+      "title": "Қазақстан флорасы. Алматы: Ғылым",
+      "url": null
+    }
+  ]
+}

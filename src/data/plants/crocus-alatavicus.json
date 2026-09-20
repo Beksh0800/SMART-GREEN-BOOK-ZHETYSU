@@ -1,0 +1,87 @@
+{
+  "slug": "crocus-alatavicus",
+  "name": {
+    "kk": "Алатау шафраны",
+    "ru": "Шафран алатавский",
+    "la": "Crocus alatavicus"
+  },
+  "family": {
+    "kk": "Құртқашаштар",
+    "la": "Iridaceae"
+  },
+  "status": {
+    "redBookKz": null,
+    "iucn": null,
+    "endemic": "regional",
+    "rarity": "Жергілікті жерлерде жиі, бірақ қала маңында қатты азайған"
+  },
+  "habitat": [
+    "alpine",
+    "mountain-forest",
+    "shrubland",
+    "steppe"
+  ],
+  "description": {
+    "summary": "Қар астынан шығып гүлдейтін, Тянь-Шаньға тән ақ гүлді бәйшешек.",
+    "morphology": "Биіктігі 5–15 см, түйнекті өсімдік. Гүлі ақ, сыртқы жағы күлгін-қола жолақты, ортасы қанық сары аталықты. Жапырақтары сызықты, ортасында ақ жолағы бар, гүлдеумен бірге өседі.",
+    "habitat": "1200–2800 м биіктіктегі тау шалғындары, шырша ормандарының шеті, қар кеш еритін беткейлер.",
+    "phenology": "Наурыз–мамырда, қар еру шегімен бірге гүлдейді; жазда түйнек күйінде тыныштықта болады.",
+    "uses": "Ерте көктемгі бал арасының қорегі; сәндік өсімдік.",
+    "threats": "Гүлін букетке жұлу, түйнегін қазу, қала маңындағы рекреациялық жүктеме."
+  },
+  "bioIndicator": {
+    "isIndicator": true,
+    "indicates": [
+      "soil-moisture",
+      "grazing-pressure"
+    ],
+    "scores": {
+      "moisture": 4,
+      "salinity": 1,
+      "soilPh": 6.8,
+      "grazing": 1,
+      "pollutionTolerance": 1
+    },
+    "note": "Қар жамылғысының ұзақтығына тікелей тәуелді: гүлдеу мерзімінің ерте жылжуы жылы қыстың көрсеткіші."
+  },
+  "locations": [
+    {
+      "zoneId": "ile-alatau",
+      "label": "Медеу шатқалы, Алматы",
+      "lat": 43.2555,
+      "lon": 76.9956,
+      "precision": "exact",
+      "source": "GBIF occurrence 5938201801",
+      "sourceUrl": "https://www.gbif.org/occurrence/5938201801"
+    },
+    {
+      "zoneId": "zhongar-alatau",
+      "label": "Жоңғар Алатауының орта белдеуі",
+      "lat": 45.2,
+      "lon": 80.2,
+      "precision": "zone",
+      "source": "Аймақтық таралу деректері бойынша",
+      "sourceUrl": null
+    }
+  ],
+  "photo": {
+    "file": "crocus-alatavicus.webp",
+    "author": "Amirekul",
+    "license": "CC BY-SA 4.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Crocus_alatavicus_01.jpg"
+  },
+  "sources": [
+    {
+      "title": "Plants of the World Online — Crocus alatavicus",
+      "url": "https://powo.science.kew.org/"
+    },
+    {
+      "title": "GBIF — Crocus alatavicus, Қазақстан бойынша кездесу деректері",
+      "url": "https://www.gbif.org/"
+    },
+    {
+      "title": "Қазақстан флорасы. Алматы: Ғылым",
+      "url": null
+    }
+  ]
+}

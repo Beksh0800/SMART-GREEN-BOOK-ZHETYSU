@@ -1,0 +1,86 @@
+{
+  "slug": "halocnemum-strobilaceum",
+  "name": {
+    "kk": "Сарсазан",
+    "ru": "Сарсазан шишковатый",
+    "la": "Halocnemum strobilaceum"
+  },
+  "family": {
+    "kk": "Алабұталар",
+    "la": "Amaranthaceae"
+  },
+  "status": {
+    "redBookKz": null,
+    "iucn": null,
+    "endemic": null,
+    "rarity": "Сорларда жиі, бірақ таралуы тек тұзды аймақтармен шектелген"
+  },
+  "habitat": [
+    "saline",
+    "wetland",
+    "desert"
+  ],
+  "description": {
+    "summary": "Ең тұзға төзімді өсімдіктердің бірі — сор топырақтың ең күшті тұзданған бөлігін белгілейді.",
+    "morphology": "Биіктігі 20–60 см жартылай бұта. Сабағы етженді, буындалған, сұр-жасыл. Жапырақтары толық редукцияланған. Бұтақ ұштарында бүршік тәрізді қысқа өркендері болады.",
+    "habitat": "Сулы сорлар, көл жағалаулары, тұзды батпақтар; жер асты суы жер бетіне жақын, өте тұзды; 340–800 м.",
+    "phenology": "Шілде–қыркүйекте гүлдейді, күзде жемісі піседі.",
+    "uses": "Күзгі түйе жайылымы, тұзды жерлерді бекітеді, сор экожүйесінің негізгі түрі.",
+    "threats": "Тікелей қауіп жоқ; таралуының артуы жердің тұздануының күшеюімен байланысты."
+  },
+  "bioIndicator": {
+    "isIndicator": true,
+    "indicates": [
+      "salinity",
+      "groundwater"
+    ],
+    "scores": {
+      "moisture": 4,
+      "salinity": 5,
+      "soilPh": 8.7,
+      "grazing": 4,
+      "pollutionTolerance": 5
+    },
+    "note": "Сарсазан алқабының кеңеюі жер асты тұзды суының көтерілгенін көрсетеді — суармалы жерлер үшін қауіп белгісі."
+  },
+  "locations": [
+    {
+      "zoneId": "ile-valley",
+      "label": "Мыңбұлақ, Іле жазығындағы сор",
+      "lat": 43.9289,
+      "lon": 78.1645,
+      "precision": "exact",
+      "source": "GBIF occurrence 6497163609",
+      "sourceUrl": "https://www.gbif.org/occurrence/6497163609"
+    },
+    {
+      "zoneId": "shu-ile",
+      "label": "Жамбыл ауданы, Қопа маңындағы сор",
+      "lat": 43.5094,
+      "lon": 75.8347,
+      "precision": "exact",
+      "source": "GBIF occurrence 2382576604",
+      "sourceUrl": "https://www.gbif.org/occurrence/2382576604"
+    }
+  ],
+  "photo": {
+    "file": "halocnemum-strobilaceum.webp",
+    "author": "Ziegler175",
+    "license": "CC BY-SA 4.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Halocnemum_strobilaceum.jpg"
+  },
+  "sources": [
+    {
+      "title": "Plants of the World Online — Halocnemum strobilaceum",
+      "url": "https://powo.science.kew.org/"
+    },
+    {
+      "title": "GBIF — Halocnemum strobilaceum, Қазақстан бойынша кездесу деректері",
+      "url": "https://www.gbif.org/"
+    },
+    {
+      "title": "Қазақстан флорасы. Алматы: Ғылым",
+      "url": null
+    }
+  ]
+}

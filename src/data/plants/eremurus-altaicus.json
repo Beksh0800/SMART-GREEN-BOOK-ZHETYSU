@@ -1,0 +1,87 @@
+{
+  "slug": "eremurus-altaicus",
+  "name": {
+    "kk": "Алтай ерешісі",
+    "ru": "Эремурус алтайский",
+    "la": "Eremurus altaicus"
+  },
+  "family": {
+    "kk": "Асфоделдер",
+    "la": "Asphodelaceae"
+  },
+  "status": {
+    "redBookKz": null,
+    "iucn": null,
+    "endemic": "regional",
+    "rarity": "Шашыраңқы, ірі популяциялары сирек"
+  },
+  "habitat": [
+    "steppe",
+    "shrubland",
+    "alpine",
+    "rocky"
+  ],
+  "description": {
+    "summary": "Биік сары гүлшоғырымен көзге түсетін тау далаларының эфемероиді.",
+    "morphology": "Биіктігі 60–150 см көпжылдық. Тамыры жуан, шоқ түзеді. Жапырақтары түбірлік, сызықты, көкшіл-жасыл. Гүлшоғыры ұзын шашақ, гүлдері сарғыш немесе қоңырлау-сары.",
+    "habitat": "1200–2600 м биіктіктегі тау далалары, бұталы беткейлер, субальпі шалғындарының шеті.",
+    "phenology": "Мамыр–маусымда гүлдейді, шілдеде тұқымы піседі, тамызда жер үсті мүшелері қурайды.",
+    "uses": "Тамырынан желім алынған, сәндік мәні жоғары, бал шарасы.",
+    "threats": "Тамырын қазу, гүлін жұлу, жайылым қысымы, тау далаларын жырту."
+  },
+  "bioIndicator": {
+    "isIndicator": true,
+    "indicates": [
+      "grazing-pressure",
+      "soil-moisture"
+    ],
+    "scores": {
+      "moisture": 3,
+      "salinity": 1,
+      "soilPh": 7.1,
+      "grazing": 2,
+      "pollutionTolerance": 2
+    },
+    "note": "Гүлдеген особьтардың азаюы жайылымның ерте басталғанын көрсетеді: мал гүлшоғырын тұқым піспей тұрып жейді."
+  },
+  "locations": [
+    {
+      "zoneId": "zhongar-alatau",
+      "label": "Солтүстік Жоңғар Алатауы, Қора өзенінің аңғары",
+      "lat": 44.9059,
+      "lon": 78.8288,
+      "precision": "exact",
+      "source": "GBIF occurrence 6234259203",
+      "sourceUrl": "https://www.gbif.org/occurrence/6234259203"
+    },
+    {
+      "zoneId": "alakol",
+      "label": "Алакөл ауданы, тау бөктерлері",
+      "lat": 45.9078,
+      "lon": 81.4633,
+      "precision": "exact",
+      "source": "GBIF occurrence 3881384352",
+      "sourceUrl": "https://www.gbif.org/occurrence/3881384352"
+    }
+  ],
+  "photo": {
+    "file": "eremurus-altaicus.webp",
+    "author": "Andrew Bazdyrev",
+    "license": "CC BY 4.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Eremurus_altaicus_112056523.jpg"
+  },
+  "sources": [
+    {
+      "title": "Plants of the World Online — Eremurus altaicus",
+      "url": "https://powo.science.kew.org/"
+    },
+    {
+      "title": "GBIF — Eremurus altaicus, Қазақстан бойынша кездесу деректері",
+      "url": "https://www.gbif.org/"
+    },
+    {
+      "title": "Қазақстан флорасы. Алматы: Ғылым",
+      "url": null
+    }
+  ]
+}

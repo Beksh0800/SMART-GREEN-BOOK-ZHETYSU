@@ -1,0 +1,86 @@
+{
+  "slug": "kalidium-foliatum",
+  "name": {
+    "kk": "Жапырақты сарсазан",
+    "ru": "Поташник олиственный",
+    "la": "Kalidium foliatum"
+  },
+  "family": {
+    "kk": "Алабұталар",
+    "la": "Amaranthaceae"
+  },
+  "status": {
+    "redBookKz": null,
+    "iucn": null,
+    "endemic": null,
+    "rarity": "Сор жерлерде жиі, аумағы тұздану есебінен кеңеюде"
+  },
+  "habitat": [
+    "saline",
+    "desert",
+    "wetland"
+  ],
+  "description": {
+    "summary": "Қатты тұзданған топырақта ғана өсетін галофит — топырақ тұздануының ең сенімді көрсеткіштерінің бірі.",
+    "morphology": "Биіктігі 20–80 см жартылай бұта. Сабағы етженді, буындалған, күзде қызғылт тартады. Жапырақтары ұсақ, етженді, жұмыртқа тәрізді. Гүлшоғыры масақ тәрізді.",
+    "habitat": "Сор, сортаң жазықтар, құрғаған көл табандары, жер асты суы тұзды аймақтар; 340–900 м.",
+    "phenology": "Шілде–тамызда гүлдейді, қыркүйек–қазанда жемісі піседі.",
+    "uses": "Күзгі-қысқы түйе жайылымы, сор топырақты бекітеді.",
+    "threats": "Тікелей қауіп жоқ; таралуының кеңеюі жердің тұздануын білдіреді."
+  },
+  "bioIndicator": {
+    "isIndicator": true,
+    "indicates": [
+      "salinity",
+      "groundwater"
+    ],
+    "scores": {
+      "moisture": 3,
+      "salinity": 5,
+      "soilPh": 8.6,
+      "grazing": 4,
+      "pollutionTolerance": 5
+    },
+    "note": "Суармалы алқаптардың шетінде сарсазанның пайда болуы екінші реттік тұзданудың басталғанын көрсетеді."
+  },
+  "locations": [
+    {
+      "zoneId": "ile-valley",
+      "label": "Еңбекшіқазақ ауданы, Іле жазығындағы сор",
+      "lat": 43.629,
+      "lon": 77.4531,
+      "precision": "exact",
+      "source": "GBIF occurrence 5086948954",
+      "sourceUrl": "https://www.gbif.org/occurrence/5086948954"
+    },
+    {
+      "zoneId": "altyn-emel",
+      "label": "Кербұлақ ауданы, сортаң жазық",
+      "lat": 44.0412,
+      "lon": 78.831,
+      "precision": "exact",
+      "source": "GBIF occurrence 4954482452",
+      "sourceUrl": "https://www.gbif.org/occurrence/4954482452"
+    }
+  ],
+  "photo": {
+    "file": "kalidium-foliatum.webp",
+    "author": "Oleg Kosterin",
+    "license": "CC BY 4.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Kalidium_foliatum_164252078.jpg"
+  },
+  "sources": [
+    {
+      "title": "Plants of the World Online — Kalidium foliatum",
+      "url": "https://powo.science.kew.org/"
+    },
+    {
+      "title": "GBIF — Kalidium foliatum, Қазақстан бойынша кездесу деректері",
+      "url": "https://www.gbif.org/"
+    },
+    {
+      "title": "Қазақстан флорасы. Алматы: Ғылым",
+      "url": null
+    }
+  ]
+}

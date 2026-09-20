@@ -1,0 +1,86 @@
+{
+  "slug": "rosa-platyacantha",
+  "name": {
+    "kk": "Жалпақ тікенді итмұрын",
+    "ru": "Шиповник плоскошипый",
+    "la": "Rosa platyacantha"
+  },
+  "family": {
+    "kk": "Раушангүлділер",
+    "la": "Rosaceae"
+  },
+  "status": {
+    "redBookKz": null,
+    "iucn": null,
+    "endemic": null,
+    "rarity": "Кең таралған, тау бөктерлерінің тән бұтасы"
+  },
+  "habitat": [
+    "shrubland",
+    "steppe",
+    "rocky"
+  ],
+  "description": {
+    "summary": "Тау бөктерлеріндегі бұталы белдеудің негізгі түрі — жайылым қысымының сенімді индикаторы.",
+    "morphology": "Биіктігі 1–2 м бұта. Тікендері жалпақ, табаны кеңейген. Жапырағы ұсақ, 5–9 жапырақшалы. Гүлі сары, жалғыз орналасады. Жемісі қызғылт-қара, шар тәрізді.",
+    "habitat": "700–2000 м биіктіктегі құрғақ тау бөктерлері, тасты беткейлер, бұталы дала.",
+    "phenology": "Мамыр–маусымда гүлдейді, тамыз–қыркүйекте жемісі піседі.",
+    "uses": "С дәруменіне бай жеміс, дәрілік шикізат; эрозияға қарсы бекітуші бұта.",
+    "threats": "Отынға кесу, өрт, шамадан тыс жайылым."
+  },
+  "bioIndicator": {
+    "isIndicator": true,
+    "indicates": [
+      "grazing-pressure",
+      "soil-erosion"
+    ],
+    "scores": {
+      "moisture": 2,
+      "salinity": 2,
+      "soilPh": 7.5,
+      "grazing": 4,
+      "pollutionTolerance": 3
+    },
+    "note": "Мал жайылымы күшейген беткейлерде басқа түрлерді ығыстырып, таза тікенді бұталық түзеді — жайылым тозуының айқын белгісі."
+  },
+  "locations": [
+    {
+      "zoneId": "ile-alatau",
+      "label": "Іле Алатауының бөктері, Наурызбай ауданы",
+      "lat": 43.1659,
+      "lon": 76.7972,
+      "precision": "exact",
+      "source": "GBIF occurrence 6234169890",
+      "sourceUrl": "https://www.gbif.org/occurrence/6234169890"
+    },
+    {
+      "zoneId": "taldykorgan-foothills",
+      "label": "Талдықорған маңы адырлары",
+      "lat": 45.05,
+      "lon": 78.4,
+      "precision": "zone",
+      "source": "Аймақтық таралу деректері бойынша",
+      "sourceUrl": null
+    }
+  ],
+  "photo": {
+    "file": "rosa-platyacantha.webp",
+    "author": "(c) Елана",
+    "license": "CC BY-NC 4.0",
+    "url": "https://www.inaturalist.org/photos/654717142"
+  },
+  "sources": [
+    {
+      "title": "Plants of the World Online — Rosa platyacantha",
+      "url": "https://powo.science.kew.org/"
+    },
+    {
+      "title": "GBIF — Rosa platyacantha, Қазақстан бойынша кездесу деректері",
+      "url": "https://www.gbif.org/"
+    },
+    {
+      "title": "Қазақстан флорасы. Алматы: Ғылым",
+      "url": null
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "slug": "atraphaxis-muschketowii",
+  "name": {
+    "kk": "Мушкетов тұзаяғы",
+    "ru": "Курчавка Мушкетова",
+    "la": "Atraphaxis muschketowii"
+  },
+  "family": {
+    "kk": "Тарандар",
+    "la": "Polygonaceae"
+  },
+  "status": {
+    "redBookKz": "II",
+    "iucn": null,
+    "endemic": "kz",
+    "rarity": "Өте сирек, тек Іле Алатауының батыс бөктерінде"
+  },
+  "habitat": [
+    "rocky",
+    "steppe",
+    "shrubland"
+  ],
+  "description": {
+    "summary": "Іле Алатауының тасты бөктерінде ғана өсетін Қазақстан эндемигі — тар ареалды реликт бұта.",
+    "morphology": "Биіктігі 0,5–1,5 м бұта. Бұтақтары бұралаң, ақшыл сұр қабықты. Жапырақтары ұсақ, қалың, көкшіл реңді. Гүлдері ақшыл-қызғылт, шашақ гүлшоғырында. Жемісі үш қырлы, қанатты жаңғақша.",
+    "habitat": "700–1500 м биіктіктегі қиыршық тасты және малта тасты бөктерлер, құрғақ сайлардың беткейлері.",
+    "phenology": "Мамыр–маусымда гүлдейді, тамызда жемісі піседі.",
+    "uses": "Эндемик ретінде ғылыми құндылығы жоғары; эрозияға қарсы бекітуші бұта.",
+    "threats": "Карьерлер мен құрылыс, ареалының тарлығы, мал жаю, жол салу."
+  },
+  "bioIndicator": {
+    "isIndicator": true,
+    "indicates": [
+      "soil-erosion",
+      "grazing-pressure"
+    ],
+    "scores": {
+      "moisture": 1,
+      "salinity": 2,
+      "soilPh": 7.7,
+      "grazing": 3,
+      "pollutionTolerance": 2
+    },
+    "note": "Тасты беткейлердің тұрақтылығын көрсетеді: тамыр жүйесі майда топырақты ұстап тұрады, жойылған жерде эрозия күшейеді."
+  },
+  "locations": [
+    {
+      "zoneId": "ile-alatau",
+      "label": "Қарасай ауданы, Іле Алатауының батыс бөктері",
+      "lat": 43.0462,
+      "lon": 76.7827,
+      "precision": "exact",
+      "source": "GBIF occurrence 6234329283",
+      "sourceUrl": "https://www.gbif.org/occurrence/6234329283"
+    },
+    {
+      "zoneId": "ile-alatau",
+      "label": "Іле Алатауының солтүстік етегі, Қарғалы маңы",
+      "lat": 43.1701,
+      "lon": 76.644,
+      "precision": "exact",
+      "source": "GBIF occurrence 6234439839",
+      "sourceUrl": "https://www.gbif.org/occurrence/6234439839"
+    }
+  ],
+  "photo": {
+    "file": "atraphaxis-muschketowii.webp",
+    "author": "(c) Alexander Dubynin",
+    "license": "CC BY 4.0",
+    "url": "https://www.inaturalist.org/photos/496712322"
+  },
+  "sources": [
+    {
+      "title": "Қазақстан Республикасының Қызыл кітабы. 2-том: Өсімдіктер. Алматы, 2014",
+      "url": null
+    },
+    {
+      "title": "Plants of the World Online — Atraphaxis muschketowii",
+      "url": "https://powo.science.kew.org/"
+    },
+    {
+      "title": "GBIF — Atraphaxis muschketowii, Қазақстан бойынша кездесу деректері",
+      "url": "https://www.gbif.org/"
+    }
+  ]
+}

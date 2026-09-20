@@ -1,0 +1,86 @@
+{
+  "slug": "stipa-capillata",
+  "name": {
+    "kk": "Қылқан бозы",
+    "ru": "Ковыль волосатик (тырса)",
+    "la": "Stipa capillata"
+  },
+  "family": {
+    "kk": "Астықтұқымдастар",
+    "la": "Poaceae"
+  },
+  "status": {
+    "redBookKz": null,
+    "iucn": null,
+    "endemic": null,
+    "rarity": "Далалық белдеуде кең таралған, бірақ бүтін дала аз қалған"
+  },
+  "habitat": [
+    "steppe",
+    "rocky",
+    "shrubland"
+  ],
+  "description": {
+    "summary": "Бүтін даланың негізгі түрі: бозды қауымдастықтың сақталуы жердің жыртылмағанын көрсетеді.",
+    "morphology": "Биіктігі 40–80 см тығыз шоқ түзетін көпжылдық. Жапырақтары жіңішке, орамалданған. Гүлшоғыры — тар сеппе; қылтанағы ұзын, түксіз, бұралған.",
+    "habitat": "Құрғақ дала, тау етегіндегі беткейлер, тасты дала; 500–2000 м.",
+    "phenology": "Маусым–шілдеде гүлдейді, шілде–тамызда тұқымы піседі.",
+    "uses": "Көктемгі-жазғы жайылым азығы, топырақты эрозиядан қорғайды, дала экожүйесінің негізі.",
+    "threats": "Жер жырту, шамадан тыс жайылым, өрт, дала алқаптарының бөлшектенуі."
+  },
+  "bioIndicator": {
+    "isIndicator": true,
+    "indicates": [
+      "grazing-pressure",
+      "soil-erosion"
+    ],
+    "scores": {
+      "moisture": 2,
+      "salinity": 1,
+      "soilPh": 7.4,
+      "grazing": 2,
+      "pollutionTolerance": 2
+    },
+    "note": "Боз шоқтарының сиреп, орнын жусан мен эфемер басуы жайылым қысымының шектен асқанын көрсетеді."
+  },
+  "locations": [
+    {
+      "zoneId": "ketmen",
+      "label": "Кеген ауданы, таулы дала белдеуі",
+      "lat": 42.94,
+      "lon": 79.2919,
+      "precision": "exact",
+      "source": "GBIF occurrence 6498804501",
+      "sourceUrl": "https://www.gbif.org/occurrence/6498804501"
+    },
+    {
+      "zoneId": "ketmen",
+      "label": "Райымбек ауданы, Кетмен жотасының етегі",
+      "lat": 43.1137,
+      "lon": 79.6042,
+      "precision": "exact",
+      "source": "GBIF occurrence 6481216931",
+      "sourceUrl": "https://www.gbif.org/occurrence/6481216931"
+    }
+  ],
+  "photo": {
+    "file": "stipa-capillata.webp",
+    "author": "Daderot",
+    "license": "Public domain",
+    "url": "https://commons.wikimedia.org/wiki/File:Stipa_capillata_-_Berlin_Botanical_Garden_-_IMG_8582.JPG"
+  },
+  "sources": [
+    {
+      "title": "Plants of the World Online — Stipa capillata",
+      "url": "https://powo.science.kew.org/"
+    },
+    {
+      "title": "GBIF — Stipa capillata, Қазақстан бойынша кездесу деректері",
+      "url": "https://www.gbif.org/"
+    },
+    {
+      "title": "Қазақстан флорасы. Алматы: Ғылым",
+      "url": null
+    }
+  ]
+}

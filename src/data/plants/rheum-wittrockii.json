@@ -1,0 +1,86 @@
+{
+  "slug": "rheum-wittrockii",
+  "name": {
+    "kk": "Виттрок рауғашы",
+    "ru": "Ревень Виттрока",
+    "la": "Rheum wittrockii"
+  },
+  "family": {
+    "kk": "Тарандар",
+    "la": "Polygonaceae"
+  },
+  "status": {
+    "redBookKz": "III",
+    "iucn": null,
+    "endemic": "regional",
+    "rarity": "Сирек, дайындау салдарынан қолжетімді жерлерде азайған"
+  },
+  "habitat": [
+    "mountain-forest",
+    "shrubland",
+    "alpine"
+  ],
+  "description": {
+    "summary": "Тянь-Шань тауларының ірі жапырақты рауғашы — халық арасында тағамға жиналуы салдарынан саны азайған түр.",
+    "morphology": "Биіктігі 60–150 см. Тамыры жуан, ағаштанған. Түбірлік жапырақтары өте ірі, жүрек тәрізді, шеті толқынды. Гүлшоғыры сеппелі, гүлдері ұсақ, ақшыл-жасыл. Жемісі үш қырлы, қанатты.",
+    "habitat": "1500–2800 м биіктіктегі шырша ормандарының шеті, субальпі шалғындары, тасты беткейлер.",
+    "phenology": "Маусым–шілдеде гүлдейді, тамызда тұқымы піседі.",
+    "uses": "Жапырақ сағағы тағамға пайдаланылады, тамырында илік және дәрілік заттар бар.",
+    "threats": "Жаппай дайындау, тамырын қазу, жайылым қысымы, орман шетін игеру."
+  },
+  "bioIndicator": {
+    "isIndicator": true,
+    "indicates": [
+      "soil-moisture",
+      "grazing-pressure"
+    ],
+    "scores": {
+      "moisture": 3,
+      "salinity": 1,
+      "soilPh": 6.6,
+      "grazing": 2,
+      "pollutionTolerance": 2
+    },
+    "note": "Ірі особьтардың жоғалып, тек жас өсімдіктердің қалуы жаппай дайындаудың айқын белгісі."
+  },
+  "locations": [
+    {
+      "zoneId": "ile-alatau",
+      "label": "Іле Алатауы, Кіші Алматы шатқалы",
+      "lat": 43.1037,
+      "lon": 76.9326,
+      "precision": "exact",
+      "source": "GBIF occurrence 6251785268",
+      "sourceUrl": "https://www.gbif.org/occurrence/6251785268"
+    },
+    {
+      "zoneId": "zhongar-alatau",
+      "label": "Жоңғар Алатауының орманды белдеуі",
+      "lat": 45.2,
+      "lon": 80.2,
+      "precision": "zone",
+      "source": "Аймақтық таралу деректері бойынша",
+      "sourceUrl": null
+    }
+  ],
+  "photo": {
+    "file": "rheum-wittrockii.webp",
+    "author": "(c) Aleksandr Naumenko",
+    "license": "CC BY-NC 4.0",
+    "url": "https://www.inaturalist.org/photos/107490290"
+  },
+  "sources": [
+    {
+      "title": "Қазақстан Республикасының Қызыл кітабы. 2-том: Өсімдіктер. Алматы, 2014",
+      "url": null
+    },
+    {
+      "title": "Plants of the World Online — Rheum wittrockii",
+      "url": "https://powo.science.kew.org/"
+    },
+    {
+      "title": "GBIF — Rheum wittrockii, Қазақстан бойынша кездесу деректері",
+      "url": "https://www.gbif.org/"
+    }
+  ]
+}

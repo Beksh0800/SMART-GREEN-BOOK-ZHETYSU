@@ -1,0 +1,86 @@
+{
+  "slug": "nitraria-sibirica",
+  "name": {
+    "kk": "Сібір тікенқарақаты",
+    "ru": "Селитрянка сибирская",
+    "la": "Nitraria sibirica"
+  },
+  "family": {
+    "kk": "Тікенқарақаттар",
+    "la": "Nitrariaceae"
+  },
+  "status": {
+    "redBookKz": null,
+    "iucn": null,
+    "endemic": null,
+    "rarity": "Сор жерлерде жиі, бірақ таралуы шектеулі"
+  },
+  "habitat": [
+    "saline",
+    "desert",
+    "wetland"
+  ],
+  "description": {
+    "summary": "Сор топырақтың классикалық галофиті: тұз жиналған жерлерде төмпешік түзеді.",
+    "morphology": "Биіктігі 0,5–1,5 м жатаған бұта. Бұтақтары тікенді, иілген. Жапырақтары етженді, қалың, сына тәрізді. Жемісі шырынды, қызғылт-қара, тұздылау дәмді.",
+    "habitat": "Сор және сортаң жерлер, көл жағалаулары, тұзды төмпешіктер; 340–900 м.",
+    "phenology": "Мамыр–маусымда гүлдейді, тамызда жемісі піседі.",
+    "uses": "Тұзды жерлерді бекітеді, жемісі құстардың азығы, дәрілік маңызы бар.",
+    "threats": "Тікелей қауіп жоқ; тұзданған жерлердің кеңеюі түрдің аумағын ұлғайтады."
+  },
+  "bioIndicator": {
+    "isIndicator": true,
+    "indicates": [
+      "salinity",
+      "groundwater"
+    ],
+    "scores": {
+      "moisture": 3,
+      "salinity": 5,
+      "soilPh": 8.5,
+      "grazing": 4,
+      "pollutionTolerance": 5
+    },
+    "note": "Нитрария төмпешіктерінің пайда болуы топырақ бетінде тұздың жиналып, буланудың басым болғанын көрсетеді."
+  },
+  "locations": [
+    {
+      "zoneId": "ile-valley",
+      "label": "Іле ауданы, сор жерлер",
+      "lat": 43.8835,
+      "lon": 76.3294,
+      "precision": "exact",
+      "source": "GBIF occurrence 4162354531",
+      "sourceUrl": "https://www.gbif.org/occurrence/4162354531"
+    },
+    {
+      "zoneId": "balkhash-sands",
+      "label": "Балқаш ауданы, көл маңындағы сор",
+      "lat": 44.8863,
+      "lon": 76.0414,
+      "precision": "exact",
+      "source": "GBIF occurrence 4120941533",
+      "sourceUrl": "https://www.gbif.org/occurrence/4120941533"
+    }
+  ],
+  "photo": {
+    "file": "nitraria-sibirica.webp",
+    "author": "(c) Алексей Эбель",
+    "license": "CC BY-NC 4.0",
+    "url": "https://www.inaturalist.org/photos/703083663"
+  },
+  "sources": [
+    {
+      "title": "Plants of the World Online — Nitraria sibirica",
+      "url": "https://powo.science.kew.org/"
+    },
+    {
+      "title": "GBIF — Nitraria sibirica, Қазақстан бойынша кездесу деректері",
+      "url": "https://www.gbif.org/"
+    },
+    {
+      "title": "Қазақстан флорасы. Алматы: Ғылым",
+      "url": null
+    }
+  ]
+}

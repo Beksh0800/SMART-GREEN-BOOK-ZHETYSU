@@ -1,0 +1,95 @@
+{
+  "slug": "tulipa-kolpakowskiana",
+  "name": {
+    "kk": "Колпаков қызғалдағы",
+    "ru": "Тюльпан Колпаковского",
+    "la": "Tulipa kolpakowskiana"
+  },
+  "family": {
+    "kk": "Лалагүлдер",
+    "la": "Liliaceae"
+  },
+  "status": {
+    "redBookKz": "III",
+    "iucn": null,
+    "endemic": "regional",
+    "rarity": "Сирек кездеседі, популяциялары шағын және бір-бірінен алшақ"
+  },
+  "habitat": [
+    "steppe",
+    "rocky",
+    "shrubland"
+  ],
+  "description": {
+    "summary": "Жетісу Алатауы мен Іле Алатауының тау бөктерлеріне тән, көктемде ең ерте гүлдейтін сирек қызғалдақ түрі.",
+    "morphology": "Биіктігі 15–30 см көпжылдық пиязшықты өсімдік. Жапырақтары 2–3, сызықты-ланцет тәрізді, көкшіл реңді, шеті толқынды. Гүлі жалғыз, сары немесе қызғылт-сары түсті, сыртқы жағында жасыл-қола жолағы бар. Пиязшығының қабығы қара қоңыр, ішкі жағы түкті.",
+    "habitat": "Теңіз деңгейінен 800–2000 м биіктіктегі тау бөктерлері, қиыршық тасты беткейлер, бұталы дала және лёсті адырлар. Жақсы жылынатын оңтүстік беткейлерді таңдайды.",
+    "phenology": "Сәуір айының басынан мамырдың ортасына дейін гүлдейді, маусымда жеміс салады. Жазда жер үсті мүшелері толық қурап, пиязшық күйінде тыныштық кезеңіне өтеді.",
+    "uses": "Әлемдік селекцияда қолданылатын бағалы бастапқы материал — көптеген мәдени қызғалдақ сорттарының арғы тегі. Сәндік өсімдік ретінде жоғары бағаланады.",
+    "threats": "Гүлдеу кезінде жаппай жұлу, пиязшықтарын қазып алу, мал жаю, тау бөктерлерін жырту және жер телімдерін игеру."
+  },
+  "bioIndicator": {
+    "isIndicator": true,
+    "indicates": [
+      "grazing-pressure",
+      "soil-erosion"
+    ],
+    "scores": {
+      "moisture": 2,
+      "salinity": 1,
+      "soilPh": 7.4,
+      "grazing": 1,
+      "pollutionTolerance": 2
+    },
+    "note": "Жайылым қысымының нәзік индикаторы: мал тығыздығы артқан беткейлерде алғашқылардың бірі болып жоғалады. Популяциясының сақталуы жердің бұзылмағанын көрсетеді."
+  },
+  "locations": [
+    {
+      "zoneId": "ketmen",
+      "label": "Ұйғыр ауданы, Кетмен жотасының батыс етегі",
+      "lat": 43.5095,
+      "lon": 80.3315,
+      "precision": "exact",
+      "source": "GBIF occurrence 6187924737",
+      "sourceUrl": "https://www.gbif.org/occurrence/6187924737"
+    },
+    {
+      "zoneId": "ile-valley",
+      "label": "Іле ауданы, өзен аңғарының тасты беткейлері",
+      "lat": 43.6291,
+      "lon": 76.7958,
+      "precision": "exact",
+      "source": "GBIF occurrence 6188130121",
+      "sourceUrl": "https://www.gbif.org/occurrence/6188130121"
+    },
+    {
+      "zoneId": "ile-alatau",
+      "label": "Еңбекшіқазақ ауданы, Іле Алатауының солтүстік бөктері",
+      "lat": 43.4136,
+      "lon": 77.3738,
+      "precision": "exact",
+      "source": "GBIF occurrence 6188084733",
+      "sourceUrl": "https://www.gbif.org/occurrence/6188084733"
+    }
+  ],
+  "photo": {
+    "file": "tulipa-kolpakowskiana.webp",
+    "author": "Ghislain118 http://www.fleurs-des-montagnes.net",
+    "license": "CC BY-SA 3.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Tulipa_kolpakowskiana_4.JPG"
+  },
+  "sources": [
+    {
+      "title": "Қазақстан Республикасының Қызыл кітабы. 2-том: Өсімдіктер. Алматы, 2014",
+      "url": null
+    },
+    {
+      "title": "Plants of the World Online — Tulipa kolpakowskiana",
+      "url": "https://powo.science.kew.org/"
+    },
+    {
+      "title": "GBIF — Tulipa kolpakowskiana, Қазақстан бойынша кездесу деректері",
+      "url": "https://www.gbif.org/"
+    }
+  ]
+}

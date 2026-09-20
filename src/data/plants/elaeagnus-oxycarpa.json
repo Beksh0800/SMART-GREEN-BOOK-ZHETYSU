@@ -1,0 +1,86 @@
+{
+  "slug": "elaeagnus-oxycarpa",
+  "name": {
+    "kk": "Жиде",
+    "ru": "Лох остроплодный",
+    "la": "Elaeagnus oxycarpa"
+  },
+  "family": {
+    "kk": "Жиделер",
+    "la": "Elaeagnaceae"
+  },
+  "status": {
+    "redBookKz": null,
+    "iucn": null,
+    "endemic": null,
+    "rarity": "Жиі, тоғай мен суармалы алқаптарда кең таралған"
+  },
+  "habitat": [
+    "riparian",
+    "saline",
+    "desert"
+  ],
+  "description": {
+    "summary": "Тоғай ормандарының тұзға төзімді ағашы — топырақтың тұздану дәрежесін көрсететін түр.",
+    "morphology": "Биіктігі 4–10 м ағаш. Бұтақтарында тікендері бар, жас өркендері күміс қабыршақпен жабылған. Жапырақтары сызықты-ланцет тәрізді, күмістей жылтыр. Гүлдері ұсақ, сары, хош иісті. Жемісі сопақ, ұннан жасалғандай құрғақ, тәтті.",
+    "habitat": "Өзен аңғарлары, суармалы жерлердің шеті, сортаң топырақты жазықтар; 350–1200 м.",
+    "phenology": "Мамыр–маусымда гүлдейді, қыркүйек–қазанда жемісі піседі.",
+    "uses": "Жемісі тағамдық, ағашы отын және құрылысқа; топырақты азотпен байытады, жел өтіне қорғаныш жолақ ретінде отырғызылады.",
+    "threats": "Тоғайларды кесу, су режимінің өзгеруі, ауылшаруашылық жерлерді кеңейту."
+  },
+  "bioIndicator": {
+    "isIndicator": true,
+    "indicates": [
+      "salinity",
+      "groundwater"
+    ],
+    "scores": {
+      "moisture": 3,
+      "salinity": 4,
+      "soilPh": 8.1,
+      "grazing": 4,
+      "pollutionTolerance": 4
+    },
+    "note": "Тұзданған топыраққа төзімді: тоғайда жиденің үлесі артуы топырақ тұздануының күшейгенін көрсетеді."
+  },
+  "locations": [
+    {
+      "zoneId": "ile-valley",
+      "label": "Іле ауданы, өзен аңғарындағы тоғай",
+      "lat": 43.6864,
+      "lon": 76.8779,
+      "precision": "exact",
+      "source": "GBIF occurrence 6253119001",
+      "sourceUrl": "https://www.gbif.org/occurrence/6253119001"
+    },
+    {
+      "zoneId": "ile-valley",
+      "label": "Еңбекшіқазақ ауданы, Іле жайылмасы",
+      "lat": 43.4177,
+      "lon": 77.2545,
+      "precision": "exact",
+      "source": "GBIF occurrence 6159357343",
+      "sourceUrl": "https://www.gbif.org/occurrence/6159357343"
+    }
+  ],
+  "photo": {
+    "file": "elaeagnus-oxycarpa.webp",
+    "author": "chernoburko",
+    "license": "CC BY 2.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Elaeagnus_oxycarpa_-_36279992725.jpg"
+  },
+  "sources": [
+    {
+      "title": "Plants of the World Online — Elaeagnus oxycarpa",
+      "url": "https://powo.science.kew.org/"
+    },
+    {
+      "title": "GBIF — Elaeagnus oxycarpa, Қазақстан бойынша кездесу деректері",
+      "url": "https://www.gbif.org/"
+    },
+    {
+      "title": "Қазақстан флорасы. Алматы: Ғылым",
+      "url": null
+    }
+  ]
+}

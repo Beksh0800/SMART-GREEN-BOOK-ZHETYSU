@@ -1,0 +1,85 @@
+{
+  "slug": "leontice-incerta",
+  "name": {
+    "kk": "Күмәнді леонтица",
+    "ru": "Леонтица сомнительная",
+    "la": "Leontice incerta"
+  },
+  "family": {
+    "kk": "Сарыағаштар",
+    "la": "Berberidaceae"
+  },
+  "status": {
+    "redBookKz": "III",
+    "iucn": null,
+    "endemic": "regional",
+    "rarity": "Сирек, шөл аймағындағы оқшау популяциялар түрінде"
+  },
+  "habitat": [
+    "desert",
+    "steppe"
+  ],
+  "description": {
+    "summary": "Шөлдің ерте көктемгі эфемероиді: сары гүлдейді, мамырда жер үсті бөлігі толық жоғалады.",
+    "morphology": "Биіктігі 10–25 см, ірі түйнекті көпжылдық. Сабағы етженді, жапырақтары көкшіл-жасыл, үш бөлікке тілімделген. Гүлшоғыры шашақ тәрізді, гүлдері ашық сары. Жемісі — қуық тәрізді ісінген қауашақ.",
+    "habitat": "Сазды және лёсті шөлдер, шөлейт жазықтар мен аласа таулардың етегі; 400–900 м биіктік.",
+    "phenology": "Наурыз–сәуірде гүлдейді, мамырдың басында жеміс беріп, вегетациясын аяқтайды.",
+    "uses": "Шөл экожүйесінің сирек компоненті, ғылыми және генетикалық құндылығы бар.",
+    "threats": "Жер жырту, шамадан тыс жайылым, шөл жерлерді игеру."
+  },
+  "bioIndicator": {
+    "isIndicator": true,
+    "indicates": [
+      "grazing-pressure",
+      "soil-erosion"
+    ],
+    "scores": {
+      "moisture": 1,
+      "salinity": 2,
+      "soilPh": 7.8,
+      "grazing": 1,
+      "pollutionTolerance": 2
+    },
+    "note": "Тек тапталмаған, тығыздалмаған топырақта сақталады — шөл жайылымының жағдайын дәл көрсетеді."
+  },
+  "locations": [
+    {
+      "zoneId": "shu-ile",
+      "label": "Шу-Іле тауларының етегі, Жамбыл ауданы",
+      "lat": 44.3072,
+      "lon": 75.6396,
+      "precision": "exact",
+      "source": "GBIF occurrence 5108455537",
+      "sourceUrl": "https://www.gbif.org/occurrence/5108455537"
+    },
+    {
+      "zoneId": "shu-ile",
+      "label": "Мойынқұм шеті, Жамбыл ауданы",
+      "lat": 44.4522,
+      "lon": 75.1106,
+      "precision": "exact",
+      "source": "GBIF occurrence 4863514223",
+      "sourceUrl": "https://www.gbif.org/occurrence/4863514223"
+    }
+  ],
+  "photo": {
+    "file": "leontice-incerta.webp",
+    "author": "Ю. Данилевский",
+    "license": "CC BY-SA 3.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Leontice_incerta_Baikonur_02.jpg"
+  },
+  "sources": [
+    {
+      "title": "Қазақстан Республикасының Қызыл кітабы. 2-том: Өсімдіктер. Алматы, 2014",
+      "url": null
+    },
+    {
+      "title": "Plants of the World Online — Leontice incerta",
+      "url": "https://powo.science.kew.org/"
+    },
+    {
+      "title": "GBIF — Leontice incerta, Қазақстан бойынша кездесу деректері",
+      "url": "https://www.gbif.org/"
+    }
+  ]
+}

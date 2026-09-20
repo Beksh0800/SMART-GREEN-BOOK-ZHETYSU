@@ -1,0 +1,86 @@
+{
+  "slug": "ephedra-equisetina",
+  "name": {
+    "kk": "Қылша",
+    "ru": "Эфедра хвощевая",
+    "la": "Ephedra equisetina"
+  },
+  "family": {
+    "kk": "Қылшалар",
+    "la": "Ephedraceae"
+  },
+  "status": {
+    "redBookKz": null,
+    "iucn": null,
+    "endemic": null,
+    "rarity": "Жиі емес, дәрілік шикізат ретінде жинау қорын азайтқан"
+  },
+  "habitat": [
+    "rocky",
+    "desert",
+    "steppe"
+  ],
+  "description": {
+    "summary": "Тасты беткейлердің реликт бұтасы — тік жартастардағы топырақ қабатын ұстап тұратын түр.",
+    "morphology": "Биіктігі 0,5–1,5 м бұта. Бұтақтары жасыл, буындалған, қырықбуынға ұқсас. Жапырақтары редукцияланған, қабыршақ тәрізді. Аналық бүрлері жеміс кезінде етженді, қызыл болады.",
+    "habitat": "Тасты және жартасты беткейлер, шатқалдардың жоғарғы жағы, қиыршық тасты шөлейт; 600–2500 м.",
+    "phenology": "Мамыр–маусымда тозаңданады, шілде–тамызда бүрлері піседі.",
+    "uses": "Алкалоидқа бай дәрілік шикізат, тасты беткейлерді бекітеді, жабайы жануарлардың қысқы азығы.",
+    "threats": "Дәрілік шикізат үшін жаппай жинау, карьерлер, өрт, мал жаю."
+  },
+  "bioIndicator": {
+    "isIndicator": true,
+    "indicates": [
+      "soil-erosion",
+      "air-pollution"
+    ],
+    "scores": {
+      "moisture": 1,
+      "salinity": 2,
+      "soilPh": 7.8,
+      "grazing": 3,
+      "pollutionTolerance": 3
+    },
+    "note": "Баяу өседі және нашар қалпына келеді: жиналған жерлерде популяция ондаған жылдар бойы қалпына келмейді."
+  },
+  "locations": [
+    {
+      "zoneId": "altyn-emel",
+      "label": "Алтын-Емел ҰТП, тасты беткейлер",
+      "lat": 43.8786,
+      "lon": 77.8711,
+      "precision": "exact",
+      "source": "GBIF occurrence 6333895527",
+      "sourceUrl": "https://www.gbif.org/occurrence/6333895527"
+    },
+    {
+      "zoneId": "zhongar-alatau",
+      "label": "Ақсу ауданы, Жоңғар Алатауының етегі",
+      "lat": 45.3301,
+      "lon": 79.2519,
+      "precision": "exact",
+      "source": "GBIF occurrence 6334354859",
+      "sourceUrl": "https://www.gbif.org/occurrence/6334354859"
+    }
+  ],
+  "photo": {
+    "file": "ephedra-equisetina.webp",
+    "author": "Cheryll williams",
+    "license": "Public domain",
+    "url": "https://commons.wikimedia.org/wiki/File:Ephedra_equisetina.485M.jpg"
+  },
+  "sources": [
+    {
+      "title": "Plants of the World Online — Ephedra equisetina",
+      "url": "https://powo.science.kew.org/"
+    },
+    {
+      "title": "GBIF — Ephedra equisetina, Қазақстан бойынша кездесу деректері",
+      "url": "https://www.gbif.org/"
+    },
+    {
+      "title": "Қазақстан флорасы. Алматы: Ғылым",
+      "url": null
+    }
+  ]
+}

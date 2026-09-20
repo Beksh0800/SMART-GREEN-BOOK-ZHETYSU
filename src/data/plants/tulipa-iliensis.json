@@ -1,0 +1,86 @@
+{
+  "slug": "tulipa-iliensis",
+  "name": {
+    "kk": "Іле қызғалдағы",
+    "ru": "Тюльпан илийский",
+    "la": "Tulipa iliensis"
+  },
+  "family": {
+    "kk": "Лалагүлдер",
+    "la": "Liliaceae"
+  },
+  "status": {
+    "redBookKz": "III",
+    "iucn": null,
+    "endemic": "regional",
+    "rarity": "Өте сирек, Жетісу бойынша санаулы табылу орны белгілі"
+  },
+  "habitat": [
+    "desert",
+    "steppe",
+    "rocky"
+  ],
+  "description": {
+    "summary": "Іле өзені алабының шөлді жазықтарына тән, ең ерте гүлдейтін ұсақ сары қызғалдақ.",
+    "morphology": "Биіктігі 10–20 см, шағын өсімдік. Жапырақтары 3–4, сызықты-ланцет тәрізді, көкшіл. Гүлі сары, сыртқы жағында қола-жасыл жолағы бар, диаметрі 3–4 см.",
+    "habitat": "Құмды және сазды шөлдер, тақыр шеттері, аласа таулардың етегі; 400–1200 м биіктік.",
+    "phenology": "Наурыздың аяғы — сәуірде гүлдейді, мамырдың ортасында жемісі піседі.",
+    "uses": "Шөл өсімдіктерінің генетикалық қоры, сәндік түр ретінде мәні бар.",
+    "threats": "Жайылымның тозуы, жер жырту, гүлін жұлу, шөл жерлерді игеру."
+  },
+  "bioIndicator": {
+    "isIndicator": true,
+    "indicates": [
+      "grazing-pressure",
+      "soil-erosion"
+    ],
+    "scores": {
+      "moisture": 1,
+      "salinity": 2,
+      "soilPh": 7.8,
+      "grazing": 1,
+      "pollutionTolerance": 2
+    },
+    "note": "Шөл жайылымдарының тозу дәрежесін көрсетеді: тығыз мал жайылған жерде толық жоғалады."
+  },
+  "locations": [
+    {
+      "zoneId": "charyn",
+      "label": "Шарын өзені аңғарының шөлді бөлігі",
+      "lat": 43.3317,
+      "lon": 79.4832,
+      "precision": "exact",
+      "source": "GBIF occurrence 1798987336",
+      "sourceUrl": "https://www.gbif.org/occurrence/1798987336"
+    },
+    {
+      "zoneId": "ketmen",
+      "label": "Кетмен жотасының етегі, Қорам өзені маңы",
+      "lat": 43.0307,
+      "lon": 79.7024,
+      "precision": "exact",
+      "source": "GBIF occurrence 6360125840",
+      "sourceUrl": "https://www.gbif.org/occurrence/6360125840"
+    }
+  ],
+  "photo": {
+    "file": "tulipa-iliensis.webp",
+    "author": "(c) eec",
+    "license": "CC BY-NC 4.0",
+    "url": "https://www.inaturalist.org/photos/278414290"
+  },
+  "sources": [
+    {
+      "title": "Қазақстан Республикасының Қызыл кітабы. 2-том: Өсімдіктер. Алматы, 2014",
+      "url": null
+    },
+    {
+      "title": "Plants of the World Online — Tulipa iliensis",
+      "url": "https://powo.science.kew.org/"
+    },
+    {
+      "title": "GBIF — Tulipa iliensis, Қазақстан бойынша кездесу деректері",
+      "url": "https://www.gbif.org/"
+    }
+  ]
+}

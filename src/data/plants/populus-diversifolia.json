@@ -1,0 +1,87 @@
+{
+  "slug": "populus-diversifolia",
+  "name": {
+    "kk": "Тораңғы",
+    "ru": "Тополь разнолистный (туранга)",
+    "la": "Populus diversifolia"
+  },
+  "family": {
+    "kk": "Талдар",
+    "la": "Salicaceae"
+  },
+  "status": {
+    "redBookKz": "III",
+    "iucn": null,
+    "endemic": null,
+    "rarity": "Сирек, тораңғы тоғайларының ауданы күрт қысқарған"
+  },
+  "habitat": [
+    "riparian",
+    "desert",
+    "saline"
+  ],
+  "description": {
+    "summary": "Шөл өзендерінің тоғайын түзетін бірегей терек: жер асты суына жетіп, тұзды топырақта өседі.",
+    "morphology": "Биіктігі 5–15 м ағаш. Діңі қисық, қабығы жуан, терең жарықшақты. Жапырақтары әртүрлі пішінді: жас бұтақтарда сызықты, ересек бұтақтарда жүрек немесе теріс жұмыртқа тәрізді — түр атауы осыдан.",
+    "habitat": "Өзен аңғарларының құмды-сазды террассалары, жер асты суы 3–8 м тереңдіктегі тұзданған топырақ; 340–800 м.",
+    "phenology": "Сәуірде тозаңданады, маусым–шілдеде тұқымы шашырайды. Тамыр өркені арқылы да көбейеді.",
+    "uses": "Шөлейттенуге қарсы басты ағаш, құмды бекітеді, тоғай экожүйесінің негізі, отын және құрылыс материалы.",
+    "threats": "Су режимінің өзгеруі, жер асты суының төмендеуі, отынға кесу, өрт, мал жаю."
+  },
+  "bioIndicator": {
+    "isIndicator": true,
+    "indicates": [
+      "groundwater",
+      "salinity",
+      "soil-erosion"
+    ],
+    "scores": {
+      "moisture": 3,
+      "salinity": 4,
+      "soilPh": 8,
+      "grazing": 3,
+      "pollutionTolerance": 4
+    },
+    "note": "Тораңғы тоғайының жаппай қурауы жер асты суының 8–10 м-ден төмен түскенін және топырақ тұздануының күшейгенін білдіреді."
+  },
+  "locations": [
+    {
+      "zoneId": "balkhash-sands",
+      "label": "Балқаш ауданы, Іле атырауындағы тораңғы тоғайы",
+      "lat": 45.0785,
+      "lon": 75.6033,
+      "precision": "exact",
+      "source": "GBIF occurrence 6234343637",
+      "sourceUrl": "https://www.gbif.org/occurrence/6234343637"
+    },
+    {
+      "zoneId": "ile-valley",
+      "label": "Іле өзенінің орта ағысы, Қонаев маңы",
+      "lat": 44.0794,
+      "lon": 76.9937,
+      "precision": "exact",
+      "source": "GBIF occurrence 6334163345",
+      "sourceUrl": "https://www.gbif.org/occurrence/6334163345"
+    }
+  ],
+  "photo": {
+    "file": "populus-diversifolia.webp",
+    "author": "Bogomolov.PL",
+    "license": "Public domain",
+    "url": "https://commons.wikimedia.org/wiki/File:Populus_diversifolia,_Ekhiin-Gol_oazis,_Shinejinst_sum,_Bayankhongor_province,_Mongolia,_Gobi_desert.JPG"
+  },
+  "sources": [
+    {
+      "title": "Қазақстан Республикасының Қызыл кітабы. 2-том: Өсімдіктер. Алматы, 2014",
+      "url": null
+    },
+    {
+      "title": "Plants of the World Online — Populus diversifolia",
+      "url": "https://powo.science.kew.org/"
+    },
+    {
+      "title": "GBIF — Populus diversifolia, Қазақстан бойынша кездесу деректері",
+      "url": "https://www.gbif.org/"
+    }
+  ]
+}

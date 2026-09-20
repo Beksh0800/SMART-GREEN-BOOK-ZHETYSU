@@ -1,0 +1,87 @@
+{
+  "slug": "artemisia-terrae-albae",
+  "name": {
+    "kk": "Ақ жусан",
+    "ru": "Полынь белоземельная",
+    "la": "Artemisia terrae-albae"
+  },
+  "family": {
+    "kk": "Күрделігүлділер",
+    "la": "Asteraceae"
+  },
+  "status": {
+    "redBookKz": null,
+    "iucn": null,
+    "endemic": null,
+    "rarity": "Шөлейт жазықтарда басым, кең таралған"
+  },
+  "habitat": [
+    "desert",
+    "steppe",
+    "saline"
+  ],
+  "description": {
+    "summary": "Шөлейт жайылымдарының негізгі түрі және олардың тозу дәрежесінің басты индикаторы.",
+    "morphology": "Биіктігі 20–40 см жартылай бұта. Сабағының төменгі бөлігі ағаштанған. Жапырақтары ұсақ, күміс-сұр, тығыз түкті, өткір иісті. Гүл себеттері ұсақ, сұр-сары, сеппе гүлшоғырында.",
+    "habitat": "Сазды және қиыршық тасты шөлейттер, тау етегіндегі жазықтар, сортаңдау топырақ; 340–1200 м.",
+    "phenology": "Тамыз–қыркүйекте гүлдейді, қазан–қарашада тұқымы піседі.",
+    "uses": "Күзгі-қысқы жайылымның ең маңызды азығы, эфир майына бай, дәрілік шикізат.",
+    "threats": "Шамадан тыс жайылым кезінде эфемерлермен және түйежапырақпен ауысады, жер жырту."
+  },
+  "bioIndicator": {
+    "isIndicator": true,
+    "indicates": [
+      "grazing-pressure",
+      "salinity",
+      "soil-erosion"
+    ],
+    "scores": {
+      "moisture": 1,
+      "salinity": 3,
+      "soilPh": 8,
+      "grazing": 3,
+      "pollutionTolerance": 4
+    },
+    "note": "Жусанды жайылымның эфемер-арамшөпті қауымдастыққа ауысуы жайылым сыйымдылығының асып кеткенін көрсетеді."
+  },
+  "locations": [
+    {
+      "zoneId": "ile-valley",
+      "label": "Іле жазығы, Алматы облысы",
+      "lat": 43.9043,
+      "lon": 77.7183,
+      "precision": "exact",
+      "source": "GBIF occurrence 2596192038",
+      "sourceUrl": "https://www.gbif.org/occurrence/2596192038"
+    },
+    {
+      "zoneId": "shu-ile",
+      "label": "Жамбыл ауданы, Тоғыз ауылы маңы",
+      "lat": 44.5007,
+      "lon": 74.6486,
+      "precision": "exact",
+      "source": "GBIF occurrence 2382576823",
+      "sourceUrl": "https://www.gbif.org/occurrence/2382576823"
+    }
+  ],
+  "photo": {
+    "file": "artemisia-terrae-albae.webp",
+    "author": "(c) ivansemenkov",
+    "license": "CC BY-NC 4.0",
+    "url": "https://www.inaturalist.org/photos/656021203"
+  },
+  "sources": [
+    {
+      "title": "Plants of the World Online — Artemisia terrae-albae",
+      "url": "https://powo.science.kew.org/"
+    },
+    {
+      "title": "GBIF — Artemisia terrae-albae, Қазақстан бойынша кездесу деректері",
+      "url": "https://www.gbif.org/"
+    },
+    {
+      "title": "Қазақстан флорасы. Алматы: Ғылым",
+      "url": null
+    }
+  ]
+}

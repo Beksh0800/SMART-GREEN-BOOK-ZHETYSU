@@ -1,0 +1,87 @@
+{
+  "slug": "juniperus-sabina",
+  "name": {
+    "kk": "Қазақ аршасы",
+    "ru": "Можжевельник казацкий",
+    "la": "Juniperus sabina"
+  },
+  "family": {
+    "kk": "Кипаристер",
+    "la": "Cupressaceae"
+  },
+  "status": {
+    "redBookKz": null,
+    "iucn": null,
+    "endemic": null,
+    "rarity": "Жиі, бірақ өрт пен кесуден аршалықтар азайған"
+  },
+  "habitat": [
+    "rocky",
+    "mountain-forest",
+    "shrubland",
+    "alpine"
+  ],
+  "description": {
+    "summary": "Тау беткейлерін эрозиядан қорғайтын жатаған арша — орман шекарасынан жоғары белдеудің негізгі түрі.",
+    "morphology": "Биіктігі 0,5–1,5 м жатаған бұта, жер бетімен кең жайылады. Жапырақтары қабыршақ тәрізді, үккенде өткір иісті. Бүрлері ұсақ, көкшіл-қара, ақ тозаңды.",
+    "habitat": "1200–2800 м биіктіктегі құрғақ тасты беткейлер, орман шекарасының жоғарғы белдеуі.",
+    "phenology": "Сәуір–мамырда тозаңданады, бүрлері екінші жылы күзде піседі. Өте баяу өседі.",
+    "uses": "Топырақ қорғаушы өсімдік, эфир майы, сәндік түр; малға улы.",
+    "threats": "Тау өрттері, отынға кесу, туристік жүктеме, баяу қалпына келуі."
+  },
+  "bioIndicator": {
+    "isIndicator": true,
+    "indicates": [
+      "soil-erosion",
+      "air-pollution"
+    ],
+    "scores": {
+      "moisture": 2,
+      "salinity": 1,
+      "soilPh": 7.2,
+      "grazing": 3,
+      "pollutionTolerance": 2
+    },
+    "note": "Аршалықтың жойылуы тік беткейлерде топырақ эрозиясы мен көшкіннің күшеюіне тікелей әкеледі; қалпына келуі 50 жылдан асады."
+  },
+  "locations": [
+    {
+      "zoneId": "alakol",
+      "label": "Алакөл ауданы, тау беткейлері",
+      "lat": 45.5746,
+      "lon": 80.8574,
+      "precision": "exact",
+      "source": "GBIF occurrence 6430907853",
+      "sourceUrl": "https://www.gbif.org/occurrence/6430907853"
+    },
+    {
+      "zoneId": "ketmen",
+      "label": "Райымбек ауданы, Кетмен жотасы",
+      "lat": 43.1143,
+      "lon": 79.6014,
+      "precision": "exact",
+      "source": "GBIF occurrence 6480975533",
+      "sourceUrl": "https://www.gbif.org/occurrence/6480975533"
+    }
+  ],
+  "photo": {
+    "file": "juniperus-sabina.webp",
+    "author": "Meneerke bloem",
+    "license": "CC BY-SA 3.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Juniperus_sabina_01.JPG"
+  },
+  "sources": [
+    {
+      "title": "Plants of the World Online — Juniperus sabina",
+      "url": "https://powo.science.kew.org/"
+    },
+    {
+      "title": "GBIF — Juniperus sabina, Қазақстан бойынша кездесу деректері",
+      "url": "https://www.gbif.org/"
+    },
+    {
+      "title": "Қазақстан флорасы. Алматы: Ғылым",
+      "url": null
+    }
+  ]
+}

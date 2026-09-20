@@ -1,0 +1,87 @@
+{
+  "slug": "phragmites-australis",
+  "name": {
+    "kk": "Кәдімгі қамыс",
+    "ru": "Тростник обыкновенный",
+    "la": "Phragmites australis"
+  },
+  "family": {
+    "kk": "Астықтұқымдастар",
+    "la": "Poaceae"
+  },
+  "status": {
+    "redBookKz": null,
+    "iucn": null,
+    "endemic": null,
+    "rarity": "Кең таралған, су көздерінің бойында басым"
+  },
+  "habitat": [
+    "wetland",
+    "riparian",
+    "saline"
+  ],
+  "description": {
+    "summary": "Сулы-батпақты жерлердің негізгі өсімдігі және судың деңгейі мен сапасының тікелей индикаторы.",
+    "morphology": "Биіктігі 1,5–4 м көпжылдық астық тұқымдасы. Тамырсабағы ұзын, жер астында тарайды. Сабағы қуыс, қатты. Жапырақтары жалпақ, сұр-жасыл. Гүлшоғыры ірі, күлгін-сұр сеппе.",
+    "habitat": "Көл жағалаулары, өзен атыраулары, арықтар, тұзданған батпақтар; 340–1500 м.",
+    "phenology": "Шілде–тамызда гүлдейді, күзде тұқымы піседі; негізінен тамырсабақ арқылы көбейеді.",
+    "uses": "Суды тазартады, жағаны бекітеді, мал азығы және құрылыс материалы, құстардың мекені.",
+    "threats": "Су көздерінің тартылуы, өрт, батпақтарды құрғату."
+  },
+  "bioIndicator": {
+    "isIndicator": true,
+    "indicates": [
+      "groundwater",
+      "soil-moisture",
+      "air-pollution"
+    ],
+    "scores": {
+      "moisture": 5,
+      "salinity": 3,
+      "soilPh": 7.8,
+      "grazing": 4,
+      "pollutionTolerance": 5
+    },
+    "note": "Қамыс алқабының шегінуі көл мен өзен деңгейінің төмендегенін, кеңеюі — суару суының жиналғанын немесе батпақтанудың күшейгенін көрсетеді."
+  },
+  "locations": [
+    {
+      "zoneId": "karatal",
+      "label": "Қаратал өзенінің атырауы",
+      "lat": 45.55,
+      "lon": 77.9,
+      "precision": "zone",
+      "source": "Аймақтық таралу деректері бойынша",
+      "sourceUrl": null
+    },
+    {
+      "zoneId": "ile-valley",
+      "label": "Іле өзенінің жайылмасы, Алматы облысы",
+      "lat": 43.4328,
+      "lon": 77.0789,
+      "precision": "exact",
+      "source": "GBIF occurrence 6178856109",
+      "sourceUrl": "https://www.gbif.org/occurrence/6178856109"
+    }
+  ],
+  "photo": {
+    "file": "phragmites-australis.webp",
+    "author": "Calle Eklund/V-wolf",
+    "license": "CC BY 3.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Phragmites_australis_Vikmanshyttesj%C3%B6n.jpg"
+  },
+  "sources": [
+    {
+      "title": "Plants of the World Online — Phragmites australis",
+      "url": "https://powo.science.kew.org/"
+    },
+    {
+      "title": "GBIF — Phragmites australis, Қазақстан бойынша кездесу деректері",
+      "url": "https://www.gbif.org/"
+    },
+    {
+      "title": "Қазақстан флорасы. Алматы: Ғылым",
+      "url": null
+    }
+  ]
+}

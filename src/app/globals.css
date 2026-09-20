@@ -1,0 +1,242 @@
+@import "tailwindcss";
+
+/* ============================================================
+   Zhetysu GreenMap — дизайн-токены
+   Палитра взята от ландшафта Жетісу: хвойные склоны Жоңғар Алатауы,
+   полынная степь, охра предгорий, бумага гербарного листа.
+   В компонентах хардкод-цветов быть не должно — только эти токены.
+   ============================================================ */
+
+@theme {
+  /* Основной — хвойный */
+  --color-forest-900: #12271f;
+  --color-forest-800: #1b3a2f;
+  --color-forest-700: #234a3b;
+  --color-forest-600: #2e5a48;
+  --color-forest-400: #5a8271;
+
+  /* Полынно-шалфейный */
+  --color-sage-600: #67765b;
+  --color-sage-500: #7c8c6f;
+  --color-sage-300: #a8b49c;
+  --color-sage-100: #dde2d5;
+
+  /* Охра предгорий — акцент */
+  --color-ochre-700: #8f6226;
+  --color-ochre-600: #a8742f;
+  --color-ochre-500: #c08a3e;
+  --color-ochre-200: #ebd9bc;
+  --color-ochre-100: #f4e9d6;
+
+  /* Бумага и текст */
+  --color-paper: #f7f5ef;
+  --color-paper-dim: #efebe1;
+  --color-paper-bright: #fdfcf8;
+  --color-graphite-900: #22201c;
+  --color-graphite-600: #55514a;
+  --color-graphite-400: #857f74;
+  --color-line: #e3dfd3;
+  --color-line-strong: #cfc9b8;
+
+  /* Шкала категорий Красной книги РК — научная нотация, не «ошибка/успех» */
+  --color-rb-1: #a03328;
+  --color-rb-2: #b85c2a;
+  --color-rb-3: #c08a3e;
+  --color-rb-4: #8d8a4a;
+  --color-rb-5: #6e7f5e;
+
+  /* Цвета серий в графиках модуля BioIndicator.
+     Пара проверена валидатором палитры: контраст к фону ≥ 3:1, ΔE ≥ 8
+     при протанопии и дейтеранопии. Зелёный + охра эту проверку не проходят,
+     поэтому вторая серия — «озёрный» синий (Балқаш, Алакөл). */
+  --color-series-a: #0a6e99;
+  --color-series-b: #a8742f;
+
+  /* Шрифты: оба с полной поддержкой казахской кириллицы (ә ғ қ ң ө ұ ү һ і) */
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-spectral), Georgia, "Times New Roman", serif;
+
+  /* Типографическая шкала 1.25 */
+  --text-2xs: 0.694rem;
+  --text-2xs--line-height: 1.4;
+  --text-xs: 0.8rem;
+  --text-xs--line-height: 1.45;
+  --text-sm: 0.875rem;
+  --text-sm--line-height: 1.55;
+  --text-base: 1rem;
+  --text-base--line-height: 1.6;
+  --text-lg: 1.25rem;
+  --text-lg--line-height: 1.5;
+  --text-xl: 1.5625rem;
+  --text-xl--line-height: 1.35;
+  --text-2xl: 1.953rem;
+  --text-2xl--line-height: 1.25;
+  --text-3xl: 2.441rem;
+  --text-3xl--line-height: 1.15;
+  --text-4xl: 3.052rem;
+  --text-4xl--line-height: 1.08;
+  --text-5xl: 3.815rem;
+  --text-5xl--line-height: 1.04;
+
+  /* Радиусы: только два значения на весь проект */
+  --radius-badge: 4px;
+  --radius-card: 8px;
+
+  /* Единственная разрешённая тень — у поднятых элементов поверх карты */
+  --shadow-raised: 0 2px 6px rgba(34, 32, 28, 0.08), 0 8px 24px rgba(34, 32, 28, 0.06);
+
+  /* Максимальная ширина текстовой колонки — 68–72 символа */
+  --container-measure: 38rem;
+}
+
+/* Вертикальный ритм кратно 8px задаём через spacing по умолчанию Tailwind (4px),
+   используя только чётные шаги: 2, 4, 6, 8, 12, 16, 24. */
+
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    background-color: var(--color-paper);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)' opacity='0.035'/%3E%3C/svg%3E");
+    background-repeat: repeat;
+    color: var(--color-graphite-900);
+    font-family: var(--font-sans);
+    font-feature-settings: "kern", "liga", "calt";
+    text-rendering: optimizeLegibility;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-display);
+    font-weight: 600;
+    letter-spacing: -0.005em;
+    text-wrap: balance;
+  }
+
+  /* У антиквы крупные кегли смотрятся плотнее — слегка разрежаем строку */
+  h1 {
+    letter-spacing: -0.015em;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  /* Латинские названия видов — курсивом антиквы, как в определителях */
+  .latin {
+    font-family: var(--font-display);
+    font-style: italic;
+    letter-spacing: 0;
+  }
+
+  /* Видимый focus-ring на всех интерактивных элементах */
+  :focus-visible {
+    outline: 2px solid var(--color-forest-600);
+    outline-offset: 2px;
+    border-radius: 2px;
+  }
+
+  ::selection {
+    background-color: var(--color-ochre-200);
+    color: var(--color-graphite-900);
+  }
+}
+
+@layer utilities {
+  /* Надзаголовок-рубрика: мелкий трекинговый капс */
+  .eyebrow {
+    font-family: var(--font-sans);
+    font-size: var(--text-2xs);
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--color-graphite-400);
+  }
+}
+
+/* Карта: приглушаем «дорожную» плитку OSM до атласной подложки,
+   чтобы точки видов оставались самым контрастным слоем.
+   Фильтр применяется только к плитке — маркеры и подписи не затрагиваются. */
+.leaflet-tile-pane {
+  filter: saturate(0.45) brightness(1.06) contrast(0.92);
+}
+
+.leaflet-container {
+  font-family: var(--font-sans);
+}
+
+.leaflet-container .leaflet-control-attribution {
+  background: color-mix(in srgb, var(--color-paper) 88%, transparent);
+  color: var(--color-graphite-400);
+  font-size: 10px;
+}
+
+.leaflet-container .leaflet-control-attribution a {
+  color: var(--color-graphite-600);
+}
+
+/* Подсказки над точками — в стиле сайта, без стандартных теней Leaflet */
+.leaflet-tooltip {
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius-badge);
+  background: var(--color-paper-bright);
+  box-shadow: var(--shadow-raised);
+  color: var(--color-graphite-900);
+  font-size: 12px;
+  padding: 6px 8px;
+}
+
+.leaflet-tooltip-top::before {
+  border-top-color: var(--color-line);
+}
+
+/* Появление блоков при прокрутке — только лёгкий сдвиг, без прозрачности.
+   Прозрачность в связке с animation-fill-mode: both прячет всё, что ещё
+   не попало в зону прокрутки: при печати и в снимке страницы целиком
+   секции выходили пустыми. Сдвиг такого следа не оставляет.
+   Без поддержки animation-timeline (Safari, Firefox) правило целиком
+   игнорируется, и блок просто стоит на месте. */
+@supports (animation-timeline: view()) {
+  @media (prefers-reduced-motion: no-preference) {
+    .reveal {
+      animation: reveal-in linear both;
+      animation-timeline: view();
+      animation-range: entry 0% cover 22%;
+    }
+  }
+}
+
+@keyframes reveal-in {
+  from {
+    transform: translateY(20px);
+  }
+  to {
+    transform: none;
+  }
+}
+
+@media print {
+  @page {
+    size: A4;
+    margin: 12mm;
+  }
+
+  body {
+    background: #fff;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "slug": "populus-talassica",
+  "name": {
+    "kk": "Талас теректі",
+    "ru": "Тополь таласский",
+    "la": "Populus talassica"
+  },
+  "family": {
+    "kk": "Талдар",
+    "la": "Salicaceae"
+  },
+  "status": {
+    "redBookKz": null,
+    "iucn": null,
+    "endemic": "regional",
+    "rarity": "Сирек, тау өзендерінің аңғарларында шашыраңқы"
+  },
+  "habitat": [
+    "riparian",
+    "mountain-forest",
+    "wetland"
+  ],
+  "description": {
+    "summary": "Тау өзендерінің аңғарларындағы тоғай ормандарын түзетін ірі терек — өзен режимінің индикаторы.",
+    "morphology": "Биіктігі 20–30 м ағаш. Діңі тік, қабығы жасыл-сұр, кәрі ағаштарда жарықшақты. Жапырақтары ромб немесе жүрек тәрізді, ұзын сағақты. Гүлшоғыры — сырға, тұқымы мамық талшықпен таралады.",
+    "habitat": "700–2000 м биіктіктегі тау өзендерінің жайылмалары, малта тасты террассалар.",
+    "phenology": "Сәуірде тозаңданады, маусымда тұқымы шашырайды.",
+    "uses": "Тоғай орманының негізгі ағашы, жағаны бекітеді, көлеңке береді, ағаш материалы.",
+    "threats": "Арнаны түзету, су алу, отынға кесу, жайылым, тоғай өрттері."
+  },
+  "bioIndicator": {
+    "isIndicator": true,
+    "indicates": [
+      "groundwater",
+      "soil-moisture"
+    ],
+    "scores": {
+      "moisture": 5,
+      "salinity": 1,
+      "soilPh": 7.2,
+      "grazing": 2,
+      "pollutionTolerance": 3
+    },
+    "note": "Жас өскіндері тек тасқын су шайған жаңа құмды жағада өнеді: жаңаруының тоқтауы өзеннің табиғи тасқын режимі бұзылғанын көрсетеді."
+  },
+  "locations": [
+    {
+      "zoneId": "charyn",
+      "label": "Шарын өзенінің аңғары, Еңбекшіқазақ ауданы",
+      "lat": 43.3497,
+      "lon": 79.0814,
+      "precision": "exact",
+      "source": "GBIF occurrence 4091664632",
+      "sourceUrl": "https://www.gbif.org/occurrence/4091664632"
+    },
+    {
+      "zoneId": "taldykorgan-foothills",
+      "label": "Кербұлақ ауданы, тау өзендерінің аңғары",
+      "lat": 44.5957,
+      "lon": 78.986,
+      "precision": "exact",
+      "source": "GBIF occurrence 4054783737",
+      "sourceUrl": "https://www.gbif.org/occurrence/4054783737"
+    }
+  ],
+  "photo": {
+    "file": "populus-talassica.webp",
+    "author": "(c) Alex",
+    "license": "CC BY-NC 4.0",
+    "url": "https://www.inaturalist.org/photos/258648138"
+  },
+  "sources": [
+    {
+      "title": "Plants of the World Online — Populus talassica",
+      "url": "https://powo.science.kew.org/"
+    },
+    {
+      "title": "GBIF — Populus talassica, Қазақстан бойынша кездесу деректері",
+      "url": "https://www.gbif.org/"
+    },
+    {
+      "title": "Қазақстан флорасы. Алматы: Ғылым",
+      "url": null
+    }
+  ]
+}

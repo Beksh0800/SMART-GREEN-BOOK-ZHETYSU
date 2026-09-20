@@ -1,0 +1,87 @@
+{
+  "slug": "salsola-arbusculiformis",
+  "name": {
+    "kk": "Бұталы сораң",
+    "ru": "Солянка деревцевидная",
+    "la": "Salsola arbusculiformis"
+  },
+  "family": {
+    "kk": "Алабұталар",
+    "la": "Amaranthaceae"
+  },
+  "status": {
+    "redBookKz": null,
+    "iucn": null,
+    "endemic": null,
+    "rarity": "Тасты шөлейтте жиі"
+  },
+  "habitat": [
+    "desert",
+    "rocky",
+    "steppe"
+  ],
+  "description": {
+    "summary": "Тасты және қиыршық тасты шөлейттің тұрақты түрі, топырақ эрозиясының дәрежесін көрсетеді.",
+    "morphology": "Биіктігі 30–100 см бұташық. Діңі төменгі бөлігінде ағаштанған, қабығы ақшыл. Жапырақтары жіңішке, жартылай цилиндр тәрізді, етженді. Жемісі қанатты.",
+    "habitat": "Қиыршық тасты және малта тасты шөлейттер, тау етегіндегі жазықтар; 400–1400 м.",
+    "phenology": "Тамыз–қыркүйекте гүлдейді, қазанда жемісі піседі.",
+    "uses": "Күзгі жайылым азығы, отын; тасты беткейлерді бекітеді.",
+    "threats": "Отынға жинау, карьерлер, жол салу, шамадан тыс жайылым."
+  },
+  "bioIndicator": {
+    "isIndicator": true,
+    "indicates": [
+      "soil-erosion",
+      "grazing-pressure",
+      "salinity"
+    ],
+    "scores": {
+      "moisture": 1,
+      "salinity": 3,
+      "soilPh": 8,
+      "grazing": 4,
+      "pollutionTolerance": 4
+    },
+    "note": "Бұталы сораңның сиреуі малта тасты беткейлердегі майда топырақтың шайылып кеткенін көрсетеді."
+  },
+  "locations": [
+    {
+      "zoneId": "altyn-emel",
+      "label": "Алтын-Емел ҰТП, қиыршық тасты жазық",
+      "lat": 43.8827,
+      "lon": 77.8712,
+      "precision": "exact",
+      "source": "GBIF occurrence 6320849905",
+      "sourceUrl": "https://www.gbif.org/occurrence/6320849905"
+    },
+    {
+      "zoneId": "ile-valley",
+      "label": "Бартоғай маңы, Іле алабы",
+      "lat": 43.3704,
+      "lon": 78.5137,
+      "precision": "exact",
+      "source": "GBIF occurrence 6235789059",
+      "sourceUrl": "https://www.gbif.org/occurrence/6235789059"
+    }
+  ],
+  "photo": {
+    "file": "salsola-arbusculiformis.webp",
+    "author": "(c) Svetlana Kushkova",
+    "license": "CC BY-NC 4.0",
+    "url": "https://www.inaturalist.org/photos/440366580"
+  },
+  "sources": [
+    {
+      "title": "Plants of the World Online — Salsola arbusculiformis",
+      "url": "https://powo.science.kew.org/"
+    },
+    {
+      "title": "GBIF — Salsola arbusculiformis, Қазақстан бойынша кездесу деректері",
+      "url": "https://www.gbif.org/"
+    },
+    {
+      "title": "Қазақстан флорасы. Алматы: Ғылым",
+      "url": null
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "slug": "peganum-harmala",
+  "name": {
+    "kk": "Адыраспан",
+    "ru": "Гармала обыкновенная",
+    "la": "Peganum harmala"
+  },
+  "family": {
+    "kk": "Тікенқарақаттар",
+    "la": "Nitrariaceae"
+  },
+  "status": {
+    "redBookKz": null,
+    "iucn": null,
+    "endemic": null,
+    "rarity": "Кең таралған, тозған жерлерде жаппай өседі"
+  },
+  "habitat": [
+    "desert",
+    "steppe",
+    "saline"
+  ],
+  "description": {
+    "summary": "Жердің тозғанын көрсететін басты индикатор: мал таптаған, бұзылған топырақта жаппай өседі.",
+    "morphology": "Биіктігі 30–80 см көпжылдық шөптесін өсімдік. Сабағы тармақталған, жасыл. Жапырақтары жіңішке тілімдерге бөлінген. Гүлдері ақ, ірі. Жемісі үш ұялы қауашақ, тұқымы қара, өткір иісті.",
+    "habitat": "Тозған жайылымдар, ауыл маңы, жол жиектері, тасталған егістіктер, сортаңдау жазықтар; 340–1200 м.",
+    "phenology": "Мамыр–шілдеде гүлдейді, тамыз–қыркүйекте тұқымы піседі.",
+    "uses": "Дәстүрлі медицинада және аластау рәсімінде қолданылады, бояу алынады; мал жемейді.",
+    "threats": "Қауіп жоқ; таралуы жердің бұзылуымен бірге артады."
+  },
+  "bioIndicator": {
+    "isIndicator": true,
+    "indicates": [
+      "grazing-pressure",
+      "soil-erosion",
+      "salinity"
+    ],
+    "scores": {
+      "moisture": 1,
+      "salinity": 3,
+      "soilPh": 8.1,
+      "grazing": 5,
+      "pollutionTolerance": 5
+    },
+    "note": "Адыраспанның жаппай өсуі — жайылымның шектен тыс тозғанының және топырақтың тығыздалғанының айқын белгісі. Мал жемейтіндіктен, басқа түрлер жойылған жерде үстемдік алады."
+  },
+  "locations": [
+    {
+      "zoneId": "ile-valley",
+      "label": "Іле алабы, тозған жайылымдар",
+      "lat": 43.6892,
+      "lon": 76.5046,
+      "precision": "exact",
+      "source": "GBIF occurrence 6251861003",
+      "sourceUrl": "https://www.gbif.org/occurrence/6251861003"
+    },
+    {
+      "zoneId": "balkhash-sands",
+      "label": "Балқаш ауданы, ауыл маңындағы жазық",
+      "lat": 45.483,
+      "lon": 75.2385,
+      "precision": "exact",
+      "source": "GBIF occurrence 6253317428",
+      "sourceUrl": "https://www.gbif.org/occurrence/6253317428"
+    }
+  ],
+  "photo": {
+    "file": "peganum-harmala.webp",
+    "author": "Roger Culos",
+    "license": "CC BY-SA 3.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Peganum_harmala_MHNT.BOT.2015.34.29.jpg"
+  },
+  "sources": [
+    {
+      "title": "Plants of the World Online — Peganum harmala",
+      "url": "https://powo.science.kew.org/"
+    },
+    {
+      "title": "GBIF — Peganum harmala, Қазақстан бойынша кездесу деректері",
+      "url": "https://www.gbif.org/"
+    },
+    {
+      "title": "Қазақстан флорасы. Алматы: Ғылым",
+      "url": null
+    }
+  ]
+}
