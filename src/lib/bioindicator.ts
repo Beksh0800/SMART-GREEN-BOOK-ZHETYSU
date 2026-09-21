@@ -9,9 +9,12 @@ import type { Plant, Zone } from "./schema";
  * пересчитать любой показатель вручную.
  */
 
-export type ZoneMetrics = {
-  zone: Zone;
-  /** Сколько видов базы отмечено в зоне и сколько из них индикаторы */
+/**
+ * Результат расчёта по набору видов. Одинаков и для готовой зоны, и для
+ * участка, набранного пользователем вручную, — считает их одна функция.
+ */
+export type SampleMetrics = {
+  /** Сколько видов базы отмечено в наборе и сколько из них индикаторы */
   plantCount: number;
   indicatorCount: number;
   protectedCount: number;
@@ -32,6 +35,8 @@ export type ZoneMetrics = {
   /** Текстовая интерпретация на казахском */
   interpretation: string[];
 };
+
+export type ZoneMetrics = SampleMetrics & { zone: Zone };
 
 const avg = (values: number[]) =>
   values.length === 0 ? 0 : values.reduce((s, v) => s + v, 0) / values.length;
@@ -55,12 +60,14 @@ function conservationIndex(sensitiveShare: number, protectedShare: number, grazi
   return Math.round(50 * sensitiveShare + 20 * protectedShare + 30 * grazingTerm);
 }
 
-function interpret(metrics: Omit<ZoneMetrics, "interpretation">): string[] {
+function interpret(metrics: Omit<SampleMetrics, "interpretation">): string[] {
   const out: string[] = [];
   const { averages, index, sensitiveShare, indicatorCount } = metrics;
 
   if (indicatorCount === 0) {
-    return ["Аймақ бойынша индикатор түрлер базаға әлі енгізілмеген."];
+    // Формулировка нейтральна к источнику набора: это может быть и зона без
+    // данных, и пустой список видов, отмеченных пользователем.
+    return ["Индикатор түрлер белгіленбеген — баға есептелмейді."];
   }
 
   if (averages.salinity >= 3.5) {
@@ -98,9 +105,15 @@ function interpret(metrics: Omit<ZoneMetrics, "interpretation">): string[] {
   return out;
 }
 
-export function computeZoneMetrics(zone: Zone, plants: Plant[]): ZoneMetrics {
-  const inZone = plants.filter((p) => p.locations.some((l) => l.zoneId === zone.id));
-  const indicators = inZone.filter((p) => p.bioIndicator.isIndicator);
+/**
+ * Расчёт по произвольному набору видов. Отдельно от зон, потому что тот же
+ * счёт нужен модулю «Өз учаскем» (/bioindicator#site): пользователь отмечает
+ * виды, которые видел на своём участке, и получает оценку по той же формуле,
+ * что и готовые зоны. Иначе методика была бы применима только к нашим данным,
+ * а проверить её на своей местности было бы нечем.
+ */
+export function computeSampleMetrics(sample: Plant[]): SampleMetrics {
+  const indicators = sample.filter((p) => p.bioIndicator.isIndicator);
   const scores = indicators.map((p) => p.bioIndicator.scores);
 
   const averages = {
@@ -111,13 +124,12 @@ export function computeZoneMetrics(zone: Zone, plants: Plant[]): ZoneMetrics {
     pollutionTolerance: avg(scores.map((s) => s.pollutionTolerance)),
   };
 
-  const protectedCount = inZone.filter((p) => p.status.redBookKz || p.status.endemic).length;
-  const sensitiveShare = inZone.length === 0 ? 0 : inZone.filter(isSensitive).length / inZone.length;
-  const protectedShare = inZone.length === 0 ? 0 : protectedCount / inZone.length;
+  const protectedCount = sample.filter((p) => p.status.redBookKz || p.status.endemic).length;
+  const sensitiveShare = sample.length === 0 ? 0 : sample.filter(isSensitive).length / sample.length;
+  const protectedShare = sample.length === 0 ? 0 : protectedCount / sample.length;
 
   const base = {
-    zone,
-    plantCount: inZone.length,
+    plantCount: sample.length,
     indicatorCount: indicators.length,
     protectedCount,
     averages,
@@ -127,6 +139,11 @@ export function computeZoneMetrics(zone: Zone, plants: Plant[]): ZoneMetrics {
   };
 
   return { ...base, interpretation: interpret(base) };
+}
+
+export function computeZoneMetrics(zone: Zone, plants: Plant[]): ZoneMetrics {
+  const inZone = plants.filter((p) => p.locations.some((l) => l.zoneId === zone.id));
+  return { zone, ...computeSampleMetrics(inZone) };
 }
 
 export function computeAllZoneMetrics(zones: Zone[], plants: Plant[]): ZoneMetrics[] {

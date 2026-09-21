@@ -34,6 +34,29 @@ export const INDICATOR_FACTORS = [
   "groundwater",
 ] as const;
 
+/**
+ * Жизненная форма — первый вопрос определителя: её видно с расстояния,
+ * не требуя ни лупы, ни цветка на растении.
+ */
+export const LIFE_FORMS = ["tree", "shrub", "subshrub", "herb", "grass", "bulb"] as const;
+
+/**
+ * Цвет околоцветника в определителе. `inconspicuous` — не «нет цветка»,
+ * а «цветок мелкий и невзрачный» (злаки, маревые, ветроопыляемые деревья):
+ * такие виды определяются по остальным признакам, поэтому в вопросе о цвете
+ * они остаются в выдаче, а не отсеиваются.
+ */
+export const FLOWER_COLORS = [
+  "white",
+  "yellow",
+  "red",
+  "pink",
+  "purple",
+  "blue",
+  "green",
+  "inconspicuous",
+] as const;
+
 /** Тип местообитания — используется в фильтрах карты и каталога. */
 export const HABITAT_TYPES = [
   "alpine",
@@ -46,6 +69,22 @@ export const HABITAT_TYPES = [
   "rocky",
   "wetland",
 ] as const;
+
+/**
+ * Полевые признаки для модуля «Анықтағыш» (определитель).
+ * Значения взяты из `description.morphology` и `description.phenology` того же
+ * вида — определитель не должен противоречить тексту паспорта.
+ */
+export const plantTraitsSchema = z.object({
+  lifeForm: z.enum(LIFE_FORMS),
+  /** Высота взрослого растения в сантиметрах: [минимум, максимум] */
+  heightCm: z
+    .tuple([z.number().positive(), z.number().positive()])
+    .refine(([min, max]) => min <= max, "heightCm: минимум больше максимума"),
+  flowerColor: z.array(z.enum(FLOWER_COLORS)).min(1),
+  /** Месяцы цветения, 1–12. У ветроопыляемых видов — месяцы пыления. */
+  bloomMonths: z.array(z.number().int().min(1).max(12)).min(1),
+});
 
 export const zoneSchema = z.object({
   id: z.string().min(1),
@@ -89,6 +128,7 @@ export const plantSchema = z.object({
     rarity: z.string().min(1),
   }),
   habitat: z.array(z.enum(HABITAT_TYPES)).min(1),
+  traits: plantTraitsSchema,
   description: z.object({
     summary: z.string().min(1),
     morphology: z.string().min(1),
@@ -136,4 +176,7 @@ export type IucnCategory = (typeof IUCN_CATEGORIES)[number];
 export type EndemicType = (typeof ENDEMIC_TYPES)[number];
 export type IndicatorFactor = (typeof INDICATOR_FACTORS)[number];
 export type HabitatType = (typeof HABITAT_TYPES)[number];
+export type LifeForm = (typeof LIFE_FORMS)[number];
+export type FlowerColor = (typeof FLOWER_COLORS)[number];
+export type PlantTraits = z.infer<typeof plantTraitsSchema>;
 export type LocationPrecision = (typeof LOCATION_PRECISION)[number];

@@ -1,6 +1,7 @@
 "use client";
 
 import dynamic from "next/dynamic";
+import type { Map as LeafletMap } from "leaflet";
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 import { useMemo, useState } from "react";
 import { SlidersHorizontal, X } from "lucide-react";
@@ -8,7 +9,9 @@ import { SlidersHorizontal, X } from "lucide-react";
 import { emptyFilters, filterPlants, isFilterActive, type PlantFilters } from "@/lib/filters";
 import type { Plant, Zone } from "@/lib/schema";
 
+import { BloomTimeline } from "./BloomTimeline";
 import { FilterPanel } from "./FilterPanel";
+import { MapControls } from "./MapControls";
 import { MapLegend } from "./MapLegend";
 import { SelectedPlantCard } from "./SelectedPlantCard";
 
@@ -30,6 +33,9 @@ export function PlantMapView({ plants, zones }: { plants: Plant[]; zones: Zone[]
   const [selected, setSelected] = useState<Plant | null>(null);
   const [showZones, setShowZones] = useState(false);
   const [filtersOpen, setFiltersOpen] = useState(false);
+  // Экземпляр Leaflet нужен кнопкам масштаба: они лежат поверх карты,
+  // в общем слое панелей, а не внутри самого контейнера карты.
+  const [map, setMap] = useState<LeafletMap | null>(null);
   const reduced = useReducedMotion();
 
   const visible = useMemo(() => filterPlants(plants, filters), [plants, filters]);
@@ -49,6 +55,7 @@ export function PlantMapView({ plants, zones }: { plants: Plant[]; zones: Zone[]
           selected={selectedVisible}
           onSelect={setSelected}
           showZones={showZones}
+          onReady={setMap}
         />
       </div>
 
@@ -101,9 +108,24 @@ export function PlantMapView({ plants, zones }: { plants: Plant[]; zones: Zone[]
         {isFilterActive(filters) && <span className="size-1.5 rounded-full bg-ochre-500" />}
       </button>
 
-      {/* Легенда */}
-      <div className="absolute bottom-6 left-4 z-20 hidden w-[15rem] md:left-[23.5rem] md:block">
-        <MapLegend showZones={showZones} onToggleZones={() => setShowZones((v) => !v)} />
+      {/* Нижний ряд: легенда и шкала цветения.
+          Справа оставлено место под карточку вида — ряд не переезжает,
+          когда её открывают и закрывают. На мобильном шкала уступает
+          место карточке: две панели поверх маленького экрана не помещаются. */}
+      <div className="absolute inset-x-4 bottom-6 z-20 flex items-end gap-3 md:left-[23.5rem] md:right-[24.5rem]">
+        <div className="hidden w-[15rem] shrink-0 md:block">
+          <MapLegend showZones={showZones} onToggleZones={() => setShowZones((v) => !v)} />
+        </div>
+        <div className={`min-w-0 flex-1 md:max-w-[30rem] ${selectedVisible ? "hidden md:block" : ""}`}>
+          <BloomTimeline
+            plants={plants}
+            month={filters.bloomMonth}
+            onChange={(bloomMonth) => setFilters((f) => ({ ...f, bloomMonth }))}
+          />
+        </div>
+        <div className={`shrink-0 ${selectedVisible ? "hidden md:block" : ""}`}>
+          <MapControls map={map} />
+        </div>
       </div>
 
       {/* Карточка выбранного вида */}

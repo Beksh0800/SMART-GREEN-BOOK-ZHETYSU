@@ -19,6 +19,19 @@
     "mountain-forest",
     "shrubland"
   ],
+  "traits": {
+    "lifeForm": "tree",
+    "heightCm": [
+      400,
+      700
+    ],
+    "flowerColor": [
+      "white"
+    ],
+    "bloomMonths": [
+      5
+    ]
+  },
   "description": {
     "summary": "Тек Іле Алатауының бөктерінде кездесетін Қазақстан эндемигі — әлемдегі ең сирек долана түрлерінің бірі.",
     "morphology": "Биіктігі 4–7 м ағаш немесе ірі бұта. Бұтақтарында сирек, қысқа тікендері бар. Жапырақтары терең тілімделген, түгі бар. Гүлдері ақ, қалқанша гүлшоғырына жиналған. Жемісі қызғылт-сары, шар тәрізді.",
@@ -62,7 +75,12 @@
       "sourceUrl": "https://www.gbif.org/occurrence/4063008986"
     }
   ],
-  "photo": null,
+  "photo": {
+    "file": "crataegus-almaatensis.webp",
+    "author": "Гербарий МГУ (MW0899273), сбор В. И. Меницкого, 1970",
+    "license": "CC BY 4.0",
+    "url": "https://plant.depo.msu.ru/open/public/item/MW0899273"
+  },
   "sources": [
     {
       "title": "Қазақстан Республикасының Қызыл кітабы. 2-том: Өсімдіктер. Алматы, 2014",

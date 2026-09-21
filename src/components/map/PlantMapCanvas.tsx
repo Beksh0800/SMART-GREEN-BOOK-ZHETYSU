@@ -2,6 +2,7 @@
 
 import "leaflet/dist/leaflet.css";
 
+import type { Map as LeafletMap } from "leaflet";
 import { Fragment, useEffect, useState } from "react";
 import { Circle, CircleMarker, MapContainer, TileLayer, Tooltip, useMap } from "react-leaflet";
 
@@ -10,7 +11,6 @@ import type { Plant, Zone } from "@/lib/schema";
 import {
   getPlantGroup,
   groupStyles,
-  MAP_BOUNDS,
   TILE_ATTRIBUTION,
   TILE_URL,
   uncertaintyRadiusM,
@@ -22,6 +22,21 @@ import {
  * Карта всех находок. Точек порядка сотни — кластеризация не нужна,
  * а плагин markercluster тянет несовместимую с React 19 обвязку.
  */
+
+/**
+ * Отдаёт экземпляр карты наружу: кнопки масштаба и возврата к Жетісу живут
+ * в панелях поверх карты, а не внутри неё, — иначе карточка выбранного вида
+ * и панель фильтров их перекрывают.
+ */
+function MapReady({ onReady }: { onReady?: (map: LeafletMap) => void }) {
+  const map = useMap();
+
+  useEffect(() => {
+    onReady?.(map);
+  }, [map, onReady]);
+
+  return null;
+}
 
 /** При выборе вида карта мягко подлетает к его первой точке. */
 function FlyToSelected({ plant }: { plant: Plant | null }) {
@@ -42,12 +57,14 @@ export function PlantMapCanvas({
   selected,
   onSelect,
   showZones,
+  onReady,
 }: {
   plants: Plant[];
   zones: Zone[];
   selected: Plant | null;
   onSelect: (plant: Plant) => void;
   showZones: boolean;
+  onReady?: (map: LeafletMap) => void;
 }) {
   // Точка под курсором подрастает: на карте с сотней меток это главный
   // сигнал, что метка кликабельна.
@@ -59,14 +76,13 @@ export function PlantMapCanvas({
       zoom={ZHETYSU_ZOOM}
       minZoom={6}
       maxZoom={14}
-      maxBounds={MAP_BOUNDS}
-      maxBoundsViscosity={0.7}
       scrollWheelZoom
       zoomControl={false}
       className="h-full w-full"
       style={{ backgroundColor: "var(--color-paper-dim)" }}
     >
       <TileLayer url={TILE_URL} attribution={TILE_ATTRIBUTION} />
+      <MapReady onReady={onReady} />
       <FlyToSelected plant={selected} />
 
       {showZones &&

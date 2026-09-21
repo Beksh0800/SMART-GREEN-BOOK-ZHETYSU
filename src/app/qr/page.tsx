@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import { Printer } from "lucide-react";
 
+import { OfflineMode } from "@/components/pwa/OfflineMode";
 import { getAllPlants } from "@/lib/plants";
 import { plantUrl, SITE_URL } from "@/lib/site";
 
@@ -18,6 +19,17 @@ export const metadata: Metadata = {
 export default function QrSheetPage() {
   const plants = getAllPlants();
 
+  /**
+   * Что кладётся в офлайн-кэш: страница каждого вида, её QR и снимок.
+   * Список собирается здесь, на сервере, из тех же данных, что и лист кодов, —
+   * иначе офлайн-набор и напечатанные коды могли бы разойтись.
+   */
+  const offlineUrls = [
+    ...plants.map((p) => `/plant/${p.slug}`),
+    ...plants.map((p) => `/qr/${p.slug}.svg`),
+    ...plants.filter((p) => p.photo).map((p) => `/images/plants/${p.photo!.file}`),
+  ];
+
   return (
     <div className="mx-auto max-w-[84rem] px-6 py-12 print:max-w-none print:px-0 print:py-0">
       <header className="print:hidden">
@@ -27,7 +39,11 @@ export default function QrSheetPage() {
           Әр кодты сканерлегенде сол өсімдіктің цифрлық паспорты ашылады. Парақты A4 форматында
           басып шығарып, көрме стендіне немесе гербарий қасына қоюға болады.
         </p>
-        <div className="mt-5 flex flex-wrap items-center gap-4">
+        <div className="mt-6">
+          <OfflineMode urls={offlineUrls} />
+        </div>
+
+        <div className="mt-6 flex flex-wrap items-center gap-4">
           <a
             href="#sheet"
             className="inline-flex items-center gap-2 rounded-badge bg-forest-800 px-4 py-2.5 text-sm font-semibold text-paper transition-colors hover:bg-forest-700"

@@ -20,6 +20,12 @@ export type PlantFilters = {
   zoneIds: string[];
   habitats: HabitatType[];
   factors: IndicatorFactor[];
+  /**
+   * Месяц цветения, 1–12, либо null — «весь год».
+   * Живёт в общих фильтрах, а не внутри карты: по нему отбирает и шкала
+   * фенологии на карте, и фильтры каталога.
+   */
+  bloomMonth: number | null;
 };
 
 export const emptyFilters: PlantFilters = {
@@ -30,6 +36,7 @@ export const emptyFilters: PlantFilters = {
   zoneIds: [],
   habitats: [],
   factors: [],
+  bloomMonth: null,
 };
 
 export function isFilterActive(filters: PlantFilters): boolean {
@@ -40,7 +47,8 @@ export function isFilterActive(filters: PlantFilters): boolean {
     filters.indicatorOnly ||
     filters.zoneIds.length > 0 ||
     filters.habitats.length > 0 ||
-    filters.factors.length > 0
+    filters.factors.length > 0 ||
+    filters.bloomMonth !== null
   );
 }
 
@@ -70,6 +78,9 @@ export function filterPlants(plants: Plant[], filters: PlantFilters): Plant[] {
     }
     if (filters.factors.length > 0) {
       if (!plant.bioIndicator.indicates.some((f) => filters.factors.includes(f))) return false;
+    }
+    if (filters.bloomMonth !== null) {
+      if (!plant.traits.bloomMonths.includes(filters.bloomMonth)) return false;
     }
     return true;
   });

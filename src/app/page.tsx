@@ -3,6 +3,7 @@ import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 
 import { ZoneRanking } from "@/components/bio/ZoneRanking";
+import { BloomBands } from "@/components/home/BloomBands";
 import { CountUp } from "@/components/home/CountUp";
 import { MapPreview } from "@/components/home/MapPreview";
 import { ModuleSection } from "@/components/home/ModuleSection";
@@ -123,6 +124,29 @@ export default function Home() {
 
         <ModuleSection
           index="02"
+          eyebrow="Анықтағыш"
+          title="Далада көрген өсімдікті белгілері бойынша анықтау"
+          description="Тіршілік формасы, мекені, гүл түсі, биіктігі және гүлдеу айы — бес белгі бойынша база түрлері сұрыпталады. Далада қателесу оңай, сондықтан бір белгісі сәйкес келмейтін түрлер де тізімде қалады: қай белгі сәйкес келмегені әр жолда көрсетіледі."
+          points={[
+            "Барлық сұраққа жауап беру міндетті емес — екі-үш белгінің өзі жеткілікті",
+            "Әр жауаптан кейін тізім бірден жаңарады",
+            `${stats.total} түрдің гүлдеу күнтізбесі бір кестеде`,
+          ]}
+          href="/identify"
+          cta="Анықтағышты ашу"
+          flip
+          preview={
+            <div className="rounded-card border border-line bg-paper-bright p-6">
+              <p className="eyebrow">Гүлдеу күнтізбесі</p>
+              <div className="mt-4">
+                <BloomBands plants={plants} />
+              </div>
+            </div>
+          }
+        />
+
+        <ModuleSection
+          index="03"
           eyebrow="QR Plant Passport"
           title="Әр өсімдіктің QR-паспорты"
           description="Кодты сканерлеген адам сол түрдің толық цифрлық паспортын телефонынан ашады: сипаттамасы, мекені, қорғау мәртебесі, индикаторлық қасиеттері және дереккөздері."
@@ -130,10 +154,10 @@ export default function Home() {
             `${stats.total} түрдің әрқайсысына жеке QR-код дайындалған`,
             "Кодтар жоба ішінде сақталады — сыртқы QR-сервиске тәуелді емес",
             "Барлық кодты A4 парағына басып шығарып, стендке қоюға болады",
+            "Базаны телефонға жүктеп қойса, кодтар интернетсіз де ашылады",
           ]}
           href="/qr"
           cta="QR-кодтар парағын көру"
-          flip
           preview={
             <div className="rounded-card border border-line bg-paper-bright p-8">
               <div className="mx-auto flex max-w-sm flex-col items-center text-center">
@@ -158,17 +182,18 @@ export default function Home() {
         />
 
         <ModuleSection
-          index="03"
+          index="04"
           eyebrow="BioIndicator"
           title="Өсімдіктер арқылы экологиялық жағдайды салыстыру"
           description="Аймақтың жағдайы онда өсетін индикатор түрлердің құрамы бойынша бағаланады. Әр түрге ылғалдылық, тұздану, жайылым және ластану бойынша балл берілген, олардан аймақтың сақталу индексі есептеледі."
           points={[
             "Формула ашық көрсетілген — кез келген көрсеткішті қайта есептеуге болады",
             "Екі аймақты бір шкалада қатар қоюға болады",
-            "Әр аймаққа мәтіндік қорытынды беріледі",
+            "Өз учаскеңізде көрген түрлерді белгілеп, сол формула бойынша баға алуға болады",
           ]}
           href="/bioindicator"
           cta="Салыстыруға өту"
+          flip
           preview={
             <div className="rounded-card border border-line bg-paper-bright p-6">
               <p className="eyebrow">Аймақтардың сақталу индексі</p>
@@ -180,7 +205,7 @@ export default function Home() {
         />
 
         <ModuleSection
-          index="04"
+          index="05"
           eyebrow="Red & Endemic Book"
           title="Қызыл кітап және эндемиктер базасы"
           description="Жетісуда кездесетін қорғалатын және тек осы аймаққа тән түрлердің жеке базасы: санаты, мекені, қауіп факторлары және дереккөздері."
@@ -191,7 +216,6 @@ export default function Home() {
           ]}
           href="/red-book"
           cta="Базаны ашу"
-          flip
           preview={
             <ul className="grid gap-5 sm:grid-cols-2">
               {featured.map((plant) => (

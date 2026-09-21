@@ -7,6 +7,7 @@ import { ArrowLeft, ExternalLink, MapPin } from "lucide-react";
 import { MiniMapLoader } from "@/components/map/MiniMapLoader";
 import { getPlantGroup, groupStyles } from "@/components/map/mapStyle";
 import { EndemicBadge, IndicatorBadge, IucnBadge, RedBookBadge } from "@/components/ui/Badge";
+import { FieldTraits } from "@/components/plant/FieldTraits";
 import { IndicatorScale } from "@/components/plant/IndicatorScale";
 import { PlantPlaceholder } from "@/components/plant/PlantPlaceholder";
 import { QrBlock } from "@/components/plant/QrBlock";
@@ -156,6 +157,10 @@ export default async function PlantPage({ params }: { params: Promise<{ slug: st
             </DataBlock>
 
             <DataBlock title="Сыртқы белгілері">{plant.description.morphology}</DataBlock>
+
+            <DataBlock title="Далалық белгілері">
+              <FieldTraits traits={plant.traits} />
+            </DataBlock>
 
             <DataBlock title="Мекені">
               <p>{plant.description.habitat}</p>

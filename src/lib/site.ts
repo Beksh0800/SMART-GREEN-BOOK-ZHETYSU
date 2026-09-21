@@ -19,6 +19,7 @@ export function plantUrl(slug: string): string {
 
 export const nav = [
   { href: "/map", label: "Карта", en: "PlantMap" },
+  { href: "/identify", label: "Анықтағыш", en: "Identification key" },
   { href: "/red-book", label: "Қызыл кітап", en: "Red & Endemic Book" },
   { href: "/bioindicator", label: "Биоиндикация", en: "BioIndicator" },
   { href: "/qr", label: "QR-кодтар", en: "QR Passport" },

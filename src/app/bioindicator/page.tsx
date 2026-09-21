@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 
+import { SiteAssessment } from "@/components/bio/SiteAssessment";
 import { ZoneCompare } from "@/components/bio/ZoneCompare";
 import { ZoneRanking } from "@/components/bio/ZoneRanking";
 import { computeAllZoneMetrics, indexLabel, splitByDataAvailability } from "@/lib/bioindicator";
@@ -37,13 +38,13 @@ export default function BioIndicatorPage() {
         </p>
         <Link
           href="/about"
-          className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-forest-700 underline-offset-4 hover:underline"
+          className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-forest-700 underline-offset-4 hover:underline print:hidden"
         >
           Есептеу әдістемесімен танысу
           <ArrowRight size={15} />
         </Link>
 
-        <dl className="mt-8 grid grid-cols-2 gap-px overflow-hidden rounded-card border border-line bg-line sm:grid-cols-4">
+        <dl className="mt-8 grid grid-cols-2 gap-px overflow-hidden rounded-card border border-line bg-line sm:grid-cols-4 print:hidden">
           {[
             { label: "Бағаланған аймақ", value: rated.length },
             { label: "Индикатор түр", value: indicators.length },
@@ -58,7 +59,7 @@ export default function BioIndicatorPage() {
         </dl>
       </header>
 
-      <section className="border-b border-line py-10">
+      <section className="border-b border-line py-10 print:hidden">
         <h2 className="font-display text-xl text-forest-900">Аймақтардың сақталу индексі</h2>
         <p className="mt-2 max-w-measure text-sm text-graphite-600">
           Индекс 0-ден 100-ге дейін: неғұрлым жоғары болса, аймақтағы өсімдік жамылғысы соғұрлым аз
@@ -77,7 +78,19 @@ export default function BioIndicatorPage() {
         )}
       </section>
 
-      <section className="border-b border-line py-10">
+      <section id="site" className="scroll-mt-24 border-b border-line py-10">
+        <h2 className="font-display text-xl text-forest-900">Өз учаскеңізді бағалау</h2>
+        <p className="mt-2 max-w-measure text-sm text-graphite-600">
+          Өз жеріңізде кездестірген түрлерді белгілеңіз — сол аймақтарға қолданылған формула
+          бойынша учаскенің сақталу индексі мен экологиялық сипаттамасы есептеледі. Есептеу
+          браузерде жүреді, ешқандай дерек сақталмайды.
+        </p>
+        <div className="mt-6">
+          <SiteAssessment plants={plants} zoneMetrics={rated} />
+        </div>
+      </section>
+
+      <section className="border-b border-line py-10 print:hidden">
         <h2 className="font-display text-xl text-forest-900">Екі аймақты салыстыру</h2>
         <p className="mt-2 max-w-measure text-sm text-graphite-600">
           Аймақтарды таңдаңыз — көрсеткіштер бірдей шкалада қатар қойылады.
@@ -87,7 +100,7 @@ export default function BioIndicatorPage() {
         </div>
       </section>
 
-      <section className="py-10">
+      <section className="py-10 print:hidden">
         <h2 className="font-display text-xl text-forest-900">Аймақтар бойынша қорытынды</h2>
         <div className="mt-6 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
           {rated.map((m) => {
