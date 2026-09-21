@@ -92,6 +92,8 @@ export function PlantMapCanvas({
       <TileLayer
         key={maxNativeZoom ?? "online"}
         url={TILE_URL}
+        // Без CORS ответ непрозрачен и в офлайн-кэш не попадает.
+        crossOrigin="anonymous"
         attribution={TILE_ATTRIBUTION}
         maxNativeZoom={maxNativeZoom}
       />

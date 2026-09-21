@@ -117,8 +117,13 @@ async function tileStrategy(request, url) {
       cache.put(request, response.clone());
     }
     return response;
-  } catch {
-    return tilePlaceholder();
+  } catch (error) {
+    // Заглушка — только для настоящего офлайна. При живой сети упавший
+    // запрос означает поломку на нашей стороне, и прятать её за аккуратной
+    // серой плиткой нельзя: именно так CSP-запрет молча выдавал себя
+    // за отсутствие интернета.
+    if (!self.navigator.onLine) return tilePlaceholder();
+    throw error;
   }
 }
 

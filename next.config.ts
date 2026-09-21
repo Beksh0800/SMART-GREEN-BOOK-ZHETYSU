@@ -11,7 +11,18 @@ const nextConfig: NextConfig = {
         headers: [
           { key: "Content-Type", value: "application/javascript; charset=utf-8" },
           { key: "Cache-Control", value: "no-cache, no-store, must-revalidate" },
-          { key: "Content-Security-Policy", value: "default-src 'self'; script-src 'self'" },
+          {
+            // Политика ограничивает сам worker, а он ходит за плиткой карты
+            // на сервер OSM: без явного разрешения запрос падает и подложка
+            // подменяется заглушкой — и офлайн, и при живом интернете.
+            key: "Content-Security-Policy",
+            value: [
+              "default-src 'self'",
+              "script-src 'self'",
+              "connect-src 'self' https://tile.openstreetmap.org",
+              "img-src 'self' data: https://tile.openstreetmap.org",
+            ].join("; "),
+          },
         ],
       },
     ];
