@@ -31,7 +31,16 @@ const TILE_CACHE = "greenmap-tiles";
 const TILE_MAX_ZOOM = 9;
 
 /** Разделы, без которых сайт офлайн бесполезен. Кэшируются при установке. */
-const SHELL = ["/", "/map", "/identify", "/red-book", "/bioindicator", "/qr", "/about"];
+const SHELL = [
+  "/",
+  "/map",
+  "/plants",
+  "/identify",
+  "/red-book",
+  "/bioindicator",
+  "/qr",
+  "/about",
+];
 
 self.addEventListener("install", (event) => {
   event.waitUntil(

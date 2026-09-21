@@ -29,7 +29,11 @@ export function SiteHeader() {
           </span>
         </Link>
 
-        <nav className="hidden items-center gap-1 md:flex">
+        {/*
+          Пунктов семь, поэтому строка меню разворачивается только с 1024px:
+          на планшете они переставали помещаться рядом с логотипом.
+        */}
+        <nav className="hidden items-center gap-1 lg:flex">
           {nav.map((item) => (
             <Link
               key={item.href}
@@ -51,14 +55,14 @@ export function SiteHeader() {
           onClick={() => setOpen((v) => !v)}
           aria-expanded={open}
           aria-label={open ? "Мәзірді жабу" : "Мәзірді ашу"}
-          className="rounded-badge border border-line p-2 text-graphite-600 transition-colors hover:bg-paper-dim md:hidden"
+          className="rounded-badge border border-line p-2 text-graphite-600 transition-colors hover:bg-paper-dim lg:hidden"
         >
           {open ? <X size={18} /> : <Menu size={18} />}
         </button>
       </div>
 
       {open && (
-        <nav className="border-t border-line bg-paper px-6 py-3 md:hidden">
+        <nav className="border-t border-line bg-paper px-6 py-3 lg:hidden">
           {nav.map((item) => (
             <Link
               key={item.href}

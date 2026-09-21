@@ -72,6 +72,12 @@ export default function Home() {
               <ArrowRight size={16} />
             </Link>
             <Link
+              href="/plants"
+              className="inline-flex items-center gap-2 rounded-badge border border-paper/40 px-5 py-3 text-sm font-semibold text-paper transition-colors hover:border-paper hover:bg-paper/10"
+            >
+              Барлық түрлер
+            </Link>
+            <Link
               href="/red-book"
               className="inline-flex items-center gap-2 rounded-badge border border-paper/40 px-5 py-3 text-sm font-semibold text-paper transition-colors hover:border-paper hover:bg-paper/10"
             >

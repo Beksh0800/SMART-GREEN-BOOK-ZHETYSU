@@ -4,12 +4,18 @@ import { useMemo, useState } from "react";
 import { SlidersHorizontal } from "lucide-react";
 
 import { FilterPanel } from "@/components/map/FilterPanel";
-import { PlantCard } from "@/components/plant/PlantCard";
+import { PlantCard } from "./PlantCard";
 import { emptyFilters, filterPlants, type PlantFilters } from "@/lib/filters";
 import type { Plant, Zone } from "@/lib/schema";
 
-/** Каталог охраняемых и эндемичных видов с теми же фильтрами, что и на карте. */
-export function RedBookCatalog({ plants, zones }: { plants: Plant[]; zones: Zone[] }) {
+/**
+ * Каталог видов с теми же фильтрами, что и на карте.
+ *
+ * Набор задаётся снаружи: на /plants это все виды базы, на /red-book —
+ * только охраняемые и эндемики. Разделять компоненты незачем, разница
+ * между модулями лишь в том, какой список им передали.
+ */
+export function PlantCatalog({ plants, zones }: { plants: Plant[]; zones: Zone[] }) {
   const [filters, setFilters] = useState<PlantFilters>(emptyFilters);
   const [panelOpen, setPanelOpen] = useState(false);
 

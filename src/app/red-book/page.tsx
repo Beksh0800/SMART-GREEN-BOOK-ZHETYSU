@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 
-import { RedBookCatalog } from "@/components/redbook/RedBookCatalog";
+import { PlantCatalog } from "@/components/plant/PlantCatalog";
 import { redBookLabels } from "@/lib/labels";
 import { getAllZones, getProtectedPlants } from "@/lib/plants";
 import { RED_BOOK_CATEGORIES } from "@/lib/schema";
@@ -54,7 +54,7 @@ export default function RedBookPage() {
       </header>
 
       <div className="mt-10">
-        <RedBookCatalog plants={plants} zones={zones} />
+        <PlantCatalog plants={plants} zones={zones} />
       </div>
     </div>
   );

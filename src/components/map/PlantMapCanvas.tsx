@@ -17,6 +17,7 @@ import {
   ZHETYSU_CENTER,
   ZHETYSU_ZOOM,
 } from "./mapStyle";
+import { useCoarsePointer } from "./useCoarsePointer";
 import { useTileMaxNativeZoom } from "./useTileMaxNativeZoom";
 
 /**
@@ -71,6 +72,7 @@ export function PlantMapCanvas({
   // сигнал, что метка кликабельна.
   const [hovered, setHovered] = useState<string | null>(null);
   const maxNativeZoom = useTileMaxNativeZoom();
+  const touch = useCoarsePointer();
 
   return (
     <MapContainer
@@ -144,6 +146,20 @@ export function PlantMapCanvas({
                   eventHandlers={{ click: () => onSelect(plant) }}
                 />
               )}
+              {/*
+                Мишень под палец. Видимая точка — шесть пикселей, попасть
+                в неё на телефоне нельзя, а увеличивать её ради этого значит
+                залить картой сотню жирных кругов. Поэтому поверх лежит
+                прозрачный круг вчетверо шире: он ловит тап и ничего не рисует.
+              */}
+              {touch && (
+                <CircleMarker
+                  center={[location.lat, location.lon]}
+                  radius={18}
+                  pathOptions={{ stroke: false, fillOpacity: 0 }}
+                  eventHandlers={{ click: () => onSelect(plant) }}
+                />
+              )}
               <CircleMarker
                 center={[location.lat, location.lon]}
                 radius={
@@ -168,11 +184,18 @@ export function PlantMapCanvas({
                   mouseout: () => setHovered((h) => (h === key ? null : h)),
                 }}
               >
-                <Tooltip direction="top" offset={[0, -8]}>
-                  <span className="font-semibold">{plant.name.kk}</span>
-                  <br />
-                  <span className="italic">{plant.name.la}</span>
-                </Tooltip>
+                {/*
+                  Подсказка — только для курсора. На сенсорном экране Leaflet
+                  показывает её по тапу, и вместо карточки вида с переходом
+                  в паспорт человек получал всплывающее название и тупик.
+                */}
+                {!touch && (
+                  <Tooltip direction="top" offset={[0, -8]}>
+                    <span className="font-semibold">{plant.name.kk}</span>
+                    <br />
+                    <span className="italic">{plant.name.la}</span>
+                  </Tooltip>
+                )}
               </CircleMarker>
             </Fragment>
           );
