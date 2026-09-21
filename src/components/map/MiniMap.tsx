@@ -27,15 +27,46 @@ export function MiniMap({
 }) {
   const maxNativeZoom = useTileMaxNativeZoom();
 
-  const center: [number, number] = [
-    locations.reduce((sum, l) => sum + l.lat, 0) / locations.length,
-    locations.reduce((sum, l) => sum + l.lon, 0) / locations.length,
-  ];
+  /**
+   * Рамка по всем находкам вида.
+   *
+   * Раньше карта центрировалась по среднему координат с постоянным зумом,
+   * и у видов с разбросанными находками дальние просто не попадали в кадр:
+   * у яблони Сиверса точка на Лепсі лежит в трёхстах километрах от
+   * алматинских. Круги неточной привязки тоже учитываются — иначе половина
+   * круга оказывалась срезанной краем карты.
+   */
+  const bounds: [[number, number], [number, number]] = (() => {
+    let south = 90;
+    let west = 180;
+    let north = -90;
+    let east = -180;
+
+    for (const location of locations) {
+      const zone = zones.find((z) => z.id === location.zoneId);
+      const radiusM = uncertaintyRadiusM(location, zone) ?? 0;
+      // Градус широты — около 111 км всюду, градус долготы сужается к полюсу.
+      const dLat = radiusM / 111_000;
+      const dLon = dLat / Math.max(Math.cos((location.lat * Math.PI) / 180), 0.01);
+
+      south = Math.min(south, location.lat - dLat);
+      north = Math.max(north, location.lat + dLat);
+      west = Math.min(west, location.lon - dLon);
+      east = Math.max(east, location.lon + dLon);
+    }
+
+    return [
+      [south, west],
+      [north, east],
+    ];
+  })();
 
   return (
     <MapContainer
-      center={center}
-      zoom={locations.length > 1 ? 7 : 9}
+      bounds={bounds}
+      // Единственная находка без круга даёт рамку нулевого размера, и Leaflet
+      // приблизился бы к ней вплотную; maxZoom оставляет вокруг окрестности.
+      boundsOptions={{ padding: [26, 26], maxZoom: 10 }}
       scrollWheelZoom={false}
       attributionControl
       className="h-full w-full"
