@@ -113,6 +113,38 @@ async function tileStrategy(request, url) {
   }
 }
 
+/**
+ * Оптимизатор картинок Next. Компонент <Image> никогда не просит файл
+ * напрямую: он запрашивает /_next/image?url=...&w=...&q=..., подбирая
+ * ширину под экран. Поэтому сохранённый оригинал сам по себе офлайн
+ * не показывается — нужна подмена, см. imageStrategy.
+ */
+function isOptimizedImage(url) {
+  return url.pathname === "/_next/image";
+}
+
+async function imageStrategy(request, url) {
+  const cached = await caches.match(request);
+  if (cached) return cached;
+
+  try {
+    const response = await fetch(request);
+    if (response.ok) {
+      const cache = await caches.open(RUNTIME_CACHE);
+      cache.put(request, response.clone());
+    }
+    return response;
+  } catch (error) {
+    // Сети нет и этот размер не просили раньше — отдаём оригинал,
+    // сохранённый кнопкой офлайн-режима. Он тяжелее подобранного
+    // по экрану, но лежит в памяти и выглядит точно так же.
+    const original = url.searchParams.get("url");
+    const fallback = original ? await caches.match(original) : null;
+    if (fallback) return fallback;
+    throw error;
+  }
+}
+
 function isStaticAsset(url) {
   return (
     url.pathname.startsWith("/_next/static/") ||
@@ -165,6 +197,11 @@ self.addEventListener("fetch", (event) => {
   }
 
   if (url.origin !== self.location.origin) return;
+
+  if (isOptimizedImage(url)) {
+    event.respondWith(imageStrategy(request, url));
+    return;
+  }
 
   if (isStaticAsset(url)) {
     event.respondWith(cacheFirst(request));

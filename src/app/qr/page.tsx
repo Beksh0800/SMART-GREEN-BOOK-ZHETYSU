@@ -28,6 +28,8 @@ export default function QrSheetPage() {
     ...plants.map((p) => `/plant/${p.slug}`),
     ...plants.map((p) => `/qr/${p.slug}.svg`),
     ...plants.filter((p) => p.photo).map((p) => `/images/plants/${p.photo!.file}`),
+    // Снимок на главной: она лежит в офлайн-оболочке и без него выглядит битой.
+    "/images/hero/zhetysu.webp",
   ];
 
   return (
