@@ -4,7 +4,7 @@ import { Printer } from "lucide-react";
 
 import { OfflineMode } from "@/components/pwa/OfflineMode";
 import { getAllPlants } from "@/lib/plants";
-import { plantUrl, SITE_URL } from "@/lib/site";
+import { plantUrl } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "QR-кодтар — басып шығаруға арналған парақ",
@@ -52,7 +52,7 @@ export default function QrSheetPage() {
             Басып шығару парағына өту
           </a>
           <p className="text-xs text-graphite-400">
-            Базалық мекенжай: {SITE_URL} · барлығы {plants.length} код
+            Барлығы {plants.length} код
           </p>
         </div>
       </header>
