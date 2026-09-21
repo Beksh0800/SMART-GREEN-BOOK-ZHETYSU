@@ -12,12 +12,23 @@
  *   HTML-страницы  — сеть вперёд, кэш как запасной вариант (данные свежие,
  *                    но офлайн страница всё равно открывается);
  *   статика и фото — кэш вперёд (эти файлы у Next неизменяемы по имени);
- *   плитка карты   — не кэшируется: это чужой сервер и тысячи файлов.
+ *   плитка карты   — кэш вперёд, но только обзорные зумы по рамке Жетісу
+ *                    (см. lib/tiles.ts). Глубокие зумы офлайн подменяются
+ *                    заглушкой: пустая подложка лучше битых картинок.
  */
 
-const VERSION = "v1";
+const VERSION = "v2";
 const SHELL_CACHE = `greenmap-shell-${VERSION}`;
 const RUNTIME_CACHE = `greenmap-runtime-${VERSION}`;
+/**
+ * Плитки лежат отдельно от остального: их сотни, они с чужого домена
+ * и переживают смену версии кэша — перекачивать 6 МБ подложки из-за
+ * правки вёрстки незачем.
+ */
+const TILE_CACHE = "greenmap-tiles";
+
+/** Дальше этого зума подложка офлайн не сохраняется. Синхронно с lib/tiles.ts. */
+const TILE_MAX_ZOOM = 9;
 
 /** Разделы, без которых сайт офлайн бесполезен. Кэшируются при установке. */
 const SHELL = ["/", "/map", "/identify", "/red-book", "/bioindicator", "/qr", "/about"];
@@ -42,7 +53,11 @@ self.addEventListener("activate", (event) => {
       const keys = await caches.keys();
       await Promise.all(
         keys
-          .filter((key) => key.startsWith("greenmap-") && !key.endsWith(VERSION))
+          // TILE_CACHE версии не имеет и чистке не подлежит.
+          .filter(
+            (key) =>
+              key.startsWith("greenmap-") && key !== TILE_CACHE && !key.endsWith(VERSION),
+          )
           .map((key) => caches.delete(key)),
       );
       await self.clients.claim();
@@ -52,6 +67,50 @@ self.addEventListener("activate", (event) => {
 
 function isMapTile(url) {
   return url.hostname.endsWith("tile.openstreetmap.org");
+}
+
+/** Зум плитки — первое число в пути вида /{z}/{x}/{y}.png. */
+function tileZoom(url) {
+  const zoom = Number(url.pathname.split("/")[1]);
+  return Number.isFinite(zoom) ? zoom : null;
+}
+
+/**
+ * Заглушка вместо плитки, которой нет в кэше и негде взять.
+ * Leaflet рисует тайлы обычными <img>, поэтому SVG подходит: сетка
+ * читается как «здесь карта, но подложка не загружена», и это лучше,
+ * чем иконки битых изображений по всему экрану.
+ */
+function tilePlaceholder() {
+  const svg =
+    '<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256">' +
+    '<rect width="256" height="256" fill="#efece4"/>' +
+    '<path d="M0 128h256M128 0v256" stroke="#e2ddd1" stroke-width="1"/>' +
+    '</svg>';
+  return new Response(svg, {
+    headers: { "Content-Type": "image/svg+xml", "Cache-Control": "no-store" },
+  });
+}
+
+/**
+ * Плитка: сначала кэш, затем сеть. Сохраняются только обзорные зумы —
+ * иначе прогулка по карте на максимальном приближении незаметно набьёт
+ * в память сотни мегабайт чужой подложки.
+ */
+async function tileStrategy(request, url) {
+  const cache = await caches.open(TILE_CACHE);
+  const cached = await cache.match(request);
+  if (cached) return cached;
+
+  try {
+    const response = await fetch(request);
+    if (response.ok && (tileZoom(url) ?? 99) <= TILE_MAX_ZOOM) {
+      cache.put(request, response.clone());
+    }
+    return response;
+  } catch {
+    return tilePlaceholder();
+  }
 }
 
 function isStaticAsset(url) {
@@ -99,7 +158,12 @@ self.addEventListener("fetch", (event) => {
   if (request.method !== "GET") return;
 
   const url = new URL(request.url);
-  if (isMapTile(url)) return;
+
+  if (isMapTile(url)) {
+    event.respondWith(tileStrategy(request, url));
+    return;
+  }
+
   if (url.origin !== self.location.origin) return;
 
   if (isStaticAsset(url)) {
@@ -119,13 +183,16 @@ self.addEventListener("fetch", (event) => {
  * а не сайт за него. О ходе загрузки сообщаем странице сообщениями.
  */
 async function precacheAll(urls, client) {
-  const cache = await caches.open(RUNTIME_CACHE);
+  const runtime = await caches.open(RUNTIME_CACHE);
+  const tiles = await caches.open(TILE_CACHE);
   let done = 0;
 
   for (const url of urls) {
     try {
+      const external = isMapTile(new URL(url, self.location.origin));
+      // Плитку просим без no-cors: нужен читаемый ответ, а OSM отдаёт CORS.
       const response = await fetch(url, { cache: "reload" });
-      if (response.ok) await cache.put(url, response.clone());
+      if (response.ok) await (external ? tiles : runtime).put(url, response.clone());
     } catch {
       // Недоступный адрес пропускаем: остальная база всё равно сохранится.
     }

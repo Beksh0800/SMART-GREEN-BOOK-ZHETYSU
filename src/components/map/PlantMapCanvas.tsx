@@ -3,10 +3,11 @@
 import "leaflet/dist/leaflet.css";
 
 import type { Map as LeafletMap } from "leaflet";
-import { Fragment, useEffect, useState } from "react";
+import { Fragment, useEffect, useState, useSyncExternalStore } from "react";
 import { Circle, CircleMarker, MapContainer, TileLayer, Tooltip, useMap } from "react-leaflet";
 
 import type { Plant, Zone } from "@/lib/schema";
+import { OFFLINE_MAX_ZOOM } from "@/lib/tiles";
 
 import {
   getPlantGroup,
@@ -22,6 +23,30 @@ import {
  * Карта всех находок. Точек порядка сотни — кластеризация не нужна,
  * а плагин markercluster тянет несовместимую с React 19 обвязку.
  */
+
+const subscribeOnline = (onChange: () => void) => {
+  window.addEventListener("online", onChange);
+  window.addEventListener("offline", onChange);
+  return () => {
+    window.removeEventListener("online", onChange);
+    window.removeEventListener("offline", onChange);
+  };
+};
+
+/**
+ * Без сети подложка есть только до девятого зума — дальше её никто не качал.
+ * maxNativeZoom заставляет Leaflet растягивать девятый зум вместо того, чтобы
+ * запрашивать отсутствующие плитки: подложка размывается, но карта остаётся
+ * картой. Онлайн ограничение снимается, иначе приближение всегда было бы мыльным.
+ */
+function useTileMaxNativeZoom() {
+  const online = useSyncExternalStore(
+    subscribeOnline,
+    () => navigator.onLine,
+    () => true,
+  );
+  return online ? undefined : OFFLINE_MAX_ZOOM;
+}
 
 /**
  * Отдаёт экземпляр карты наружу: кнопки масштаба и возврата к Жетісу живут
@@ -69,6 +94,7 @@ export function PlantMapCanvas({
   // Точка под курсором подрастает: на карте с сотней меток это главный
   // сигнал, что метка кликабельна.
   const [hovered, setHovered] = useState<string | null>(null);
+  const maxNativeZoom = useTileMaxNativeZoom();
 
   return (
     <MapContainer
@@ -81,7 +107,16 @@ export function PlantMapCanvas({
       className="h-full w-full"
       style={{ backgroundColor: "var(--color-paper-dim)" }}
     >
-      <TileLayer url={TILE_URL} attribution={TILE_ATTRIBUTION} />
+      {/*
+        key перемонтирует слой при пропаже сети: react-leaflet не пробрасывает
+        изменение maxNativeZoom в уже созданный TileLayer.
+      */}
+      <TileLayer
+        key={maxNativeZoom ?? "online"}
+        url={TILE_URL}
+        attribution={TILE_ATTRIBUTION}
+        maxNativeZoom={maxNativeZoom}
+      />
       <MapReady onReady={onReady} />
       <FlyToSelected plant={selected} />
 

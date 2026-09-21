@@ -1,15 +1,21 @@
 "use client";
 
 import { CheckCircle2, CloudDownload, WifiOff } from "lucide-react";
-import { useCallback, useEffect, useState, useSyncExternalStore } from "react";
+import { useCallback, useEffect, useMemo, useState, useSyncExternalStore } from "react";
+
+import { offlineTileUrls } from "@/lib/tiles";
 
 /**
  * Регистрация service worker и явная загрузка базы в офлайн-кэш.
  *
  * Регистрация происходит на любой странице, где стоит компонент; загрузка —
- * только по кнопке. Кнопка живёт на странице QR-кодов, потому что офлайн
- * нужен ровно в том сценарии, ради которого сделаны сами коды: человек в поле
- * или у стенда сканирует код, а сети нет.
+ * только по кнопке. Кнопка живёт на страницах QR-кодов и карты, потому что
+ * офлайн нужен ровно в том сценарии, ради которого сделаны сами коды: человек
+ * в поле или у стенда сканирует код, а сети нет.
+ *
+ * Вместе со страницами и фотографиями сохраняется подложка карты: это
+ * единственный ресурс проекта с чужого сервера, и без него офлайн-карта
+ * осталась бы пустым полем с точками.
  */
 
 type State = "idle" | "working" | "done" | "unsupported";
@@ -27,6 +33,11 @@ const subscribeOnline = (onChange: () => void) => {
 };
 
 export function OfflineMode({ urls }: { urls: string[] }) {
+  /**
+   * Плитки считаются один раз: список из 230 адресов, пересчитывать его
+   * при каждом рендере незачем.
+   */
+  const payload = useMemo(() => [...urls, ...offlineTileUrls()], [urls]);
   const [state, setState] = useState<State>("idle");
   const [progress, setProgress] = useState(0);
 
@@ -76,8 +87,8 @@ export function OfflineMode({ urls }: { urls: string[] }) {
     if (!registration.active) return;
     setState("working");
     setProgress(0);
-    registration.active.postMessage({ type: "PRECACHE_ALL", urls });
-  }, [urls]);
+    registration.active.postMessage({ type: "PRECACHE_ALL", urls: payload });
+  }, [payload]);
 
   if (!supported || state === "unsupported") return null;
 
@@ -93,8 +104,9 @@ export function OfflineMode({ urls }: { urls: string[] }) {
             Барлық паспортты телефонға сақтау
           </h2>
           <p className="mt-2 text-sm text-graphite-600">
-            Түрлер өсетін жерде байланыс жиі болмайды. Бір рет жүктеп алсаңыз, QR-кодтар
-            интернетсіз де ашылады: {urls.length} бет пен сурет браузердің жадына сақталады.
+            Түрлер өсетін жерде байланыс жиі болмайды. Бір рет жүктеп алсаңыз, бәрі
+            интернетсіз де ашылады: {urls.length} бет пен сурет және Жетісу картасының
+            негізі браузердің жадына сақталады.
           </p>
         </div>
 
