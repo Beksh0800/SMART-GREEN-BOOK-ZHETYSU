@@ -3,11 +3,10 @@
 import "leaflet/dist/leaflet.css";
 
 import type { Map as LeafletMap } from "leaflet";
-import { Fragment, useEffect, useState, useSyncExternalStore } from "react";
+import { Fragment, useEffect, useState } from "react";
 import { Circle, CircleMarker, MapContainer, TileLayer, Tooltip, useMap } from "react-leaflet";
 
 import type { Plant, Zone } from "@/lib/schema";
-import { OFFLINE_MAX_ZOOM } from "@/lib/tiles";
 
 import {
   getPlantGroup,
@@ -18,35 +17,12 @@ import {
   ZHETYSU_CENTER,
   ZHETYSU_ZOOM,
 } from "./mapStyle";
+import { useTileMaxNativeZoom } from "./useTileMaxNativeZoom";
 
 /**
  * Карта всех находок. Точек порядка сотни — кластеризация не нужна,
  * а плагин markercluster тянет несовместимую с React 19 обвязку.
  */
-
-const subscribeOnline = (onChange: () => void) => {
-  window.addEventListener("online", onChange);
-  window.addEventListener("offline", onChange);
-  return () => {
-    window.removeEventListener("online", onChange);
-    window.removeEventListener("offline", onChange);
-  };
-};
-
-/**
- * Без сети подложка есть только до девятого зума — дальше её никто не качал.
- * maxNativeZoom заставляет Leaflet растягивать девятый зум вместо того, чтобы
- * запрашивать отсутствующие плитки: подложка размывается, но карта остаётся
- * картой. Онлайн ограничение снимается, иначе приближение всегда было бы мыльным.
- */
-function useTileMaxNativeZoom() {
-  const online = useSyncExternalStore(
-    subscribeOnline,
-    () => navigator.onLine,
-    () => true,
-  );
-  return online ? undefined : OFFLINE_MAX_ZOOM;
-}
 
 /**
  * Отдаёт экземпляр карты наружу: кнопки масштаба и возврата к Жетісу живут

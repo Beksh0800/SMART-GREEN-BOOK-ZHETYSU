@@ -9,6 +9,7 @@ import { precisionLabels } from "@/lib/labels";
 import type { PlantLocation, Zone } from "@/lib/schema";
 
 import { TILE_ATTRIBUTION, TILE_URL, uncertaintyRadiusM } from "./mapStyle";
+import { useTileMaxNativeZoom } from "./useTileMaxNativeZoom";
 
 /**
  * Небольшая карта находок одного вида — блок паспорта.
@@ -24,6 +25,8 @@ export function MiniMap({
   zones: Zone[];
   color: string;
 }) {
+  const maxNativeZoom = useTileMaxNativeZoom();
+
   const center: [number, number] = [
     locations.reduce((sum, l) => sum + l.lat, 0) / locations.length,
     locations.reduce((sum, l) => sum + l.lon, 0) / locations.length,
@@ -38,7 +41,13 @@ export function MiniMap({
       className="h-full w-full"
       style={{ backgroundColor: "var(--color-paper-dim)" }}
     >
-      <TileLayer url={TILE_URL} attribution={TILE_ATTRIBUTION} />
+      {/* key перемонтирует слой при пропаже сети — см. useTileMaxNativeZoom. */}
+      <TileLayer
+        key={maxNativeZoom ?? "online"}
+        url={TILE_URL}
+        attribution={TILE_ATTRIBUTION}
+        maxNativeZoom={maxNativeZoom}
+      />
 
       {locations.map((location) => {
         const zone = zones.find((z) => z.id === location.zoneId);

@@ -5,6 +5,7 @@ import { notFound } from "next/navigation";
 import { ArrowLeft, ExternalLink, MapPin } from "lucide-react";
 
 import { MiniMapLoader } from "@/components/map/MiniMapLoader";
+import { OpenInMaps } from "@/components/map/OpenInMaps";
 import { getPlantGroup, groupStyles } from "@/components/map/mapStyle";
 import { EndemicBadge, IndicatorBadge, IucnBadge, RedBookBadge } from "@/components/ui/Badge";
 import { FieldTraits } from "@/components/plant/FieldTraits";
@@ -259,6 +260,11 @@ export default async function PlantPage({ params }: { params: Promise<{ slug: st
                             </>
                           )}
                         </p>
+                        <OpenInMaps
+                          lat={location.lat}
+                          lon={location.lon}
+                          label={location.label}
+                        />
                       </div>
                     </li>
                   );
