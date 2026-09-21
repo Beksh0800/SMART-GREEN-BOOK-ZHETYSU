@@ -15,6 +15,8 @@ import { MapControls } from "./MapControls";
 import { MapLegend } from "./MapLegend";
 import { SelectedPlantCard } from "./SelectedPlantCard";
 
+import type { MapSelection } from "./PlantMapCanvas";
+
 const PlantMapCanvas = dynamic(() => import("./PlantMapCanvas").then((m) => m.PlantMapCanvas), {
   ssr: false,
   loading: () => (
@@ -30,7 +32,7 @@ const PlantMapCanvas = dynamic(() => import("./PlantMapCanvas").then((m) => m.Pl
  */
 export function PlantMapView({ plants, zones }: { plants: Plant[]; zones: Zone[] }) {
   const [filters, setFilters] = useState<PlantFilters>(emptyFilters);
-  const [selected, setSelected] = useState<Plant | null>(null);
+  const [selected, setSelected] = useState<MapSelection | null>(null);
   const [showZones, setShowZones] = useState(false);
   const [filtersOpen, setFiltersOpen] = useState(false);
   // Экземпляр Leaflet нужен кнопкам масштаба: они лежат поверх карты,
@@ -41,7 +43,8 @@ export function PlantMapView({ plants, zones }: { plants: Plant[]; zones: Zone[]
   const visible = useMemo(() => filterPlants(plants, filters), [plants, filters]);
 
   // Выбранный вид, выпавший из выборки, не должен оставаться на карте
-  const selectedVisible = selected && visible.some((p) => p.slug === selected.slug) ? selected : null;
+  const selectedVisible =
+    selected && visible.some((p) => p.slug === selected.plant.slug) ? selected : null;
 
   return (
     <div className="relative h-[calc(100vh-4rem)] w-full overflow-hidden">
@@ -132,7 +135,7 @@ export function PlantMapView({ plants, zones }: { plants: Plant[]; zones: Zone[]
       <AnimatePresence>
         {selectedVisible && (
           <motion.div
-            key={selectedVisible.slug}
+            key={selectedVisible.plant.slug}
             initial={reduced ? false : { opacity: 0, x: 24 }}
             animate={{ opacity: 1, x: 0 }}
             exit={reduced ? undefined : { opacity: 0, x: 24 }}
@@ -140,7 +143,11 @@ export function PlantMapView({ plants, zones }: { plants: Plant[]; zones: Zone[]
             className="absolute inset-x-3 bottom-3 z-30 max-h-[60vh] md:inset-x-auto md:top-4 md:right-4 md:bottom-4 md:w-[23rem] md:max-h-none"
           >
             <SelectedPlantCard
-              plant={selectedVisible}
+              plant={selectedVisible.plant}
+              activeLocation={selectedVisible.location}
+              onPickLocation={(location) =>
+                setSelected({ plant: selectedVisible.plant, location })
+              }
               zones={zones}
               onClose={() => setSelected(null)}
             />

@@ -7,16 +7,22 @@ import { ArrowRight, X } from "lucide-react";
 import { PlantPlaceholder } from "@/components/plant/PlantPlaceholder";
 import { EndemicBadge, IndicatorBadge, IucnBadge, RedBookBadge } from "@/components/ui/Badge";
 import { habitatLabels, precisionLabels } from "@/lib/labels";
-import type { Plant, Zone } from "@/lib/schema";
+import type { Plant, PlantLocation, Zone } from "@/lib/schema";
 
 /** Карточка выбранного вида поверх карты: превью данных и переход в полный паспорт. */
 export function SelectedPlantCard({
   plant,
   zones,
+  activeLocation,
+  onPickLocation,
   onClose,
 }: {
   plant: Plant;
   zones: Zone[];
+  /** Находка, по которой нажали на карте. */
+  activeLocation: PlantLocation;
+  /** Перелёт к другой находке того же вида. */
+  onPickLocation: (location: PlantLocation) => void;
   onClose: () => void;
 }) {
   return (
@@ -89,20 +95,41 @@ export function SelectedPlantCard({
           {plant.habitat.map((h) => habitatLabels[h]).join(" · ")}
         </p>
 
-        <ul className="mt-4 space-y-2 border-t border-line pt-3">
-          {plant.locations.map((location) => (
-            <li key={`${location.lat}-${location.lon}`} className="text-xs text-graphite-600">
-              <span className="font-semibold text-graphite-900">
-                {zones.find((z) => z.id === location.zoneId)?.name.kk}
-              </span>
-              <br />
-              {location.label}
-              <span className="text-graphite-400">
-                {" "}
-                · {precisionLabels[location.precision].label}
-              </span>
-            </li>
-          ))}
+        {/*
+          Список находок кликабельный: вид встречается в разных концах Жетісу,
+          и увидеть остальные места можно, не закрывая карточку. Активная
+          отмечена — иначе непонятно, к какой из них относится вид на карте.
+        */}
+        <ul className="mt-4 space-y-1 border-t border-line pt-3">
+          {plant.locations.map((location) => {
+            const active =
+              location.lat === activeLocation.lat && location.lon === activeLocation.lon;
+
+            return (
+              <li key={`${location.lat}-${location.lon}`}>
+                <button
+                  type="button"
+                  onClick={() => onPickLocation(location)}
+                  aria-current={active ? "true" : undefined}
+                  className={`w-full rounded-badge px-2.5 py-2 text-left text-xs transition-colors ${
+                    active
+                      ? "bg-sage-100 text-graphite-900"
+                      : "text-graphite-600 hover:bg-paper-dim"
+                  }`}
+                >
+                  <span className="font-semibold text-graphite-900">
+                    {zones.find((z) => z.id === location.zoneId)?.name.kk}
+                  </span>
+                  <br />
+                  {location.label}
+                  <span className="text-graphite-400">
+                    {" "}
+                    · {precisionLabels[location.precision].label}
+                  </span>
+                </button>
+              </li>
+            );
+          })}
         </ul>
       </div>
 

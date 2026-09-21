@@ -6,7 +6,7 @@ import type { Map as LeafletMap } from "leaflet";
 import { Fragment, useEffect, useState } from "react";
 import { Circle, CircleMarker, MapContainer, TileLayer, Tooltip, useMap } from "react-leaflet";
 
-import type { Plant, Zone } from "@/lib/schema";
+import type { Plant, PlantLocation, Zone } from "@/lib/schema";
 
 import {
   getPlantGroup,
@@ -19,6 +19,9 @@ import {
 } from "./mapStyle";
 import { useCoarsePointer } from "./useCoarsePointer";
 import { useTileMaxNativeZoom } from "./useTileMaxNativeZoom";
+
+/** Что именно выбрано на карте: вид и конкретная его находка. */
+export type MapSelection = { plant: Plant; location: PlantLocation };
 
 /**
  * Карта всех находок. Точек порядка сотни — кластеризация не нужна,
@@ -41,14 +44,22 @@ function MapReady({ onReady }: { onReady?: (map: LeafletMap) => void }) {
 }
 
 /** При выборе вида карта мягко подлетает к его первой точке. */
-function FlyToSelected({ plant }: { plant: Plant | null }) {
+/**
+ * Перелёт к выбранной находке.
+ *
+ * Раньше карта всегда летела к первой находке вида, а не к нажатой:
+ * у видов с находками по всему Жетісу это выглядело как прыжок в другой
+ * конец региона — человек нажимал точку на севере и оказывался под Алматы.
+ */
+function FlyToSelected({ selection }: { selection: MapSelection | null }) {
   const map = useMap();
+  const lat = selection?.location.lat;
+  const lon = selection?.location.lon;
 
   useEffect(() => {
-    if (!plant) return;
-    const first = plant.locations[0];
-    map.flyTo([first.lat, first.lon], Math.max(map.getZoom(), 9), { duration: 0.8 });
-  }, [plant, map]);
+    if (lat === undefined || lon === undefined) return;
+    map.flyTo([lat, lon], Math.max(map.getZoom(), 9), { duration: 0.8 });
+  }, [lat, lon, map]);
 
   return null;
 }
@@ -63,8 +74,8 @@ export function PlantMapCanvas({
 }: {
   plants: Plant[];
   zones: Zone[];
-  selected: Plant | null;
-  onSelect: (plant: Plant) => void;
+  selected: MapSelection | null;
+  onSelect: (selection: MapSelection) => void;
   showZones: boolean;
   onReady?: (map: LeafletMap) => void;
 }) {
@@ -98,7 +109,7 @@ export function PlantMapCanvas({
         maxNativeZoom={maxNativeZoom}
       />
       <MapReady onReady={onReady} />
-      <FlyToSelected plant={selected} />
+      <FlyToSelected selection={selected} />
 
       {showZones &&
         zones.map((zone) => (
@@ -122,12 +133,24 @@ export function PlantMapCanvas({
 
       {plants.map((plant) => {
         const color = groupStyles[getPlantGroup(plant)].color;
-        const isSelected = selected?.slug === plant.slug;
+        const isSelected = selected?.plant.slug === plant.slug;
+        /**
+         * Когда вид выбран, остальные точки приглушаются. Их на карте больше
+         * сотни, и без этого найти среди них находки выбранного вида нельзя —
+         * а карточка рядом рассказывает именно про него.
+         */
+        const dimmed = selected !== null && !isSelected;
 
         return plant.locations.map((location) => {
           const zone = zones.find((z) => z.id === location.zoneId);
           const radius = uncertaintyRadiusM(location, zone);
           const key = `${plant.slug}-${location.lat}-${location.lon}`;
+          // Находка, по которой нажали: у вида их бывает до десятка,
+          // и понимать, о какой из них речь, нужно и на карте, и в карточке.
+          const isActive =
+            isSelected &&
+            selected.location.lat === location.lat &&
+            selected.location.lon === location.lon;
 
           return (
             <Fragment key={key}>
@@ -145,7 +168,7 @@ export function PlantMapCanvas({
                     fillColor: color,
                     fillOpacity: 0.1,
                   }}
-                  eventHandlers={{ click: () => onSelect(plant) }}
+                  eventHandlers={{ click: () => onSelect({ plant, location }) }}
                 />
               )}
               {/*
@@ -159,29 +182,34 @@ export function PlantMapCanvas({
                   center={[location.lat, location.lon]}
                   radius={18}
                   pathOptions={{ stroke: false, fillOpacity: 0 }}
-                  eventHandlers={{ click: () => onSelect(plant) }}
+                  eventHandlers={{ click: () => onSelect({ plant, location }) }}
                 />
               )}
               <CircleMarker
                 center={[location.lat, location.lon]}
                 radius={
-                  isSelected
-                    ? 9
-                    : hovered === key
-                      ? 8
-                      : location.precision === "exact"
-                        ? 6
-                        : 5.5
+                  isActive
+                    ? 11
+                    : isSelected
+                      ? 9
+                      : hovered === key
+                        ? 8
+                        : location.precision === "exact"
+                          ? 6
+                          : 5.5
                 }
                 pathOptions={{
                   color: isSelected ? "#22201c" : location.precision === "exact" ? "#ffffff" : color,
                   weight: isSelected ? 2.5 : 1.75,
                   dashArray: location.precision === "exact" ? undefined : "2 2",
                   fillColor: color,
-                  fillOpacity: location.precision === "exact" ? 1 : 0.35,
+                  // Приглушённые точки не исчезают совсем: общая картина
+                  // распределения видов по региону — смысл этой карты.
+                  opacity: dimmed ? 0.2 : 1,
+                  fillOpacity: dimmed ? 0.12 : location.precision === "exact" ? 1 : 0.35,
                 }}
                 eventHandlers={{
-                  click: () => onSelect(plant),
+                  click: () => onSelect({ plant, location }),
                   mouseover: () => setHovered(key),
                   mouseout: () => setHovered((h) => (h === key ? null : h)),
                 }}
