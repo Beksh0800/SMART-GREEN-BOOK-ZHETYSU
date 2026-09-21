@@ -97,7 +97,7 @@ function evaluate(plant: Plant, answers: IdentifyAnswers): IdentifyMatch {
 /**
  * Результат определения. Пока не отвечен ни один вопрос, список пуст:
  * показывать все 50 видов как «результат определения» было бы обманом —
- * это просто каталог, и для него есть /red-book.
+ * это просто каталог, и для него есть /plants.
  */
 export function identify(plants: Plant[], answers: IdentifyAnswers): IdentifyMatch[] {
   if (answeredCount(answers) === 0) return [];
