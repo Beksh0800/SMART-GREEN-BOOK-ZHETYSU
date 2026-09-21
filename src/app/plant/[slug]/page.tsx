@@ -147,8 +147,19 @@ export default async function PlantPage({ params }: { params: Promise<{ slug: st
                 <li>
                   IUCN Red List:{" "}
                   <strong className="font-semibold text-graphite-900">
-                    {plant.status.iucn ? iucnLabels[plant.status.iucn] : "бағаланбаған"}
+                    {plant.status.iucn ? iucnLabels[plant.status.iucn] : "бағаланбаған (NE)"}
                   </strong>
+                  {/*
+                    Пустая строка читалась как пробел в нашей базе, хотя это
+                    свойство вида: IUCN оценила лишь часть флоры региона,
+                    и «не оценён» — такой же факт, как категория.
+                  */}
+                  {!plant.status.iucn && (
+                    <span className="block text-xs text-graphite-400">
+                      Түр IUCN жаһандық тізімінде әлі бағаланбаған — бұл сирек емес дегенді
+                      білдірмейді, аймақтық мәртебесі ҚР Қызыл кітабы бойынша беріледі.
+                    </span>
+                  )}
                 </li>
                 <li>
                   Кездесуі:{" "}

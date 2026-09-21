@@ -280,7 +280,8 @@ export default function AboutPage() {
                 >
                   IUCN Red List
                 </a>{" "}
-                — халықаралық мәртебе
+                — халықаралық мәртебе; базадағы {stats.total} түрдің {stats.iucnAssessed}-і
+                бағаланған, қалғаны жаһандық тізімде әлі қаралмаған
               </li>
             </ul>
           </div>

@@ -109,5 +109,8 @@ export function getStats() {
     locations: locations.length,
     exactLocations: locations.filter((l) => l.precision === "exact").length,
     withPhoto: plants.filter((p) => p.photo !== null).length,
+    // IUCN оценила не всю флору региона, и доля оценённых — сама по себе
+    // показатель изученности, поэтому она видна в методике.
+    iucnAssessed: plants.filter((p) => p.status.iucn !== null).length,
   };
 }
